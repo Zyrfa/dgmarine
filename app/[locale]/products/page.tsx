@@ -1,20 +1,47 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { MOCK_PRODUCTS } from '@/lib/mock-products'
+import { ProductsClient } from '@/components/products/ProductsClient'
+import type { ZoneId } from '@/components/ship/ShipDiagram'
 
 type Props = { params: Promise<{ locale: string }> }
+
+const ZONE_IDS: ZoneId[] = ['deck','accommodation','cargo_hold','galley','fuel','cooling','engine_room','ballast_tank','bilge']
 
 export default async function ProductsPage({ params }: Props) {
   const { locale } = await params
   setRequestLocale(locale)
 
-  const t = await getTranslations({ locale, namespace: 'products' })
+  const tz = await getTranslations({ locale, namespace: 'zones' })
+  const tp = await getTranslations({ locale, namespace: 'products' })
+
+  const zoneLabels = Object.fromEntries(ZONE_IDS.map(id => [id, tz(id)])) as Record<string, string>
 
   return (
-    <main className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6" style={{ color: 'var(--fg)' }}>
-        {t('filter')}
-      </h1>
-      {/* TODO: SearchBar + ProductGrid */}
-      <p style={{ color: 'var(--fg-muted)' }}>Product catalog — coming soon</p>
+    <main className="page">
+      <div style={{ marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--fg)', margin: 0 }}>
+          {tp('filter')}
+        </h1>
+        <p style={{ color: 'var(--fg-muted)', margin: '.35rem 0 0' }}>
+          {MOCK_PRODUCTS.length} {locale === 'pl' ? 'produktów' : locale === 'de' ? 'Produkte' : 'products'}
+        </p>
+      </div>
+
+      <ProductsClient
+        products={MOCK_PRODUCTS}
+        locale={locale}
+        zoneLabels={zoneLabels}
+        ui={{
+          search: tp('search'),
+          filter: tp('filter'),
+          noResults: tp('noResults'),
+          addToRfq: tp('addToRfq'),
+          added: tp('addedToRfq'),
+          compare: tp('compare'),
+          all: locale === 'pl' ? 'Wszystkie' : locale === 'de' ? 'Alle' : 'All',
+          biological: locale === 'pl' ? 'Biologiczne' : locale === 'de' ? 'Biologisch' : 'Biological',
+        }}
+      />
     </main>
   )
 }
