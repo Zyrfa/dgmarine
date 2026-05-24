@@ -4,7 +4,7 @@ import { useRFQStore } from '@/lib/rfq-store'
 import { useCompareStore } from '@/lib/compare-store'
 
 interface Props {
-  product: { id: string; name: string; slug: string; unit: string }
+  product: { id: string; name: string; slug: string; unit: string; zones: string[]; tags: string[]; dosage?: { baseConc: number; unit: string } }
   ui: { addToRfq: string; addedToRfq: string; compare: string }
 }
 
@@ -24,7 +24,7 @@ export function ProductDetailActions({ product, ui }: Props) {
         {inRfq ? ui.addedToRfq : ui.addToRfq}
       </button>
       <button
-        onClick={() => !inCompare && addCompare({ id: product.id, name: product.name, slug: product.slug, zones: [], tags: [] })}
+        onClick={() => !inCompare && addCompare({ id: product.id, name: product.name, slug: product.slug, zones: product.zones, tags: product.tags, dosage: product.dosage })}
         className="btn-ghost"
         style={{ opacity: inCompare ? .5 : 1 }}
       >

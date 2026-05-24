@@ -80,7 +80,7 @@ export default async function ProductPage({ params }: Props) {
 
         {/* Actions */}
         <ProductDetailActions
-          product={{ id: product.id, name, slug: product.slug, unit: 'L' }}
+          product={{ id: product.id, name, slug: product.slug, unit: 'L', zones: product.zones, tags: product.tags, dosage: { baseConc: product.dosage.baseConc, unit: product.dosage.unit } }}
           ui={{ addToRfq: tp('addToRfq'), addedToRfq: tp('addedToRfq'), compare: tp('compare') }}
         />
       </div>

@@ -47,9 +47,13 @@
     "empty": "Add products to compare",
     "max": "You can compare up to 4 products",
     "remove": "Remove",
+    "clearAll": "Clear all",
     "zones": "Ship zones",
     "tags": "Tags",
-    "dosage": "Dosage"
+    "dosage": "Dosage",
+    "category": "Category",
+    "biological": "Biological",
+    "description": "Description"
   },
   "zones": {
     "engine_room": "Engine Room",

@@ -47,9 +47,13 @@
     "empty": "Dodaj produkty do porównania",
     "max": "Możesz porównać maksymalnie 4 produkty",
     "remove": "Usuń",
+    "clearAll": "Wyczyść wszystko",
     "zones": "Strefy statku",
     "tags": "Tagi",
-    "dosage": "Dawkowanie"
+    "dosage": "Dawkowanie",
+    "category": "Kategoria",
+    "biological": "Biologiczny",
+    "description": "Opis"
   },
   "zones": {
     "engine_room": "Maszynownia",

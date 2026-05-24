@@ -47,9 +47,13 @@
     "empty": "Produkte zum Vergleich hinzufügen",
     "max": "Sie können bis zu 4 Produkte vergleichen",
     "remove": "Entfernen",
+    "clearAll": "Alle entfernen",
     "zones": "Schiffsbereiche",
     "tags": "Tags",
-    "dosage": "Dosierung"
+    "dosage": "Dosierung",
+    "category": "Kategorie",
+    "biological": "Biologisch",
+    "description": "Beschreibung"
   },
   "zones": {
     "engine_room": "Maschinenraum",
