@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "products": "Produkty",
+    "visualSearch": "Wyszukaj na statku",
+    "biological": "Produkty biologiczne",
+    "about": "O nas",
+    "rfq": "Zapytanie ofertowe"
+  },
+  "home": {
+    "hero": {
+      "title": "Chemia morska najwyższej klasy",
+      "subtitle": "Profesjonalne rozwiązania chemiczne dla przemysłu morskiego",
+      "cta": "Przeglądaj produkty"
+    }
+  },
+  "products": {
+    "search": "Szukaj produktów...",
+    "filter": "Filtruj",
+    "addToRfq": "Dodaj do zapytania",
+    "addedToRfq": "Dodano",
+    "compare": "Porównaj",
+    "noResults": "Brak wyników",
+    "zone": "Strefa statku"
+  },
+  "dosage": {
+    "title": "Kalkulator dawkowania",
+    "tankVolume": "Pojemność zbiornika (L)",
+    "result": "Wymagana ilość",
+    "concentration": "Stężenie"
+  },
+  "rfq": {
+    "title": "Zapytanie ofertowe",
+    "empty": "Twoja lista jest pusta",
+    "portOfDelivery": "Port dostawy",
+    "vesselName": "Nazwa statku",
+    "imoNumber": "Numer IMO",
+    "email": "Adres e-mail",
+    "notes": "Uwagi",
+    "quantity": "Ilość",
+    "send": "Wyślij zapytanie",
+    "sending": "Wysyłanie...",
+    "success": "Zapytanie wysłane. Odpiszemy wkrótce.",
+    "error": "Błąd wysyłki. Spróbuj ponownie."
+  },
+  "compare": {
+    "title": "Porównaj produkty",
+    "empty": "Dodaj produkty do porównania",
+    "max": "Możesz porównać maksymalnie 4 produkty",
+    "remove": "Usuń",
+    "zones": "Strefy statku",
+    "tags": "Tagi",
+    "dosage": "Dawkowanie"
+  },
+  "zones": {
+    "engine_room": "Maszynownia",
+    "cargo_hold": "Ładownia",
+    "deck": "Pokład",
+    "bilge": "Zęza",
+    "ballast_tank": "Zbiorniki balastowe",
+    "cooling": "System chłodzenia",
+    "fuel": "System paliwowy",
+    "galley": "Kuchnia / Mess",
+    "accommodation": "Kabiny załogi"
+  },
+  "theme": {
+    "light": "Tryb jasny",
+    "dark": "Tryb ciemny"
+  }
+}

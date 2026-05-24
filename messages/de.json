@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "products": "Produkte",
+    "visualSearch": "Schiff-Suche",
+    "biological": "Biologische Produkte",
+    "about": "Über uns",
+    "rfq": "Angebotsanfrage"
+  },
+  "home": {
+    "hero": {
+      "title": "Premium Marine-Chemikalien",
+      "subtitle": "Professionelle chemische Lösungen für die Schifffahrtsindustrie",
+      "cta": "Produkte ansehen"
+    }
+  },
+  "products": {
+    "search": "Produkte suchen...",
+    "filter": "Filtern",
+    "addToRfq": "Zur Anfrage hinzufügen",
+    "addedToRfq": "Hinzugefügt",
+    "compare": "Vergleichen",
+    "noResults": "Keine Ergebnisse",
+    "zone": "Schiffsbereich"
+  },
+  "dosage": {
+    "title": "Dosierrechner",
+    "tankVolume": "Tankvolumen (L)",
+    "result": "Benötigte Menge",
+    "concentration": "Konzentration"
+  },
+  "rfq": {
+    "title": "Angebotsanfrage",
+    "empty": "Ihre Liste ist leer",
+    "portOfDelivery": "Lieferhafen",
+    "vesselName": "Schiffsname",
+    "imoNumber": "IMO-Nummer",
+    "email": "E-Mail-Adresse",
+    "notes": "Notizen",
+    "quantity": "Menge",
+    "send": "Anfrage senden",
+    "sending": "Wird gesendet...",
+    "success": "Anfrage gesendet. Wir melden uns in Kürze.",
+    "error": "Fehler beim Senden. Bitte versuchen Sie es erneut."
+  },
+  "compare": {
+    "title": "Produkte vergleichen",
+    "empty": "Produkte zum Vergleich hinzufügen",
+    "max": "Sie können bis zu 4 Produkte vergleichen",
+    "remove": "Entfernen",
+    "zones": "Schiffsbereiche",
+    "tags": "Tags",
+    "dosage": "Dosierung"
+  },
+  "zones": {
+    "engine_room": "Maschinenraum",
+    "cargo_hold": "Laderaum",
+    "deck": "Deck",
+    "bilge": "Bilge",
+    "ballast_tank": "Ballasttanks",
+    "cooling": "Kühlsystem",
+    "fuel": "Kraftstoffsystem",
+    "galley": "Kombüse",
+    "accommodation": "Unterkunft"
+  },
+  "theme": {
+    "light": "Heller Modus",
+    "dark": "Dunkler Modus"
+  }
+}
