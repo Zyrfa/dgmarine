@@ -1,9 +1,14 @@
-import { useTranslations } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 
-export default function HomePage() {
-  const t = useTranslations('home.hero')
-  const nav = useTranslations('nav')
+type Props = { params: Promise<{ locale: string }> }
+
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
+  const t = await getTranslations({ locale, namespace: 'home.hero' })
+  const nav = await getTranslations({ locale, namespace: 'nav' })
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center text-center px-4">

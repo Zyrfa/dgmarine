@@ -1,7 +1,12 @@
-import { useTranslations } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
-export default function ProductsPage() {
-  const t = useTranslations('products')
+type Props = { params: Promise<{ locale: string }> }
+
+export default async function ProductsPage({ params }: Props) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
+  const t = await getTranslations({ locale, namespace: 'products' })
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-8">
