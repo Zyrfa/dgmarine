@@ -6,60 +6,62 @@ export type ZoneId =
   | 'deck' | 'accommodation' | 'cargo_hold' | 'galley'
   | 'fuel' | 'cooling' | 'engine_room' | 'ballast_tank' | 'bilge'
 
+// Darker, more muted palette – professional maritime feel
 export const ZONE_COLORS: Record<ZoneId, string> = {
-  deck:          '#2563eb',
-  accommodation: '#7c3aed',
-  cargo_hold:    '#d97706',
-  galley:        '#c2410c',
-  fuel:          '#a16207',
-  cooling:       '#15803d',
-  engine_room:   '#b91c1c',
-  ballast_tank:  '#0e7490',
-  bilge:         '#475569',
+  deck:          '#1e40af', // blue-800
+  accommodation: '#4c1d95', // violet-900
+  cargo_hold:    '#92400e', // amber-800
+  galley:        '#7c2d12', // orange-900
+  fuel:          '#713f12', // yellow-900 / oil amber
+  cooling:       '#064e3b', // emerald-900
+  engine_room:   '#7f1d1d', // red-900
+  ballast_tank:  '#164e63', // cyan-900
+  bilge:         '#1e293b', // slate-800
 }
 
 interface ZoneRect { id: ZoneId; x: number; y: number; w: number; h: number }
 
-// ─────────────────────────────────────────────────────────────
+// ─────────────────────────────────────────────────────────────────
 //  ViewBox 0 0 1200 460
 //
-//  deck level  y = 175
-//  waterline   y = 345
-//  keel        y = 420  (flat bottom, no sag)
+//  Deck     y = 172
+//  Waterline y = 350
+//  Keel     y = 425   (flat, no sag)
 //
-//  bow deck    x = 170  (bow tip at waterline x≈68)
-//  stern deck  x = 1085 (stern transom vertical at x = 1105)
-// ─────────────────────────────────────────────────────────────
+//  BOW (left):  stem at deck  x = 115
+//               stem at wl    x = 148  → deck further LEFT = forward rake ↑
+//  STERN (right): transom x = 1105, vertical
+// ─────────────────────────────────────────────────────────────────
 
 const ZONES: ZoneRect[] = [
-  { id: 'deck',          x: 170, y: 175, w: 915, h: 28  },
-  { id: 'accommodation', x: 805, y:  72, w: 280, h: 103 },
-  { id: 'cargo_hold',    x: 170, y: 203, w: 540, h: 142 },
-  { id: 'galley',        x: 710, y: 203, w: 97,  h:  71 },
-  { id: 'fuel',          x: 710, y: 274, w: 97,  h:  71 },
-  { id: 'cooling',       x: 807, y: 203, w: 92,  h: 142 },
-  { id: 'engine_room',   x: 899, y: 203, w: 206, h: 142 },
-  { id: 'ballast_tank',  x: 170, y: 345, w: 540, h:  34 },
-  { id: 'bilge',         x: 170, y: 379, w: 729, h:  26 },
+  { id: 'deck',          x: 168, y: 172, w: 917, h: 28  },
+  { id: 'accommodation', x: 803, y:  72, w: 282, h: 100 },
+  { id: 'cargo_hold',    x: 168, y: 200, w: 537, h: 150 },
+  { id: 'galley',        x: 705, y: 200, w:  98, h:  75 },
+  { id: 'fuel',          x: 705, y: 275, w:  98, h:  75 },
+  { id: 'cooling',       x: 803, y: 200, w:  92, h: 150 },
+  { id: 'engine_room',   x: 895, y: 200, w: 210, h: 150 },
+  { id: 'ballast_tank',  x: 168, y: 350, w: 537, h:  34 },
+  { id: 'bilge',         x: 168, y: 384, w: 727, h:  30 }, // h≥30 → label shows
 ]
 
-// ── Hull paths ─────────────────────────────────────────────
-// Freeboard (above waterline) — red
-const FREEBOARD =
-  'M 68,345 C 78,264 115,192 170,175 L 1085,175 L 1105,200 L 1105,345 Z'
+// ── Forward-raked bow: deck (115,172) is left of waterline (148,350)
+//    Q bezier gives a slight concave stem – correct for cargo ships
+const BOW_CURVE  = 'M 148,350 Q 133,262 115,172'
 
-// Underwater — dark navy (flat bottom, bow keel shape)
-const UNDERWATER =
-  'M 68,345 L 105,390 L 170,420 L 1105,420 L 1105,345 Z'
+// Freeboard (above waterline) – red/orange hull colour
+const FREEBOARD  = `${BOW_CURVE} L 1085,172 L 1105,200 L 1105,350 Z`
 
-// Full outline for stroke only
-const HULL_OUTLINE =
-  'M 68,345 C 78,264 115,192 170,175 L 1085,175 L 1105,200 L 1105,420 L 170,420 L 105,390 Z'
+// Underwater section – dark antifouling navy (flat keel)
+const UNDERWATER = 'M 148,350 L 130,395 L 158,425 L 1105,425 L 1105,350 Z'
 
-function labelSize(w: number, h: number): number {
-  if (h < 30 || w < 62) return 0
-  if (w < 108) return 9
-  if (w < 200) return 10
+// Single outer stroke path
+const OUTLINE    = `${BOW_CURVE} L 1085,172 L 1105,200 L 1105,425 L 158,425 L 130,395 Z`
+
+function labelPx(w: number, h: number): number {
+  if (h < 28 || w < 60) return 0
+  if (w < 100) return 9
+  if (w < 190) return 10
   if (w < 300) return 11
   return 13
 }
@@ -82,142 +84,134 @@ export function ShipDiagram({ activeZone, onZoneClick, zoneLabels }: Props) {
       aria-label="Interactive ship diagram"
     >
       <defs>
-        <linearGradient id="d-sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%"   stopColor="#08111f" />
-          <stop offset="100%" stopColor="#0c1a30" />
+        <linearGradient id="g-sky"  x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stopColor="#07101e"/>
+          <stop offset="100%" stopColor="#0c1b30"/>
         </linearGradient>
-        <linearGradient id="d-sea" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%"   stopColor="#0c4a6e" stopOpacity="0.9" />
-          <stop offset="100%" stopColor="#082f4a" stopOpacity="1"   />
+        <linearGradient id="g-sea"  x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stopColor="#0c4566" stopOpacity="0.95"/>
+          <stop offset="100%" stopColor="#07273c" stopOpacity="1"/>
         </linearGradient>
-        <linearGradient id="d-free" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%"   stopColor="#c8341f" />
-          <stop offset="100%" stopColor="#a82b18" />
+        <linearGradient id="g-free" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stopColor="#c0311e"/>
+          <stop offset="100%" stopColor="#9e2818"/>
         </linearGradient>
-        <linearGradient id="d-anti" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%"   stopColor="#1e3a5c" />
-          <stop offset="100%" stopColor="#152a42" />
+        <linearGradient id="g-anti" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stopColor="#1a3554"/>
+          <stop offset="100%" stopColor="#112540"/>
         </linearGradient>
-        <linearGradient id="d-sslo" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%"   stopColor="#e8a020" />
-          <stop offset="100%" stopColor="#c07a10" />
+        <linearGradient id="g-sslo" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stopColor="#d4920e"/>
+          <stop offset="100%" stopColor="#a87010"/>
         </linearGradient>
-        <linearGradient id="d-sshi" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%"   stopColor="#2e5ba8" />
-          <stop offset="100%" stopColor="#1e4590" />
+        <linearGradient id="g-sshi" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stopColor="#1e4b8f"/>
+          <stop offset="100%" stopColor="#163870"/>
         </linearGradient>
-        <filter id="d-glow" x="-50%" y="-50%" width="200%" height="200%">
+        <filter id="f-glow" x="-60%" y="-60%" width="220%" height="220%">
           <feGaussianBlur stdDeviation="2.5" result="b"/>
           <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
         </filter>
       </defs>
 
-      {/* ── Background ─────────────────────────────── */}
-      <rect width="1200" height="460" fill="url(#d-sky)" />
+      {/* ── Background ──────────────────────────────────── */}
+      <rect width="1200" height="460" fill="url(#g-sky)"/>
 
-      {/* ── Sea (below waterline y=345) ─────────────── */}
-      <rect x="0" y="345" width="1200" height="115" fill="url(#d-sea)" />
-      {/* subtle wave lines */}
-      <line x1="0" y1="358" x2="1200" y2="358" stroke="#38bdf8" strokeWidth="0.8" opacity="0.12"/>
-      <line x1="0" y1="376" x2="1200" y2="376" stroke="#38bdf8" strokeWidth="0.6" opacity="0.07"/>
-      <line x1="0" y1="394" x2="1200" y2="394" stroke="#38bdf8" strokeWidth="0.5" opacity="0.05"/>
+      {/* ── Sea ─────────────────────────────────────────── */}
+      <rect x="0" y="350" width="1200" height="110" fill="url(#g-sea)"/>
+      <line x1="0" y1="362" x2="1200" y2="362" stroke="#38bdf8" strokeWidth="0.7" opacity="0.10"/>
+      <line x1="0" y1="380" x2="1200" y2="380" stroke="#38bdf8" strokeWidth="0.5" opacity="0.06"/>
 
-      {/* ── Hull – freeboard (red) ──────────────────── */}
-      <path d={FREEBOARD}   fill="url(#d-free)" />
+      {/* ── Hull – freeboard (red) ───────────────────────── */}
+      <path d={FREEBOARD}  fill="url(#g-free)"/>
 
-      {/* ── Hull – antifouling (dark navy) ─────────── */}
-      <path d={UNDERWATER}  fill="url(#d-anti)" />
+      {/* ── Hull – antifouling (dark navy, flat keel) ───── */}
+      <path d={UNDERWATER} fill="url(#g-anti)"/>
 
-      {/* ── Deck surface ───────────────────────────── */}
-      <rect x="170" y="175" width="915" height="16" fill="#3a4f62" />
-      <rect x="170" y="175" width="915" height="3"  fill="#4e6880" />
+      {/* ── Deck surface ────────────────────────────────── */}
+      <rect x="168" y="172" width="917" height="16" fill="#38505e"/>
+      <rect x="168" y="172" width="917" height="3"  fill="#4e6878"/>
 
-      {/* ╔═══════════════════════════════════════════╗
-          ║  SUPERSTRUCTURE  (stern / right side)     ║
-          ╚═══════════════════════════════════════════╝ */}
+      {/* ╔══════════════════════════════════════════════════╗
+          ║  SUPERSTRUCTURE  – stern, right side             ║
+          ╚══════════════════════════════════════════════════╝ */}
 
-      {/* lower deckhouse */}
-      <rect x="807" y="145" width="298" height="30" fill="url(#d-sslo)" />
+      {/* lower deckhouse (golden) */}
+      <rect x="805" y="144" width="300" height="28" fill="url(#g-sslo)" rx="1"/>
       {/* porthole row */}
-      {[824,848,872,896,920,944,968,992,1016,1040,1064,1088].map((cx,i)=>(
-        <circle key={i} cx={cx} cy={160} r={5} fill="#b8dff0" fillOpacity="0.75"/>
+      {[820,844,868,892,916,940,964,988,1012,1036,1060,1086].map((cx,i)=>(
+        <circle key={i} cx={cx} cy={158} r={4.8} fill="#c8e8f8" fillOpacity="0.72"/>
       ))}
 
-      {/* bridge block */}
-      <rect x="828" y="72"  width="277" height="73" fill="url(#d-sshi)" rx="2" />
-      {/* bridge roof lip */}
-      <rect x="828" y="72"  width="277" height="5"  fill="#3a5880" />
-      {/* bridge windows — large panoramic */}
-      {[844,869,894,919,944,969,994,1019,1044,1069,1090].map((cx,i)=>{
-        const w = i===10 ? 13 : 17
-        return <rect key={i} x={cx} y={86} width={w} height={28} fill="#a8d8ea" fillOpacity="0.78" rx="1"/>
-      })}
-      {/* bridge lower windows */}
-      {[844,872,900,928,956,984,1012,1040,1068,1092].map((cx,i)=>(
-        <rect key={i} x={cx} y={121} width={14} height={14} fill="#a8d8ea" fillOpacity="0.5" rx="1"/>
+      {/* bridge block (blue) */}
+      <rect x="828" y="72"  width="257" height="72" fill="url(#g-sshi)" rx="2"/>
+      {/* roof lip */}
+      <rect x="828" y="72"  width="257" height="4"  fill="#2a4870"/>
+      {/* panoramic bridge windows */}
+      {[844,869,894,919,944,969,994,1019,1044,1069].map((cx,i)=>(
+        <rect key={i} x={cx} y={86} width={16} height={30} fill="#90c8e0" fillOpacity="0.80" rx="1"/>
+      ))}
+      {/* lower windows */}
+      {[844,872,900,928,956,984,1012,1040,1068].map((cx,i)=>(
+        <rect key={i} x={cx} y={123} width={14} height={12} fill="#90c8e0" fillOpacity="0.55" rx="1"/>
       ))}
 
-      {/* ── Funnel ─────────────────────────────────── */}
-      <rect x="890" y="36"  width="50" height="40" fill="#232f3e" rx="3" />
-      <rect x="890" y="36"  width="50" height="10" fill="#c8341f" />
-      <rect x="890" y="46"  width="50" height="5"  fill="#e8a020" />
-      <ellipse cx="915" cy="36" rx="26" ry="5.5"   fill="#1a2535" />
-      {/* smoke */}
-      <ellipse cx="910" cy="22" rx="9"  ry="12"    fill="#44556a" fillOpacity="0.28"/>
-      <ellipse cx="922" cy="14" rx="7"  ry="10"    fill="#44556a" fillOpacity="0.18"/>
+      {/* ── Funnel ──────────────────────────────────────── */}
+      <rect x="892" y="34"  width="48" height="42" fill="#1e2d3e" rx="3"/>
+      <rect x="892" y="34"  width="48" height="9"  fill="#c0311e"/>   {/* red band */}
+      <rect x="892" y="43"  width="48" height="5"  fill="#d4920e"/>   {/* gold band */}
+      <ellipse cx="916" cy="34" rx="25" ry="5" fill="#141e2c"/>
+      {/* subtle smoke */}
+      <ellipse cx="910" cy="20" rx="8" ry="11" fill="#3a4a5a" fillOpacity="0.22"/>
+      <ellipse cx="922" cy="12" rx="6" ry="9"  fill="#3a4a5a" fillOpacity="0.14"/>
 
-      {/* ── Bow mast ───────────────────────────────── */}
-      <rect   x="192" y="96"  width="4"  height="79" fill="#8090a0" />
-      <rect   x="165" y="110" width="58" height="3"  fill="#8090a0" />
-      {/* forestay lines */}
-      <line x1="194" y1="110" x2="170" y2="175" stroke="#607080" strokeWidth="1.2" opacity="0.55"/>
-      <line x1="194" y1="110" x2="220" y2="175" stroke="#607080" strokeWidth="1.2" opacity="0.55"/>
-      {/* nav light */}
-      <circle cx="194" cy="93" r="5" fill="#fde68a" filter="url(#d-glow)" opacity="0.95"/>
+      {/* ── Bow mast ────────────────────────────────────── */}
+      <rect   x="190" y="100" width="4" height="72" fill="#6a7e90"/>
+      {/* crosstree */}
+      <rect   x="164" y="113" width="56" height="3" fill="#6a7e90"/>
+      {/* stays */}
+      <line x1="192" y1="113" x2="168" y2="172" stroke="#536070" strokeWidth="1.1" opacity="0.50"/>
+      <line x1="192" y1="113" x2="220" y2="172" stroke="#536070" strokeWidth="1.1" opacity="0.50"/>
+      {/* masthead light */}
+      <circle cx="192" cy="97" r="5" fill="#fde68a" filter="url(#f-glow)" opacity="0.90"/>
 
-      {/* ── Stern crane arm ────────────────────────── */}
-      <rect   x="770" y="145" width="3"  height="30" fill="#7080a0" />
-      <line x1="771" y1="150" x2="796" y2="175"      stroke="#607080" strokeWidth="1" opacity="0.5"/>
-      <line x1="771" y1="150" x2="748" y2="175"      stroke="#607080" strokeWidth="1" opacity="0.5"/>
-
-      {/* ── Cargo hatch covers (3) ─────────────────── */}
-      {([215, 384, 543] as const).map((hx,i)=>(
+      {/* ── Cargo hatches (3) ───────────────────────────── */}
+      {([215,390,555] as const).map((hx,i)=>(
         <g key={i}>
-          <rect x={hx}   y={180} width={124} height={13} fill="#2e3f50" stroke="#42566a" strokeWidth="1" rx="2"/>
-          <rect x={hx+2} y={181} width={57}  height={10} fill="#364c60" rx="1.5"/>
-          <rect x={hx+65}y={181} width={57}  height={10} fill="#364c60" rx="1.5"/>
-          <line x1={hx+62} y1={181} x2={hx+62} y2={191} stroke="#1e2d3a" strokeWidth="2"/>
-          <circle cx={hx+16}  cy={180} r={2.5} fill="#526070"/>
-          <circle cx={hx+108} cy={180} r={2.5} fill="#526070"/>
+          <rect x={hx}    y={178} width={126} height={12} fill="#28404f" stroke="#3e5868" strokeWidth="1" rx="2"/>
+          <rect x={hx+2}  y={179} width={58}  height={9}  fill="#324d5e" rx="1.5"/>
+          <rect x={hx+66} y={179} width={58}  height={9}  fill="#324d5e" rx="1.5"/>
+          <line x1={hx+63} y1={179} x2={hx+63} y2={188} stroke="#1a2e3a" strokeWidth="2"/>
+          <circle cx={hx+16}  cy={178} r={2} fill="#4e6272"/>
+          <circle cx={hx+110} cy={178} r={2} fill="#4e6272"/>
         </g>
       ))}
 
-      {/* ── Anchor hawse ───────────────────────────── */}
-      <circle cx="112" cy="248" r="9"   fill="#1e2d3a" stroke="#3a4e60" strokeWidth="1.5"/>
-      <circle cx="112" cy="248" r="4.5" fill="#0f1a25"/>
+      {/* ── Anchor hawse ────────────────────────────────── */}
+      <circle cx="132" cy="258" r="8"   fill="#1a2838" stroke="#364e62" strokeWidth="1.5"/>
+      <circle cx="132" cy="258" r="3.5" fill="#0c1620"/>
 
-      {/* ── Deck railing ───────────────────────────── */}
-      {Array.from({length:40},(_,i)=>170+i*23).filter(x=>x<1086).map((sx,i)=>(
-        <line key={i} x1={sx} y1="175" x2={sx} y2="165" stroke="#4a6278" strokeWidth="1.2" opacity="0.5"/>
-      ))}
-      <line x1="170" y1="165" x2="1085" y2="165" stroke="#4a6278" strokeWidth="1" opacity="0.4"/>
-
-      {/* ── Freeboard portholes ─────────────────────── */}
-      {[200,260,320,380,440,500,560,620,680].map((px,i)=>(
-        <circle key={i} cx={px} cy={268} r={6} fill="none" stroke="#7a9ab0" strokeWidth="1.5" opacity="0.4"/>
+      {/* ── Deck railing (simplified – single rail line + short stanchions) */}
+      <line x1="168" y1="164" x2="1085" y2="164" stroke="#4a6278" strokeWidth="1" opacity="0.45"/>
+      {Array.from({length:46},(_,i)=>168+i*20).filter(x=>x<=1085).map((sx,i)=>(
+        <line key={i} x1={sx} y1="172" x2={sx} y2="164" stroke="#4a6278" strokeWidth="1" opacity="0.35"/>
       ))}
 
-      {/* ═══════════════════════════════════════════════
-           INTERACTIVE ZONE OVERLAYS
-          ═══════════════════════════════════════════════ */}
+      {/* ═══════════════════════════════════════════════════
+           CLICKABLE ZONE OVERLAYS
+           Default: very low opacity (0.15) — ship stays clean
+           Hover: 0.68  |  Active: 0.82
+          ═══════════════════════════════════════════════════ */}
       {ZONES.map((z) => {
-        const active  = activeZone === z.id
-        const hover   = hovered    === z.id
-        const color   = ZONE_COLORS[z.id]
-        const fillOp  = active ? 0.78 : hover ? 0.66 : 0.44
-        const sw      = active ? 2.5  : hover ? 1.8  : 0.7
-        const sc      = active ? '#fff' : hover ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.15)'
-        const size    = labelSize(z.w, z.h)
+        const active = activeZone === z.id
+        const hover  = hovered    === z.id
+        const color  = ZONE_COLORS[z.id]
+        const fillOp = active ? 0.82 : hover ? 0.68 : 0.15
+        const sw     = active ? 2.5  : hover ? 1.8  : 0.6
+        const sc     = active ? '#fff'
+                     : hover  ? 'rgba(255,255,255,0.85)'
+                     :           'rgba(255,255,255,0.14)'
+        const size   = labelPx(z.w, z.h)
 
         return (
           <g
@@ -238,16 +232,20 @@ export function ShipDiagram({ activeZone, onZoneClick, zoneLabels }: Props) {
               rx={3}
             />
             {active && (
-              <circle cx={z.x+z.w-10} cy={z.y+10} r={4.5}
-                fill="#fff" opacity={0.95} style={{pointerEvents:'none'}}/>
+              <circle
+                cx={z.x + z.w - 10} cy={z.y + 10} r={4.5}
+                fill="#fff" opacity={0.95}
+                style={{ pointerEvents: 'none' }}
+              />
             )}
-            {size > 0 && (
+            {/* show label when hovered OR active */}
+            {(hover || active) && size > 0 && (
               <text
-                x={z.x+z.w/2} y={z.y+z.h/2}
+                x={z.x + z.w / 2} y={z.y + z.h / 2}
                 textAnchor="middle" dominantBaseline="middle"
                 fill="#fff" fontSize={size} fontWeight="700"
-                stroke="rgba(0,0,0,0.6)" strokeWidth="3.5" paintOrder="stroke fill"
-                style={{pointerEvents:'none'}}
+                stroke="rgba(0,0,0,0.65)" strokeWidth="3.5" paintOrder="stroke fill"
+                style={{ pointerEvents: 'none' }}
               >
                 {zoneLabels[z.id].toUpperCase()}
               </text>
@@ -256,26 +254,28 @@ export function ShipDiagram({ activeZone, onZoneClick, zoneLabels }: Props) {
         )
       })}
 
-      {/* ── Hull outline ───────────────────────────── */}
-      <path d={HULL_OUTLINE} fill="none" stroke="#3a5570" strokeWidth="2.5"
-        style={{pointerEvents:'none'}}/>
+      {/* ── Hull outer stroke ────────────────────────────── */}
+      <path d={OUTLINE} fill="none" stroke="#304558" strokeWidth="2.5"
+        style={{ pointerEvents: 'none' }}/>
 
-      {/* ── Waterline dash ─────────────────────────── */}
-      <line x1="0" y1="345" x2="1200" y2="345"
-        stroke="#38bdf8" strokeWidth="1.5" strokeDasharray="16 8" opacity="0.45"/>
+      {/* ── Waterline ────────────────────────────────────── */}
+      <line x1="0" y1="350" x2="1200" y2="350"
+        stroke="#38bdf8" strokeWidth="1.5" strokeDasharray="18 9" opacity="0.40"/>
 
-      {/* ── Hover tooltip ──────────────────────────── */}
-      {hovered && (() => {
-        const z   = ZONES.find(z => z.id === hovered)!
-        const tx  = Math.min(Math.max(z.x + z.w/2, 90), 1110)
-        const ty  = Math.max(z.y - 12, 44)
-        const lbl = zoneLabels[hovered]
-        const tw  = Math.max(lbl.length * 8.5 + 28, 110)
+      {/* ── Hover / active tooltip ───────────────────────── */}
+      {(hovered || activeZone) && (() => {
+        const id  = hovered ?? activeZone!
+        const z   = ZONES.find(z => z.id === id)!
+        const tx  = Math.min(Math.max(z.x + z.w / 2, 95), 1105)
+        const ty  = Math.max(z.y - 14, 46)
+        const lbl = zoneLabels[id]
+        const tw  = Math.max(lbl.length * 8.5 + 32, 112)
         return (
-          <g style={{pointerEvents:'none'}}>
-            <rect x={tx-tw/2} y={ty-30} width={tw} height={26}
-              fill="#0c1a2e" stroke="#38bdf8" strokeWidth="1.5" rx={7} opacity={0.97}/>
-            <text x={tx} y={ty-14} textAnchor="middle" dominantBaseline="middle"
+          <g style={{ pointerEvents: 'none' }}>
+            <rect x={tx - tw/2} y={ty - 30} width={tw} height={26}
+              fill="#071526" stroke="#38bdf8" strokeWidth="1.5" rx={7} opacity={0.97}/>
+            <text x={tx} y={ty - 14}
+              textAnchor="middle" dominantBaseline="middle"
               fill="#e2e8f0" fontSize={12} fontWeight={600}>
               {lbl}
             </text>
