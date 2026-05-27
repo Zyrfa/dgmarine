@@ -42,6 +42,20 @@
     "success": "Request sent. We will get back to you shortly.",
     "error": "Error sending request. Please try again."
   },
+  "biological": {
+    "badge": "🌿 Biological line",
+    "title": "Biological Marine Solutions",
+    "subtitle": "Eco-safe, science-based products that work with nature — not against it.",
+    "why": "Why choose biological?",
+    "b1Title": "Zero toxic by-products",
+    "b1": "Microbial formulas produce no hazardous residues, keeping crew and sea life safe.",
+    "b2Title": "Science-based",
+    "b2": "Naturally selected microorganisms optimised for marine environments and temperature ranges.",
+    "b3Title": "MARPOL compliant",
+    "b3": "Approved for use and overboard discharge under IMO / MARPOL regulations.",
+    "productsTitle": "Our biological products",
+    "cta": "View all products"
+  },
   "compare": {
     "title": "Compare Products",
     "empty": "Add products to compare",

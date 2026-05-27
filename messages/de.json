@@ -42,6 +42,20 @@
     "success": "Anfrage gesendet. Wir melden uns in Kürze.",
     "error": "Fehler beim Senden. Bitte versuchen Sie es erneut."
   },
+  "biological": {
+    "badge": "🌿 Biologische Linie",
+    "title": "Biologische Meereslösungen",
+    "subtitle": "Umweltfreundliche, wissenschaftlich fundierte Produkte, die mit der Natur arbeiten — nicht gegen sie.",
+    "why": "Warum biologisch?",
+    "b1Title": "Keine giftigen Nebenprodukte",
+    "b1": "Mikrobielle Formeln erzeugen keine gefährlichen Rückstände und schützen Besatzung und Meeresleben.",
+    "b2Title": "Wissenschaftlich fundiert",
+    "b2": "Natürlich ausgewählte Mikroorganismen, optimiert für maritime Umgebungen und Temperaturbereiche.",
+    "b3Title": "MARPOL-konform",
+    "b3": "Zugelassen für den Einsatz und Overboard-Entsorgung gemäß IMO / MARPOL-Vorschriften.",
+    "productsTitle": "Unsere biologischen Produkte",
+    "cta": "Alle Produkte ansehen"
+  },
   "compare": {
     "title": "Produkte vergleichen",
     "empty": "Produkte zum Vergleich hinzufügen",

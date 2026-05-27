@@ -40,6 +40,22 @@
   --bio-border: #166534;
 }
 
+/* ── Bio section theme override ─────────────────────── */
+.bio-theme {
+  --bg:           var(--bio-bg);
+  --bg-card:      var(--bio-card);
+  --bg-card2:     var(--bio-card);
+  --accent:       var(--bio-accent);
+  --accent-fg:    #ffffff;
+  --accent-hover: color-mix(in srgb, var(--bio-accent) 80%, black);
+  --border:       var(--bio-border);
+  background:     var(--bio-bg);
+  min-height:     calc(100vh - 64px);
+}
+[data-theme="dark"] .bio-theme {
+  --accent-fg: #052e16;
+}
+
 /* ── Base ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }

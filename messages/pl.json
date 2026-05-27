@@ -42,6 +42,20 @@
     "success": "Zapytanie wysłane. Odpiszemy wkrótce.",
     "error": "Błąd wysyłki. Spróbuj ponownie."
   },
+  "biological": {
+    "badge": "🌿 Linia biologiczna",
+    "title": "Biologiczne środki morskie",
+    "subtitle": "Ekologiczne, oparte na nauce produkty, które działają razem z naturą — nie przeciwko niej.",
+    "why": "Dlaczego biologiczne?",
+    "b1Title": "Zero toksycznych produktów ubocznych",
+    "b1": "Formuły mikrobiologiczne nie wytwarzają niebezpiecznych pozostałości, chroniąc załogę i życie morskie.",
+    "b2Title": "Oparte na nauce",
+    "b2": "Naturalnie wyselekcjonowane mikroorganizmy zoptymalizowane pod warunki morskie i zakresy temperatur.",
+    "b3Title": "Zgodność z MARPOL",
+    "b3": "Zatwierdzone do stosowania i zrzutu za burtą zgodnie z przepisami IMO / MARPOL.",
+    "productsTitle": "Nasze produkty biologiczne",
+    "cta": "Zobacz wszystkie produkty"
+  },
   "compare": {
     "title": "Porównaj produkty",
     "empty": "Dodaj produkty do porównania",
