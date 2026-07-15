@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { useRFQStore } from '@/lib/rfq-store'
@@ -83,9 +84,8 @@ export function Navbar({ locale, links, rfqLabel }: Props) {
       <nav className="page" style={{ padding: '0 1rem', maxWidth: 1280, margin: '0 auto', display: 'flex', alignItems: 'center', height: 60, gap: '1rem' }}>
 
         {/* Logo */}
-        <Link href={`/${locale}`} style={{ display: 'flex', alignItems: 'center', gap: '.5rem', fontWeight: 800, fontSize: '1.1rem', color: 'var(--accent)', textDecoration: 'none', flexShrink: 0 }}>
-          <AnchorIcon />
-          DG Marine
+        <Link href={`/${locale}`} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
+          <Image src="/logo.png" alt="DG Marine Chemistry" width={140} height={46} priority style={{ objectFit: 'contain', height: 38, width: 'auto' }} />
         </Link>
 
         {/* Desktop links */}

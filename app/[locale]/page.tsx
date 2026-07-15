@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type Props = { params: Promise<{ locale: string }> }
 
@@ -27,6 +28,10 @@ export default async function HomePage({ params }: Props) {
         <div aria-hidden style={{ position: 'absolute', inset: 0, opacity: .07, backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 40px, #38bdf8 40px, #38bdf8 41px)', pointerEvents: 'none' }} />
 
         <div style={{ position: 'relative', maxWidth: 760, margin: '0 auto' }}>
+          <div style={{ marginBottom: '1.75rem' }}>
+            <Image src="/logo.png" alt="DG Marine Chemistry" width={240} height={80} priority style={{ objectFit: 'contain', height: 72, width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.95 }} />
+          </div>
+
           <span style={{ display: 'inline-block', padding: '.3rem .9rem', background: '#0ea5e920', border: '1px solid #0ea5e950', borderRadius: 999, fontSize: '.8rem', fontWeight: 600, color: '#38bdf8', marginBottom: '1.25rem', letterSpacing: '.05em' }}>
             {locale === 'pl' ? '⚓ Profesjonalna chemia morska' : locale === 'de' ? '⚓ Professionelle Meereschemie' : '⚓ Professional Marine Chemistry'}
           </span>
