@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
 import { useRFQStore } from '@/lib/rfq-store'
@@ -15,14 +14,6 @@ interface Props {
   locale: string
   links: NavLink[]
   rfqLabel: string
-}
-
-function AnchorIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden>
-      <path d="M12 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm1 7v1h3v2h-3v7.93A7.001 7.001 0 0 0 19 13h-2a5 5 0 0 1-4 4.9V11h3V9h-3V2h-2v7H9v2h3v6.9A5 5 0 0 1 7 13H5a7.001 7.001 0 0 0 6 6.93V12H8V10h3V9h2z"/>
-    </svg>
-  )
 }
 
 function SunIcon() {
@@ -64,12 +55,17 @@ function CloseIcon() {
 export function Navbar({ locale, links, rfqLabel }: Props) {
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const [logoSrc, setLogoSrc] = useState('/logo.png')
   const { theme, setTheme } = useTheme()
   const pathname = usePathname()
   const rfqCount = useRFQStore(s => s.items.length)
 
   useEffect(() => { setMounted(true) }, [])
   useEffect(() => { setOpen(false) }, [pathname])
+  useEffect(() => {
+    const base = window.location.pathname.startsWith('/dgmarine') ? '/dgmarine' : ''
+    setLogoSrc(`${base}/logo.png`)
+  }, [])
 
   const switchLocale = (next: string) => {
     const segments = pathname.split('/')
@@ -85,7 +81,7 @@ export function Navbar({ locale, links, rfqLabel }: Props) {
 
         {/* Logo */}
         <Link href={`/${locale}`} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
-          <Image src="/logo.png" alt="DG Marine Chemistry" width={140} height={46} priority style={{ objectFit: 'contain', height: 38, width: 'auto' }} />
+          <img src={logoSrc} alt="DG Marine Chemistry" style={{ objectFit: 'contain', height: 38, width: 'auto' }} />
         </Link>
 
         {/* Desktop links */}
