@@ -44,6 +44,10 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
         <img
           src={basePath + product.image}
           alt={name}
+          loading="lazy"
+          decoding="async"
+          width={800}
+          height={600}
           style={{ maxHeight: 160, maxWidth: '100%', objectFit: 'contain', padding: '0 1.25rem' }}
           onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none' }}
         />

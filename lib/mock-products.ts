@@ -33,7 +33,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 20, unit: 'ml/L', notesEn: 'Dilute 10–30% for spray/injection; use undiluted for bath cleaning.' },
     category: 'Cooling',
-    image: '/products/Air Cooler Cleaner 25L_niebieska.jpg',
+    image: '/products/Air Cooler Cleaner 25L_niebieska.webp',
   },
   {
     id: '2', slug: 'alkal-control',
@@ -53,7 +53,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 5, unit: 'ml/L', notesEn: 'Dose to maintain pH 10.5–11.5 in boiler water.' },
     category: 'Engine Room',
-    image: '/products/Alkal Control 25L_biała.jpg',
+    image: '/products/Alkal Control 25L_biała.webp',
   },
   {
     id: '3', slug: 'anti-sludge-agent',
@@ -73,7 +73,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 0.25, unit: 'ml/L', notesEn: 'Initial dose 1:4000 into bunker tank; maintenance 1:8000.' },
     category: 'Fuel',
-    image: '/products/Anti-Sludge Agent 25L_czerwona.jpg',
+    image: '/products/Anti-Sludge Agent 25L_czerwona.webp',
   },
   {
     id: '4', slug: 'anti-fouling-agent',
@@ -93,7 +93,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 5, unit: 'ml/L', notesEn: '0.5 L per 100 tonnes of seawater flow per hour.' },
     category: 'Cooling',
-    image: '/products/Anti-Fouling Agent 25L_biała.jpg',
+    image: '/products/Anti-Fouling Agent 25L_biała.webp',
   },
   {
     id: '5', slug: 'antifreeze-el',
@@ -113,7 +113,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 33, unit: '%', notesEn: '33% concentration for -20°C protection; 50% for -37°C.' },
     category: 'Cooling',
-    image: '/products/Antifreeze EL 25L_biała.jpg',
+    image: '/products/Antifreeze EL 25L_biała.webp',
   },
   {
     id: '6', slug: 'antifreeze',
@@ -133,7 +133,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 33, unit: '%', notesEn: '33% for -20°C; 50% for -37°C protection.' },
     category: 'Cooling',
-    image: '/products/Antifreeze 25L_biała.jpg',
+    image: '/products/Antifreeze 25L_biała.webp',
   },
   {
     id: '7', slug: 'bilge-cleaner-hd',
@@ -153,7 +153,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 50, unit: 'ml/L', notesEn: 'Steam cleaning 1:20–1:100; immersion 1:10–1:50.' },
     category: 'Bilge',
-    image: '/products/Bilge Cleaner HD krzywe_niebieska.jpg',
+    image: '/products/Bilge Cleaner HD krzywe_niebieska.webp',
   },
   {
     id: '8', slug: 'bilge-water-flocculant-agent',
@@ -173,7 +173,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 0.15, unit: 'ml/L', notesEn: 'Dose 50–250 ppm into bilge water before separation.' },
     category: 'Bilge',
-    image: '/products/Bilge Water Flocculant Agent krzywe_biała.jpg',
+    image: '/products/Bilge Water Flocculant Agent krzywe_biała.webp',
   },
   {
     id: '9', slug: 'bioactivae-descaling-agent',
@@ -193,7 +193,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: true,
     dosage: { baseConc: 10, unit: '%', notesEn: 'Use 10–30% solution at 45–65°C. Rinse thoroughly after.' },
     category: 'Biological',
-    image: '/products/bio/Bioactivae Descaling Agent 25L_zielony.jpg',
+    image: '/products/bio/Bioactivae Descaling Agent 25L_zielony.webp',
   },
   {
     id: '10', slug: 'biver-hd',
@@ -213,7 +213,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 20, unit: 'ml/L', notesEn: 'Spray 10–25%; immersion 1:10–1:50; steam 1:20–1:100.' },
     category: 'Engine Room',
-    image: '/products/Biver HD 25L_niebieska.jpg',
+    image: '/products/Biver HD 25L_niebieska.webp',
   },
   {
     id: '11', slug: 'boiler-sludge-coagulant',
@@ -233,7 +233,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 2, unit: 'ml/L', notesEn: 'Dose to maintain residual 30–50 ppm in boiler water.' },
     category: 'Engine Room',
-    image: '/products/Boiler Sludge Coagulant 25L_biała.jpg',
+    image: '/products/Boiler Sludge Coagulant 25L_biała.webp',
   },
   {
     id: '12', slug: 'carbon-remover',
@@ -253,7 +253,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Use 1:5 for heavy deposits; 1:10–1:100 general cleaning.' },
     category: 'Engine Room',
-    image: '/products/Carbon Remover krzywe_niebieska.jpg',
+    image: '/products/Carbon Remover krzywe_niebieska.webp',
   },
   {
     id: '13', slug: 'cargo-marine-cleaner-hd',
@@ -273,7 +273,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: '10% solution; leave 10–15 min; high-pressure rinse.' },
     category: 'Cargo Hold',
-    image: '/products/Cargo Marine Cleaner HD krzywe_niebieska.jpg',
+    image: '/products/Cargo Marine Cleaner HD krzywe_niebieska.webp',
   },
   {
     id: '14', slug: 'cementosol',
@@ -293,7 +293,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Undiluted or 1:1–1:15; contact 30 sec to 5 min; rinse.' },
     category: 'Deck',
-    image: '/products/Cementosol 25 L krzywe_czarna.jpg',
+    image: '/products/Cementosol 25 L krzywe_czarna.webp',
   },
   {
     id: '15', slug: 'cip-descaler',
@@ -313,7 +313,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: true,
     dosage: { baseConc: 50, unit: 'ml/L', notesEn: 'Use 5% solution at 55–65°C; monitor pH; rinse after.' },
     category: 'Biological',
-    image: '/products/bio/CIP Descaler 25 L krzywe_zielony.jpg',
+    image: '/products/bio/CIP Descaler 25 L krzywe_zielony.webp',
   },
   {
     id: '16', slug: 'citrasolv-ex',
@@ -333,7 +333,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 50, unit: 'ml/L', notesEn: '1:20–1:100 general cleaning; 1:10–1:50 immersion.' },
     category: 'Engine Room',
-    image: '/products/CitraSolv EX 25 L krzywe_niebieska.jpg',
+    image: '/products/CitraSolv EX 25 L krzywe_niebieska.webp',
   },
   {
     id: '17', slug: 'coldfuel-conditioner',
@@ -353,7 +353,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 0.8, unit: 'ml/L', notesEn: 'Dose 1:1000–1:2000 directly into bunker tank.' },
     category: 'Fuel',
-    image: '/products/ColdFuel Conditioner krzywe_biała.jpg',
+    image: '/products/ColdFuel Conditioner krzywe_biała.webp',
   },
   {
     id: '18', slug: 'condensate-auto-boiler',
@@ -373,7 +373,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 2.4, unit: 'ml/L', notesEn: 'Initial: 2.4 L per ton boiler capacity; maintain via auto dosing.' },
     category: 'Engine Room',
-    image: '/products/Condesate Auto Boiler krzywe_biała.jpg',
+    image: '/products/Condesate Auto Boiler krzywe_biała.webp',
   },
   {
     id: '19', slug: 'condensate-control',
@@ -393,7 +393,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 50, unit: 'ml/L', notesEn: 'Approx. 50 ml per 24 h per 1 m³ system; maintain pH 8.2–9.5.' },
     category: 'Engine Room',
-    image: '/products/Condesate Control krzywe_biała.jpg',
+    image: '/products/Condesate Control krzywe_biała.webp',
   },
   {
     id: '20', slug: 'cooltreat-fa',
@@ -413,7 +413,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 82, unit: 'ml/L', notesEn: 'Initial: 82 L/t distilled water. Maintain concentration via test kit.' },
     category: 'Cooling',
-    image: '/products/Cooltreat FA krzywe_biała.jpg',
+    image: '/products/Cooltreat FA krzywe_biała.webp',
   },
   {
     id: '21', slug: 'deck-cleaner-marine',
@@ -433,7 +433,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 20, unit: 'ml/L', notesEn: 'Undiluted heavy duty; dilute to 1:50 general; 1:10–1:50 steam.' },
     category: 'Deck',
-    image: '/products/Deck Cleaner Marine krzywe_niebieska.jpg',
+    image: '/products/Deck Cleaner Marine krzywe_niebieska.webp',
   },
   {
     id: '22', slug: 'defoam-c',
@@ -453,7 +453,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 0.3, unit: 'ml/L', notesEn: 'Dose 50–500 ml per ton depending on foam level.' },
     category: 'Engine Room',
-    image: '/products/Defoam krzywe_biała.jpg',
+    image: '/products/Defoam krzywe_biała.webp',
   },
   {
     id: '23', slug: 'degreaser-hd',
@@ -473,7 +473,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 50, unit: 'ml/L', notesEn: '1:1–1:20 general; 1:5–1:20 immersion; contact 5 min–2 h.' },
     category: 'Engine Room',
-    image: '/products/Deagreser HD krzywe_niebieska.jpg',
+    image: '/products/Deagreser HD krzywe_niebieska.webp',
   },
   {
     id: '24', slug: 'descaler-ca-bioactivae',
@@ -493,7 +493,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 15, unit: '%', notesEn: '10–20% circulating systems; 10–50% immersion at 55–65°C.' },
     category: 'Engine Room',
-    image: '/products/Descaler CA krzywe_czarna.jpg',
+    image: '/products/Descaler CA krzywe_czarna.webp',
   },
   {
     id: '25', slug: 'descaler-l',
@@ -513,7 +513,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 20, unit: '%', notesEn: '15–30% circulating; 10–50% immersion bath (max 55°C).' },
     category: 'Engine Room',
-    image: '/products/Descaler L krzywe_czarna.jpg',
+    image: '/products/Descaler L krzywe_czarna.webp',
   },
   {
     id: '26', slug: 'diesel-lubricity-agent',
@@ -533,7 +533,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 0.1, unit: 'ml/L', notesEn: '1 L per 10,000–40,000 L fuel; add before bunkering.' },
     category: 'Fuel',
-    image: '/products/Diesel Lubricity Agent krzywe_czerwona.jpg',
+    image: '/products/Diesel Lubricity Agent krzywe_czerwona.webp',
   },
   {
     id: '27', slug: 'diesel-prt',
@@ -553,7 +553,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 8, unit: 'ml/L', notesEn: 'Start: 8 L per m³ distilled water; maintain nitrite 1000–2000 ppm.' },
     category: 'Fuel',
-    image: '/products/Diesel PRT krzywe_biała.jpg',
+    image: '/products/Diesel PRT krzywe_biała.webp',
   },
   {
     id: '28', slug: 'elektrocleaner-fast-fry',
@@ -573,7 +573,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Apply undiluted; allow to evaporate — no rinsing needed.' },
     category: 'Engine Room',
-    image: '/products/Elekrocleaner fast dry krzywe_żółta.jpg',
+    image: '/products/Elekrocleaner fast dry krzywe_żółta.webp',
   },
   {
     id: '29', slug: 'elektrocleaner',
@@ -593,7 +593,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Apply undiluted by brush, swab, or spray.' },
     category: 'Engine Room',
-    image: '/products/Elekrocleaner krzywe_żółta.jpg',
+    image: '/products/Elekrocleaner krzywe_żółta.webp',
   },
   {
     id: '30', slug: 'engine-cleaner',
@@ -613,7 +613,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 200, unit: 'ml/L', notesEn: 'Dilute up to 1:5; apply by brush, spray, or immersion.' },
     category: 'Engine Room',
-    image: '/products/Engine Cleaner krzywe_niebieska.jpg',
+    image: '/products/Engine Cleaner krzywe_niebieska.webp',
   },
   {
     id: '31', slug: 'envirocleaner',
@@ -633,7 +633,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 20, unit: 'ml/L', notesEn: 'Undiluted heavy duty; dilute up to 1:50 general cleaning.' },
     category: 'Deck',
-    image: '/products/Envirocleaner krzywe_niebieska.jpg',
+    image: '/products/Envirocleaner krzywe_niebieska.webp',
   },
   {
     id: '32', slug: 'fastmax',
@@ -653,7 +653,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 50, unit: 'ml/L', notesEn: 'General 1:10–1:100; immersion 1:25; foam equipment neat.' },
     category: 'Engine Room',
-    image: '/products/Fast Max krzywe_niebieska.jpg',
+    image: '/products/Fast Max krzywe_niebieska.webp',
   },
   {
     id: '33', slug: 'filtercleaner',
@@ -673,7 +673,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Use undiluted at max 70°C; contact time 2–8 hours.' },
     category: 'Engine Room',
-    image: '/products/Fitercleaner krzywe_niebieska.jpg',
+    image: '/products/Fitercleaner krzywe_niebieska.webp',
   },
   {
     id: '34', slug: 'high-pressure-cleaner',
@@ -693,7 +693,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 15, unit: '%', notesEn: '10–25% for high-pressure washers; 1–2% for foam equipment.' },
     category: 'Deck',
-    image: '/products/HP Wash krzywe_niebieska.jpg',
+    image: '/products/HP Wash krzywe_niebieska.webp',
   },
   {
     id: '35', slug: 'multicleaner-eco',
@@ -713,7 +713,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 10, unit: 'ml/L', notesEn: '1:1–1:10 general; 1:10–1:50 steam cleaning.' },
     category: 'Deck',
-    image: '/products/Multicleaner ECO krzywe_niebieska.jpg',
+    image: '/products/Multicleaner ECO krzywe_niebieska.webp',
   },
   {
     id: '36', slug: 'multicleaner-forte',
@@ -733,7 +733,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 20, unit: 'ml/L', notesEn: '1:5–1:50 general; 1:5–1:20 immersion.' },
     category: 'Deck',
-    image: '/products/Multicleaner Forte krzywe_niebieska.jpg',
+    image: '/products/Multicleaner Forte krzywe_niebieska.webp',
   },
   {
     id: '37', slug: 'oil-dispersant',
@@ -753,7 +753,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Apply undiluted on spills; 5–10% as tank cleaner.' },
     category: 'Bilge',
-    image: '/products/Oil dispersant krzywe_niebieska.jpg',
+    image: '/products/Oil dispersant krzywe_niebieska.webp',
   },
   {
     id: '38', slug: 'paint-remover',
@@ -773,7 +773,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Undiluted or 1:1 at 55–65°C; immerse 30 min–5 h.' },
     category: 'Deck',
-    image: '/products/Paint Remover krzywe_czerwona.jpg',
+    image: '/products/Paint Remover krzywe_czerwona.webp',
   },
   {
     id: '39', slug: 'petrosolv',
@@ -793,7 +793,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Apply undiluted; contact 15–45 min; rinse with hot water.' },
     category: 'Fuel',
-    image: '/products/Petrosolv krzywe_biała.jpg',
+    image: '/products/Petrosolv krzywe_biała.webp',
   },
   {
     id: '40', slug: 'pipe-cleaner',
@@ -813,7 +813,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 20, unit: '%', notesEn: '10–30% circulating systems; 10–50% immersion (max 55°C).' },
     category: 'Engine Room',
-    image: '/products/Pipe Cleaner krzywe_czarna.jpg',
+    image: '/products/Pipe Cleaner krzywe_czarna.webp',
   },
   {
     id: '41', slug: 'rust-remover',
@@ -833,7 +833,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Immersion 2–20 min or brush; rinse with fresh water.' },
     category: 'Engine Room',
-    image: '/products/Rust Remover krzywe_czarna.jpg',
+    image: '/products/Rust Remover krzywe_czarna.webp',
   },
   {
     id: '42', slug: 'separator-cleaner',
@@ -853,7 +853,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 100, unit: 'ml/L', notesEn: 'Undiluted or 20% in fresh water; soak 30 min–2 h.' },
     category: 'Engine Room',
-    image: '/products/Separator Cleaner krzywe_czarna.jpg',
+    image: '/products/Separator Cleaner krzywe_czarna.webp',
   },
   {
     id: '43', slug: 'tankcleaner-plus',
@@ -873,7 +873,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 15, unit: '%', notesEn: '10–25% machine washing (35–55°C); undiluted direct injection.' },
     category: 'Cargo Hold',
-    image: '/products/Tankcleaner Plus krzywe_niebieska.jpg',
+    image: '/products/Tankcleaner Plus krzywe_niebieska.webp',
   },
   {
     id: '44', slug: 'tankcleaner',
@@ -893,7 +893,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 15, unit: '%', notesEn: '10–25% in heated water (35–55°C) for machine washing.' },
     category: 'Cargo Hold',
-    image: '/products/Tankcleaner krzywe_niebieska.jpg',
+    image: '/products/Tankcleaner krzywe_niebieska.webp',
   },
   {
     id: '45', slug: 'ultrasonic-cleaner',
@@ -913,7 +913,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 10, unit: '%', notesEn: '5–20% solution at 55–75°C; cleaning time 5–30 min.' },
     category: 'Engine Room',
-    image: '/products/Ultrasonic Cleaner krzywe_niebieska.jpg',
+    image: '/products/Ultrasonic Cleaner krzywe_niebieska.webp',
   },
   {
     id: '46', slug: 'vacuum-pipe-cleaner-bioactivae',
@@ -933,7 +933,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: true,
     dosage: { baseConc: 1.3, unit: 'ml/L', notesEn: 'Daily dose: 1.2–1.4 L per dosing station (8–10 toilets).' },
     category: 'Biological',
-    image: '/products/bio/Vacuum BioActivae krzywe_zielony.jpg',
+    image: '/products/bio/Vacuum BioActivae krzywe_zielony.webp',
   },
   {
     id: '47', slug: 'vapor-control',
@@ -953,7 +953,7 @@ export const MOCK_PRODUCTS: Product[] = [
     isBiological: false,
     dosage: { baseConc: 35, unit: 'ml/L', notesEn: 'Continuously inject 25–45 ml per ton of distillate.' },
     category: 'Engine Room',
-    image: '/products/Vapor Control krzywe_biała.jpg',
+    image: '/products/Vapor Control krzywe_biała.webp',
   },
 ]
 

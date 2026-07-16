@@ -23,6 +23,10 @@ export function ProductImage({ src, alt }: Props) {
       <img
         src={imgSrc}
         alt={alt}
+        loading="eager"
+        decoding="async"
+        width={800}
+        height={600}
         style={{ maxHeight: 200, maxWidth: '100%', objectFit: 'contain' }}
         onError={() => setVisible(false)}
       />
