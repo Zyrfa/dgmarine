@@ -12,7 +12,7 @@ interface Props {
   products: Product[]
   locale: string
   zoneLabels: Record<string, string>
-  ui: { search: string; filter: string; noResults: string; addToRfq: string; added: string; compare: string; details: string; all: string; biological: string }
+  ui: { search: string; filter: string; noResults: string; addToRfq: string; added: string; compare: string; all: string; biological: string }
 }
 
 export function ProductsClient({ products, locale, zoneLabels, ui }: Props) {
@@ -96,7 +96,6 @@ export function ProductsClient({ products, locale, zoneLabels, ui }: Props) {
               product={p}
               locale={locale}
               zoneLabels={zoneLabels}
-              detailsLabel={ui.details}
               addRfqLabel={ui.addToRfq}
               addedLabel={ui.added}
               compareLabel={ui.compare}

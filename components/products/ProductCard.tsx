@@ -11,13 +11,12 @@ interface Props {
   product: Product
   locale: string
   zoneLabels: Record<string, string>
-  detailsLabel: string
   addRfqLabel: string
   addedLabel: string
   compareLabel: string
 }
 
-export function ProductCard({ product, locale, zoneLabels, detailsLabel, addRfqLabel, addedLabel, compareLabel }: Props) {
+export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLabel, compareLabel }: Props) {
   const { add: addRFQ, has: hasRFQ } = useRFQStore()
   const { add: addCompare, has: hasCompare, isFull } = useCompareStore()
   const [basePath, setBasePath] = useState('')
@@ -36,10 +35,17 @@ export function ProductCard({ product, locale, zoneLabels, detailsLabel, addRfqL
   return (
     <article
       className="card"
-      style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', transition: 'box-shadow .2s, transform .2s' }}
+      style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', transition: 'box-shadow .2s, transform .2s', position: 'relative', cursor: 'pointer' }}
       onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(0,0,0,.15)' }}
       onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = ''; (e.currentTarget as HTMLElement).style.boxShadow = '' }}
     >
+      {/* Stretched link covering whole card */}
+      <Link
+        href={`/${locale}/products/${product.slug}`}
+        aria-label={name}
+        style={{ position: 'absolute', inset: 0, zIndex: 0 }}
+      />
+
       {/* Product image */}
       <div style={{ position: 'relative', background: 'var(--bg-card2)', height: 180, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', borderBottom: '1px solid var(--border)' }}>
         <img
@@ -53,7 +59,7 @@ export function ProductCard({ product, locale, zoneLabels, detailsLabel, addRfqL
           onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none' }}
         />
         {product.isBiological && (
-          <span className="tag" style={{ position: 'absolute', top: 8, right: 8, background: 'var(--bio-accent)', color: '#fff', fontSize: '.7rem', fontWeight: 700 }}>
+          <span className="tag" style={{ position: 'absolute', top: 8, right: 8, background: 'var(--bio-accent)', color: '#fff', fontSize: '.7rem', fontWeight: 700, zIndex: 1 }}>
             🌿 BIO
           </span>
         )}
@@ -95,28 +101,23 @@ export function ProductCard({ product, locale, zoneLabels, detailsLabel, addRfqL
       </div>
 
       {/* Actions */}
-      <div style={{ padding: '0 1.1rem 1.1rem', display: 'flex', flexDirection: 'column', gap: '.4rem' }}>
-        <div style={{ display: 'flex', gap: '.4rem' }}>
-          <Link href={`/${locale}/products/${product.slug}`} className="btn-ghost" style={{ flex: 1, justifyContent: 'center', fontSize: '.8rem' }}>
-            {detailsLabel}
-          </Link>
-          <button
-            onClick={() => !inCompare && !isFull() && addCompare({ id: product.id, name, slug: product.slug, zones: product.zones, tags: product.tags, dosage: { baseConc: product.dosage.baseConc, unit: product.dosage.unit } })}
-            className="btn-ghost"
-            style={{ padding: '.5rem .65rem', opacity: inCompare || isFull() ? .5 : 1 }}
-            title={compareLabel}
-            aria-label={compareLabel}
-          >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="15" height="15">
-              <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
-              <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-            </svg>
-          </button>
-        </div>
+      <div style={{ padding: '0 1.1rem 1.1rem', display: 'flex', gap: '.4rem', position: 'relative', zIndex: 1 }}>
+        <button
+          onClick={() => !inCompare && !isFull() && addCompare({ id: product.id, name, slug: product.slug, zones: product.zones, tags: product.tags, dosage: { baseConc: product.dosage.baseConc, unit: product.dosage.unit } })}
+          className="btn-ghost"
+          style={{ padding: '.5rem .65rem', opacity: inCompare || isFull() ? .5 : 1 }}
+          title={compareLabel}
+          aria-label={compareLabel}
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="15" height="15">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+        </button>
         <button
           onClick={() => !inRfq && addRFQ({ id: product.id, name, slug: product.slug, unit: 'L' })}
           className="btn-primary"
-          style={{ width: '100%', justifyContent: 'center', fontSize: '.8rem', opacity: inRfq ? .7 : 1 }}
+          style={{ flex: 1, justifyContent: 'center', fontSize: '.8rem', opacity: inRfq ? .7 : 1 }}
         >
           {inRfq ? addedLabel : addRfqLabel}
         </button>

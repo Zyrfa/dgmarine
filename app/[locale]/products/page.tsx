@@ -38,7 +38,6 @@ export default async function ProductsPage({ params }: Props) {
           addToRfq: tp('addToRfq'),
           added: tp('addedToRfq'),
           compare: tp('compare'),
-          details: tp('details'),
           all: tp('all'),
           biological: tp('biologicalFilter'),
         }}

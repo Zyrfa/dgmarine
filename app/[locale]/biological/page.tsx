@@ -156,7 +156,6 @@ export default async function BiologicalPage({ params }: Props) {
               product={product}
               locale={locale}
               zoneLabels={zoneLabels}
-              detailsLabel={tp('details')}
               addRfqLabel={tp('addToRfq')}
               addedLabel={tp('addedToRfq')}
               compareLabel={tp('compare')}
