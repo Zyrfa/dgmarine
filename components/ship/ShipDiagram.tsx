@@ -52,8 +52,8 @@ function parse(s: string): [number, number][] {
 }
 
 const ZONES: ZonePoly[] = [
-  // Superstructure / crew quarters (top-left block)
-  { id: 'accommodation', pts: parse('108,192 416,192 416,373 108,373') },
+  // Superstructure / crew quarters — traced from schematic by user
+  { id: 'accommodation', pts: parse('332,370 330,251 337,234 332,225 248,224 248,259 236,260 236,284 220,285 221,340 210,342 209,210 200,206 199,200 186,190 186,197 190,208 170,209 158,312 159,366') },
 
   // Main deck strip — follows bow taper on the right
   { id: 'deck',          pts: parse('108,373 1268,373 1388,458 1306,400 108,400') },
