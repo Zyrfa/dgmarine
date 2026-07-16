@@ -182,15 +182,6 @@ export function ShipDiagram({ activeZone, onZoneClick, zoneLabels }: Props) {
               strokeLinejoin="round"
             />
 
-            {/* active indicator dot */}
-            {active && (
-              <circle
-                cx={bb.maxX - 10} cy={bb.minY + 10} r={4}
-                fill={color}
-                style={{ pointerEvents: 'none' }}
-              />
-            )}
-
             {/* zone label — visible on hover / active */}
             {(hover || active) && size > 0 && (
               <text
