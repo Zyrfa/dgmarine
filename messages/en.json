@@ -4,7 +4,9 @@
     "visualSearch": "Search by Ship",
     "biological": "Biological Products",
     "about": "About Us",
-    "rfq": "Request a Quote"
+    "rfq": "Request a Quote",
+    "contact": "Contact",
+    "compare": "Compare"
   },
   "home": {
     "hero": {

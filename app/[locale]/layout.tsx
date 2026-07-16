@@ -23,6 +23,8 @@ export default async function LocaleLayout({ children, params }: Props) {
     { href: `/${locale}/products`,      label: tn('products') },
     { href: `/${locale}/visual-search`, label: tn('visualSearch') },
     { href: `/${locale}/biological`,    label: tn('biological') },
+    { href: `/${locale}/compare`,       label: tn('compare') },
+    { href: `/${locale}/contact`,       label: tn('contact') },
     { href: `/${locale}/about`,         label: tn('about') },
   ]
 
