@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Link from 'next/link'
 import { LogoImage } from '@/components/ui/LogoImage'
+import { HeroBgImage } from '@/components/ui/HeroBgImage'
 
 type Props = { params: Promise<{ locale: string }> }
 
@@ -22,10 +23,10 @@ export default async function HomePage({ params }: Props) {
     <main>
       {/* Hero */}
       <section style={{
-        background: 'linear-gradient(135deg, #060e1a 0%, #0a1f3a 50%, #0d2a4a 100%)',
         color: '#e2e8f0', padding: '5rem 1rem 4rem', textAlign: 'center', position: 'relative', overflow: 'hidden',
       }}>
-        <div aria-hidden style={{ position: 'absolute', inset: 0, opacity: .07, backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 40px, #38bdf8 40px, #38bdf8 41px)', pointerEvents: 'none' }} />
+        <HeroBgImage src="/hero-bg.webp" />
+        <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(4,10,20,0.62), rgba(8,20,40,0.68))', pointerEvents: 'none' }} />
 
         <div style={{ position: 'relative', maxWidth: 760, margin: '0 auto' }}>
           <div style={{ marginBottom: '1.75rem' }}>
