@@ -67,8 +67,8 @@ const ZONES: ZonePoly[] = [
   // Cargo holds — top edge matches deck bottom exactly, no gap
   { id: 'cargo_hold',    pts: parse('355,406 1304,400 1297,411 1295,422 1295,429 1300,434 1306,437 1317,442 1325,447 1332,456 1335,464 1337,471 357,469') },
 
-  // Cooling systems — lower left of hull
-  { id: 'cooling',       pts: parse('108,470 337,470 337,533 108,533') },
+  // Cooling systems — user-calibrated
+  { id: 'cooling',       pts: parse('266,471 264,518 350,519 352,470') },
 
   // Fuel system — user-calibrated
   { id: 'fuel',          pts: parse('149,470 148,474 144,481 138,482 135,482 133,473 132,468 128,463 123,465 125,476 128,483 125,486 122,488 125,492 128,498 126,503 128,510 130,514 135,507 135,498 139,494 146,501 149,505 156,504 162,503 173,503 196,504 258,507 260,469') },
