@@ -43,7 +43,7 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
       <Link
         href={`/${locale}/products/${product.slug}`}
         aria-label={name}
-        style={{ position: 'absolute', inset: 0, zIndex: 0 }}
+        style={{ position: 'absolute', inset: 0, zIndex: 1 }}
       />
 
       {/* Product image */}
@@ -101,7 +101,7 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
       </div>
 
       {/* Actions */}
-      <div style={{ padding: '0 1.1rem 1.1rem', display: 'flex', gap: '.4rem', position: 'relative', zIndex: 1 }}>
+      <div style={{ padding: '0 1.1rem 1.1rem', display: 'flex', gap: '.4rem', position: 'relative', zIndex: 2 }}>
         <button
           onClick={() => !inCompare && !isFull() && addCompare({ id: product.id, name, slug: product.slug, zones: product.zones, tags: product.tags, dosage: { baseConc: product.dosage.baseConc, unit: product.dosage.unit } })}
           className="btn-ghost"
