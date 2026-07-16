@@ -70,8 +70,8 @@ const ZONES: ZonePoly[] = [
   // Cooling systems — lower left of hull
   { id: 'cooling',       pts: parse('108,470 337,470 337,533 108,533') },
 
-  // Fuel tanks — lower right of stern block
-  { id: 'fuel',          pts: parse('337,470 416,470 416,533 337,533') },
+  // Fuel system — user-calibrated
+  { id: 'fuel',          pts: parse('149,470 148,474 144,481 138,482 135,482 133,473 132,468 128,463 123,465 125,476 128,483 125,486 122,488 125,492 128,498 126,503 128,510 130,514 135,507 135,498 139,494 146,501 149,505 156,504 162,503 173,503 196,504 258,507 260,469') },
 
   // Ballast tanks — user-calibrated
   { id: 'ballast_tank',  pts: parse('353,471 352,502 1199,497 1208,497 1208,504 1276,505 1329,501 1332,494 1336,484 1338,476 1338,470') },
