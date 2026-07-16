@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { MOCK_PRODUCTS, getProductBySlug } from '@/lib/mock-products'
 import { DosageCalculator } from '@/components/products/DosageCalculator'
 import { ProductDetailActions } from '@/components/products/ProductDetailActions'
+import { ProductImage } from '@/components/products/ProductImage'
 import { ZONE_COLORS, type ZoneId } from '@/components/ship/ShipDiagram'
 
 type Props = { params: Promise<{ locale: string; slug: string }> }
@@ -54,12 +55,16 @@ export default async function ProductPage({ params }: Props) {
         )}
       </div>
 
-      <h1 style={{ fontSize: '2rem', fontWeight: 800, margin: '0 0 .5rem', color: 'var(--fg)' }}>{name}</h1>
+      <h1 style={{ fontSize: '2rem', fontWeight: 800, margin: '0 0 1.5rem', color: 'var(--fg)' }}>{name}</h1>
 
       <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: '1fr' }}>
-        {/* Description */}
-        <div className="card" style={{ padding: '1.5rem' }}>
-          <p style={{ margin: 0, color: 'var(--fg)', lineHeight: 1.7, fontSize: '.95rem' }}>{desc}</p>
+        {/* Image + description side by side on wider screens */}
+        <div style={{ display: 'grid', gap: '1.5rem', gridTemplateColumns: 'minmax(0,1fr) minmax(0,2fr)', alignItems: 'start' }}
+          className="product-detail-top">
+          <ProductImage src={product.image} alt={name} />
+          <div className="card" style={{ padding: '1.5rem' }}>
+            <p style={{ margin: 0, color: 'var(--fg)', lineHeight: 1.7, fontSize: '.95rem' }}>{desc}</p>
+          </div>
         </div>
 
         {/* Dosage calculator */}

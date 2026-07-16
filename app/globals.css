@@ -120,3 +120,7 @@ body {
 .page { max-width: 1280px; margin: 0 auto; padding: 2rem 1rem; }
 @media (min-width: 640px)  { .page { padding: 2.5rem 1.5rem; } }
 @media (min-width: 1024px) { .page { padding: 3rem 2rem; } }
+
+/* ── Product detail: image + description side by side ── */
+.product-detail-top { grid-template-columns: 1fr !important; }
+@media (min-width: 640px) { .product-detail-top { grid-template-columns: minmax(0,1fr) minmax(0,2fr) !important; } }

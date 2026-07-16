@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRFQStore } from '@/lib/rfq-store'
 import { useCompareStore } from '@/lib/compare-store'
@@ -18,6 +19,11 @@ interface Props {
 export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLabel, compareLabel }: Props) {
   const { add: addRFQ, has: hasRFQ } = useRFQStore()
   const { add: addCompare, has: hasCompare, isFull } = useCompareStore()
+  const [basePath, setBasePath] = useState('')
+
+  useEffect(() => {
+    setBasePath(window.location.pathname.startsWith('/dgmarine') ? '/dgmarine' : '')
+  }, [])
 
   const name = product.name[locale as 'en' | 'pl' | 'de'] ?? product.name.en
   const desc = product.shortDesc[locale as 'en' | 'pl' | 'de'] ?? product.shortDesc.en
@@ -27,28 +33,36 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
   const accentColor = primaryZone ? ZONE_COLORS[primaryZone] : 'var(--accent)'
 
   return (
-    <article className="card" style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', transition: 'box-shadow .2s, transform .2s' }}
-      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(0,0,0,.12)' }}
+    <article
+      className="card"
+      style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', transition: 'box-shadow .2s, transform .2s' }}
+      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(0,0,0,.15)' }}
       onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = ''; (e.currentTarget as HTMLElement).style.boxShadow = '' }}
     >
-      {/* Color bar */}
-      <div style={{ height: 4, background: accentColor }} />
-
-      {/* Badge for biological */}
-      {product.isBiological && (
-        <div style={{ position: 'relative' }}>
-          <span className="tag" style={{ position: 'absolute', top: 8, right: 8, background: 'var(--bio-accent)', color: '#fff' }}>
-            BIO
+      {/* Product image */}
+      <div style={{ position: 'relative', background: 'var(--bg-card2)', height: 180, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', borderBottom: '1px solid var(--border)' }}>
+        <img
+          src={basePath + product.image}
+          alt={name}
+          style={{ maxHeight: 160, maxWidth: '100%', objectFit: 'contain', padding: '0 1.25rem' }}
+          onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none' }}
+        />
+        {product.isBiological && (
+          <span className="tag" style={{ position: 'absolute', top: 8, right: 8, background: 'var(--bio-accent)', color: '#fff', fontSize: '.7rem', fontWeight: 700 }}>
+            🌿 BIO
           </span>
-        </div>
-      )}
+        )}
+      </div>
 
-      <div style={{ padding: '1.25rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '.75rem' }}>
+      {/* Color bar */}
+      <div style={{ height: 3, background: accentColor }} />
+
+      <div style={{ padding: '1.1rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '.65rem' }}>
         {/* Zones */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
           {product.zones.slice(0, 3).map(z => (
             <span key={z} className="tag"
-              style={{ background: ZONE_COLORS[z] + '22', color: ZONE_COLORS[z], border: `1px solid ${ZONE_COLORS[z]}44` }}
+              style={{ background: ZONE_COLORS[z] + '22', color: ZONE_COLORS[z], border: `1px solid ${ZONE_COLORS[z]}44`, fontSize: '.72rem' }}
             >
               {zoneLabels[z] ?? z}
             </span>
@@ -57,10 +71,10 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
 
         {/* Name & description */}
         <div>
-          <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 700, color: 'var(--fg)', lineHeight: 1.3 }}>
+          <h3 style={{ margin: 0, fontSize: '.95rem', fontWeight: 700, color: 'var(--fg)', lineHeight: 1.3 }}>
             {name}
           </h3>
-          <p style={{ margin: '.35rem 0 0', fontSize: '.85rem', color: 'var(--fg-muted)', lineHeight: 1.5 }}>
+          <p style={{ margin: '.3rem 0 0', fontSize: '.82rem', color: 'var(--fg-muted)', lineHeight: 1.5 }}>
             {desc}
           </p>
         </div>
@@ -68,7 +82,7 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
         {/* Tags */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginTop: 'auto' }}>
           {product.tags.slice(0, 4).map(t => (
-            <span key={t} className="tag" style={{ background: 'var(--bg-card2)', color: 'var(--fg-muted)', border: '1px solid var(--border)' }}>
+            <span key={t} className="tag" style={{ background: 'var(--bg-card2)', color: 'var(--fg-muted)', border: '1px solid var(--border)', fontSize: '.7rem' }}>
               {t}
             </span>
           ))}
@@ -76,7 +90,7 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
       </div>
 
       {/* Actions */}
-      <div style={{ padding: '0 1.25rem 1.25rem', display: 'flex', gap: '.5rem' }}>
+      <div style={{ padding: '0 1.1rem 1.1rem', display: 'flex', gap: '.5rem' }}>
         <Link href={`/${locale}/products/${product.slug}`} className="btn-ghost" style={{ flex: 1, justifyContent: 'center', fontSize: '.8rem' }}>
           Details
         </Link>
