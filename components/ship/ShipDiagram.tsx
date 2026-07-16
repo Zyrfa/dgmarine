@@ -76,8 +76,8 @@ const ZONES: ZonePoly[] = [
   // Ballast tanks — user-calibrated
   { id: 'ballast_tank',  pts: parse('353,471 352,502 1199,497 1208,497 1208,504 1276,505 1329,501 1332,494 1336,484 1338,476 1338,470') },
 
-  // Bilge — bottom strip, full width including bow bottom
-  { id: 'bilge',         pts: parse('108,533 1288,533 1268,548 108,548') },
+  // Bilge — user-calibrated
+  { id: 'bilge',         pts: parse('144,502 196,505 196,506 1200,504 1208,505 1273,506 1323,504 1317,509 1311,511 1304,514 1295,517 1287,519 1280,519 176,520 165,518 159,513 152,507') },
 ]
 
 // ── Geometry helpers ──────────────────────────────────────────────────────────
