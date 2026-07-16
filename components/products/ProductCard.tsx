@@ -55,7 +55,6 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
           decoding="async"
           width={800}
           height={600}
-          className="product-img"
           style={{ maxHeight: 160, maxWidth: '100%', objectFit: 'contain', padding: '0 1.25rem' }}
           onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none' }}
         />

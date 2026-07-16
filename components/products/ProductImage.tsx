@@ -27,7 +27,6 @@ export function ProductImage({ src, alt }: Props) {
         decoding="async"
         width={800}
         height={600}
-        className="product-img"
         style={{ maxHeight: 200, maxWidth: '100%', objectFit: 'contain' }}
         onError={() => setVisible(false)}
       />
