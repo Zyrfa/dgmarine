@@ -61,8 +61,8 @@ const ZONES: ZonePoly[] = [
   // Engine room — user-calibrated (stern interior with machinery outline)
   { id: 'engine_room',   pts: parse('72,409 352,407 352,467 148,468 144,462 142,454 134,451 125,448 118,446 117,474 114,474 114,517 83,517 76,448 101,447 100,440 94,438 89,438 79,435 74,435 72,408') },
 
-  // Galley / utility — upper right of stern block
-  { id: 'galley',        pts: parse('337,400 416,400 416,470 337,470') },
+  // Galley — user-calibrated
+  { id: 'galley',        pts: parse('158,340 158,367 330,372 330,337') },
 
   // Cargo holds — top edge matches deck bottom exactly, no gap
   { id: 'cargo_hold',    pts: parse('355,406 1304,400 1297,411 1295,422 1295,429 1300,434 1306,437 1317,442 1325,447 1332,456 1335,464 1337,471 357,469') },
