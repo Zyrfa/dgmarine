@@ -58,8 +58,8 @@ const ZONES: ZonePoly[] = [
   // Main deck strip — user-calibrated, includes hatch coamings
   { id: 'deck',          pts: parse('72,367 330,371 385,373 386,361 389,354 520,354 526,360 528,370 599,370 599,361 603,355 733,351 738,358 742,369 810,366 814,359 818,352 950,352 954,359 954,368 1025,366 1029,358 1029,352 1164,347 1165,355 1168,357 1168,363 1196,345 1260,339 1268,330 1336,328 1304,400 355,406 72,409') },
 
-  // Engine room — upper left of hull interior
-  { id: 'engine_room',   pts: parse('108,400 337,400 337,470 108,470') },
+  // Engine room — user-calibrated (stern interior with machinery outline)
+  { id: 'engine_room',   pts: parse('72,409 352,407 352,467 148,468 144,462 142,454 134,451 125,448 118,446 117,474 114,474 114,517 83,517 76,448 101,447 100,440 94,438 89,438 79,435 74,435 72,408') },
 
   // Galley / utility — upper right of stern block
   { id: 'galley',        pts: parse('337,400 416,400 416,470 337,470') },
