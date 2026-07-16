@@ -5,6 +5,7 @@ import { MOCK_PRODUCTS, getProductBySlug } from '@/lib/mock-products'
 import { DosageCalculator } from '@/components/products/DosageCalculator'
 import { ProductDetailActions } from '@/components/products/ProductDetailActions'
 import { ProductImage } from '@/components/products/ProductImage'
+import { ProductDescription } from '@/components/products/ProductDescription'
 import { ZONE_COLORS, type ZoneId } from '@/components/ship/ShipDiagram'
 
 type Props = { params: Promise<{ locale: string; slug: string }> }
@@ -63,7 +64,7 @@ export default async function ProductPage({ params }: Props) {
           className="product-detail-top">
           <ProductImage src={product.image} alt={name} />
           <div className="card" style={{ padding: '1.5rem' }}>
-            <p style={{ margin: 0, color: 'var(--fg)', lineHeight: 1.7, fontSize: '.95rem' }}>{desc}</p>
+            <ProductDescription text={desc} locale={locale} />
           </div>
         </div>
 
