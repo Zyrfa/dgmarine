@@ -95,26 +95,28 @@ export function ProductCard({ product, locale, zoneLabels, detailsLabel, addRfqL
       </div>
 
       {/* Actions */}
-      <div style={{ padding: '0 1.1rem 1.1rem', display: 'flex', gap: '.5rem' }}>
-        <Link href={`/${locale}/products/${product.slug}`} className="btn-ghost" style={{ flex: 1, justifyContent: 'center', fontSize: '.8rem' }}>
-          {detailsLabel}
-        </Link>
-        <button
-          onClick={() => !inCompare && !isFull() && addCompare({ id: product.id, name, slug: product.slug, zones: product.zones, tags: product.tags, dosage: { baseConc: product.dosage.baseConc, unit: product.dosage.unit } })}
-          className="btn-ghost"
-          style={{ padding: '.5rem .65rem', opacity: inCompare || isFull() ? .5 : 1 }}
-          title={compareLabel}
-          aria-label={compareLabel}
-        >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="15" height="15">
-            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
-            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
-          </svg>
-        </button>
+      <div style={{ padding: '0 1.1rem 1.1rem', display: 'flex', flexDirection: 'column', gap: '.4rem' }}>
+        <div style={{ display: 'flex', gap: '.4rem' }}>
+          <Link href={`/${locale}/products/${product.slug}`} className="btn-ghost" style={{ flex: 1, justifyContent: 'center', fontSize: '.8rem' }}>
+            {detailsLabel}
+          </Link>
+          <button
+            onClick={() => !inCompare && !isFull() && addCompare({ id: product.id, name, slug: product.slug, zones: product.zones, tags: product.tags, dosage: { baseConc: product.dosage.baseConc, unit: product.dosage.unit } })}
+            className="btn-ghost"
+            style={{ padding: '.5rem .65rem', opacity: inCompare || isFull() ? .5 : 1 }}
+            title={compareLabel}
+            aria-label={compareLabel}
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="15" height="15">
+              <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </button>
+        </div>
         <button
           onClick={() => !inRfq && addRFQ({ id: product.id, name, slug: product.slug, unit: 'L' })}
           className="btn-primary"
-          style={{ flex: 1, justifyContent: 'center', fontSize: '.8rem', opacity: inRfq ? .7 : 1 }}
+          style={{ width: '100%', justifyContent: 'center', fontSize: '.8rem', opacity: inRfq ? .7 : 1 }}
         >
           {inRfq ? addedLabel : addRfqLabel}
         </button>
