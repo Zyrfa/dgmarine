@@ -13,10 +13,10 @@ export default async function HomePage({ params }: Props) {
   const tn = await getTranslations({ locale, namespace: 'nav' })
 
   const features = [
-    t('features.ship'),
-    t('features.dosage'),
-    t('features.rfq'),
-    t('features.bio'),
+    { label: t('features.ship'),   icon: '🗺️', href: `/${locale}/visual-search` },
+    { label: t('features.dosage'), icon: '⚗️',  href: `/${locale}/products`      },
+    { label: t('features.rfq'),    icon: '📋', href: `/${locale}/rfq`            },
+    { label: t('features.bio'),    icon: '🌿', href: `/${locale}/biological`     },
   ]
 
   return (
@@ -58,11 +58,11 @@ export default async function HomePage({ params }: Props) {
       {/* Features */}
       <section style={{ maxWidth: 1280, margin: '0 auto', padding: '3rem 1rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
-          {features.map((f, i) => (
-            <div key={i} className="card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '.75rem' }}>
-              <span style={{ fontSize: '1.5rem' }}>{['🗺️','⚗️','📋','🌿'][i]}</span>
-              <span style={{ fontWeight: 600, fontSize: '.9rem', color: 'var(--fg)' }}>{f}</span>
-            </div>
+          {features.map(({ label, icon, href }) => (
+            <Link key={href} href={href} className="feature-card card" style={{ textDecoration: 'none', padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '.75rem' }}>
+              <span style={{ fontSize: '1.5rem' }}>{icon}</span>
+              <span style={{ fontWeight: 600, fontSize: '.9rem', color: 'var(--fg)' }}>{label}</span>
+            </Link>
           ))}
         </div>
       </section>

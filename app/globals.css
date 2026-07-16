@@ -125,6 +125,16 @@ body {
 .product-detail-top { grid-template-columns: 1fr !important; }
 @media (min-width: 640px) { .product-detail-top { grid-template-columns: minmax(0,1fr) minmax(0,2fr) !important; } }
 
+/* ── Feature cards on homepage ──────────────────────────────── */
+.feature-card {
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,0,0,.12);
+}
+
 /* ── Product image: always white bg to match photo background ── */
 .product-img-frame {
   background: #ffffff;
