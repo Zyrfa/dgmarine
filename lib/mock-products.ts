@@ -18,16 +18,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '1', slug: 'air-cooler-cleaner',
     name: { en: 'DG Air Cooler Cleaner', pl: 'DG Air Cooler Cleaner', de: 'DG Air Cooler Cleaner' },
-    shortDesc: {
-      en: 'Heavy-duty degreasing solution for diesel engine charge air coolers and turbochargers.',
-      pl: 'Silny środek odtłuszczający do chłodnic powietrza doładowania i turbosprężarek.',
-      de: 'Schwerlast-Entfettungslösung für Ladeluftkühler und Turbolader von Dieselmotoren.',
-    },
-    description: {
-      en: 'DG Air Cooler Cleaner is a water-based heavy-duty degreasing solution for diesel engine charge air coolers and turbochargers. It dissolves lube-oil and fuel-oil deposits as well as contamination entering through the air inlet. Suitable for all diesel engine types via spray or bath application. Available as 25 L concentrate.',
-      pl: 'DG Air Cooler Cleaner to wodny środek odtłuszczający do chłodnic powietrza doładowania i turbosprężarek. Skutecznie usuwa osady olejowe i paliwowe. Dwie metody aplikacji: wtrysk/natrysk lub kąpiel myjąca. Dostępny jako koncentrat 25 L.',
-      de: 'DG Air Cooler Cleaner ist eine wasserbasierte Schwerlast-Entfettungslösung für Ladeluftkühler und Turbolader. Löst Öl- und Kraftstoffablagerungen. Zwei Anwendungsmethoden: Einspritzung/Sprühen oder Tauchbad. Erhältlich als 25-L-Konzentrat.',
-    },
+    shortDesc: { en: 'Air Cooler Cleaning Solution DG Air Cooler Cleaner is a water-based, heavy-duty degreasing solution developed specifically for diesel engine charge air coolers and turbochargers.', pl: 'DG Air Cooler Cleaner to wodny środek odtłuszczający opracowany specjalnie do czyszczenia chłodnic powietrza doładowania i turbosprężarek silników wysokoprężnych.', de: 'Air Cooler Cleaning Solution DG Air Cooler Cleaner is a water-based, heavy-duty degreasing solution developed specifically for diesel engine charge air coolers and turbochargers.' },
+    description: { en: 'Air Cooler Cleaning Solution DG Air Cooler Cleaner is a water-based, heavy-duty degreasing solution developed specifically for diesel engine charge air coolers and turbochargers. Its advanced formula combines solvent, cleaning, and anti-corrosive agents to effectively dissolve lube-oil and fuel-oil deposits, as well as contamination entering through the air inlet. The product is suitable for all types of diesel engines and can be applied as a diluted spray or injection solution (10–30% concentration depending on contamination level) or as an undiluted bath soak for heavily fouled components. A single 25-litre concentrate provides multiple cleaning cycles. Key features: Removes oil and fuel contamination from air coolers, turbochargers, and scavenging air systems Free from chlorinated solvents, aromatic hydrocarbons, and nonylphenol ethoxylates Two application methods: injection/spray (diluted) and bath cleaning (undiluted) Suitable for all diesel engine types and sizes Available as 25 L concentrate', pl: 'DG Air Cooler Cleaner to wodny środek odtłuszczający opracowany specjalnie do czyszczenia chłodnic powietrza doładowania i turbosprężarek silników wysokoprężnych. Zaawansowana formuła łączy substancje rozpuszczające, czyszczące i inhibitory korozji, skutecznie usuwając osady olejowe, paliwowe oraz zanieczyszczenia napływające z powietrzem. Produkt nadaje się do wszystkich typów silników diesla. Może być stosowany jako roztwór do natrysku lub wtrysku (rozcieńczony w proporcji 10–30% w zależności od stopnia zabrudzenia) lub do kąpieli myjącej bez rozcieńczenia przy silnie zanieczyszczonych podzespołach. Główne cechy: Usuwa osady olejowe i paliwowe z chłodnic powietrza, turbosprężarek i układów przepłukiwania Nie zawiera chlorowanych rozpuszczalników, węglowodorów aromatycznych ani nonylfenoloetylenoksylatów Dwie metody aplikacji: wtrysk/natrysk (rozcieńczony) oraz kąpiel myjąca (bez rozcieńczenia) Kompatybilny z wszystkimi typami silników wysokoprężnych Dostępny jako koncentrat 25 L', de: 'Air Cooler Cleaning Solution DG Air Cooler Cleaner is a water-based, heavy-duty degreasing solution developed specifically for diesel engine charge air coolers and turbochargers. Its advanced formula combines solvent, cleaning, and anti-corrosive agents to effectively dissolve lube-oil and fuel-oil deposits, as well as contamination entering through the air inlet. The product is suitable for all types of diesel engines and can be applied as a diluted spray or injection solution (10–30% concentration depending on contamination level) or as an undiluted bath soak for heavily fouled components. A single 25-litre concentrate provides multiple cleaning cycles. Key features: Removes oil and fuel contamination from air coolers, turbochargers, and scavenging air systems Free from chlorinated solvents, aromatic hydrocarbons, and nonylphenol ethoxylates Two application methods: injection/spray (diluted) and bath cleaning (undiluted) Suitable for all diesel engine types and sizes Available as 25 L concentrate' },
     zones: ['cooling', 'engine_room'],
     tags: ['air cooler', 'turbocharger', 'degreaser', 'engine', 'charge air', 'diesel'],
     isBiological: false,
@@ -38,16 +30,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '2', slug: 'alkal-control',
     name: { en: 'DG Alkal Control', pl: 'DG Alkal Control', de: 'DG Alkal Control' },
-    shortDesc: {
-      en: 'Concentrated alkaline treatment for maintaining optimal alkalinity in boiler water.',
-      pl: 'Skoncentrowany preparat alkaliczny do utrzymywania optymalnej zasadowości wody kotłowej.',
-      de: 'Konzentriertes alkalisches Mittel zur Aufrechterhaltung optimaler Alkalität im Kesselspeisewasser.',
-    },
-    description: {
-      en: 'DG Alkal Control is a concentrated liquid alkaline treatment for maintaining optimal alkalinity in boiler water. It prevents calcium and magnesium scale build-up and protects against corrosion caused by acidic gases. Compatible with all pressure ratings; also used as a neutraliser after acid cleaning.',
-      pl: 'DG Alkal Control to skoncentrowany preparat alkaliczny utrzymujący optymalną zasadowość wody kotłowej. Zapobiega osadzaniu się kamienia i chroni przed korozją. Kompatybilny ze wszystkimi ciśnieniami; stosowany jako neutralizator po czyszczeniu kwasem.',
-      de: 'DG Alkal Control ist ein konzentriertes alkalisches Mittel zur Aufrechterhaltung optimaler Alkalität im Kesselspeisewasser. Verhindert Kalk- und Korrosionsablagerungen. Kompatibel mit allen Druckstufen.',
-    },
+    shortDesc: { en: 'Control for Boiler Water Treatment DG Alkal Control is a concentrated liquid alkaline treatment designed to maintain optimal alkalinity levels in boiler water systems.', pl: 'DG Alkal Control to skoncentrowany ciekły preparat alkaliczny przeznaczony do utrzymywania optymalnego poziomu zasadowości wody kotłowej.', de: 'Control for Boiler Water Treatment DG Alkal Control is a concentrated liquid alkaline treatment designed to maintain optimal alkalinity levels in boiler water systems.' },
+    description: { en: 'Control for Boiler Water Treatment DG Alkal Control is a concentrated liquid alkaline treatment designed to maintain optimal alkalinity levels in boiler water systems. By providing the correct alkaline conditions, it enables effective hardness control, prevents the build-up of calcium and magnesium scale, and protects boiler internals from corrosion caused by acidic gases. The product is compatible with most boiler water treatment chemicals and can be used in boilers operating at any pressure. It is also suitable as a neutralising agent following acid cleaning operations. Key features: Maintains p-Alkalinity within optimum limits (250 ml/tonne raises p-Alkalinity by 100 ppm) Assists in the precipitation and blowdown of hardness salts Protects against corrosion by neutralising acidic conditions Compatible with boilers at all pressure ratings Can be used after acid cleaning as a system neutraliser Available as 25 L concentrate', pl: 'DG Alkal Control to skoncentrowany ciekły preparat alkaliczny przeznaczony do utrzymywania optymalnego poziomu zasadowości wody kotłowej. Zapewnia właściwe warunki alkaliczne niezbędne do skutecznej kontroli twardości wody, zapobiega osadzaniu się kamienia z soli wapnia i magnezu oraz chroni wnętrze kotła przed korozją wywołaną kwaśnymi gazami. Produkt jest kompatybilny z większością chemicznych środków do uzdatniania wody kotłowej i może być stosowany w kotłach pracujących przy dowolnym ciśnieniu. Nadaje się również jako neutralizator po operacjach czyszczenia kwasem. Główne cechy: Utrzymuje zasadowość p w optymalnym zakresie (250 ml/tonę podnosi zasadowość p o 100 ppm ) Wspomaga wytrącanie i odprowadzanie ( blowdown ) soli twardości Chroni przed korozją poprzez neutralizację warunków kwaśnych Kompatybilny z kotłami przy wszystkich ciśnieniach roboczych Może być stosowany po czyszczeniu kwasem jako neutralizator układu Dostępny jako koncentrat 25 L', de: 'Control for Boiler Water Treatment DG Alkal Control is a concentrated liquid alkaline treatment designed to maintain optimal alkalinity levels in boiler water systems. By providing the correct alkaline conditions, it enables effective hardness control, prevents the build-up of calcium and magnesium scale, and protects boiler internals from corrosion caused by acidic gases. The product is compatible with most boiler water treatment chemicals and can be used in boilers operating at any pressure. It is also suitable as a neutralising agent following acid cleaning operations. Key features: Maintains p-Alkalinity within optimum limits (250 ml/tonne raises p-Alkalinity by 100 ppm) Assists in the precipitation and blowdown of hardness salts Protects against corrosion by neutralising acidic conditions Compatible with boilers at all pressure ratings Can be used after acid cleaning as a system neutraliser Available as 25 L concentrate' },
     zones: ['engine_room'],
     tags: ['boiler', 'alkalinity', 'water treatment', 'scale', 'corrosion', 'neutraliser'],
     isBiological: false,
@@ -58,16 +42,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '3', slug: 'anti-sludge-agent',
     name: { en: 'DG Anti-Sludge Agent', pl: 'DG Anti-Sludge Agent', de: 'DG Anti-Sludge Agent' },
-    shortDesc: {
-      en: 'Self-dispersing fuel oil treatment that stabilises fuel blends and eliminates heavy fuel sludge.',
-      pl: 'Samodyspergujący preparat paliwowy stabilizujący mieszanki i eliminujący szlam w ciężkich paliwach.',
-      de: 'Selbstdispergierendes Heizölbehandlungsmittel zur Stabilisierung von Kraftstoffmischungen.',
-    },
-    description: {
-      en: 'DG Anti-Sludge Agent is a self-dispersing fuel oil treatment that stabilises fuel blends and eliminates compatibility issues in heavy fuels. It disperses existing sludge deposits and prevents new formation, while combating microorganisms in fuel tanks. Dose directly into the bunker tank at 1:4000 initially.',
-      pl: 'DG Anti-Sludge Agent stabilizuje mieszanki paliwowe i dysperguje istniejące osady w ciężkich paliwach. Zapobiega tworzeniu się nowych osadów i zwalcza mikroorganizmy. Dozować do zbiornika bunkrowego w proporcji 1:4000.',
-      de: 'DG Anti-Sludge Agent stabilisiert Kraftstoffmischungen und dispergiert vorhandene Schlammablagerungen. Verhindert Neubildung und bekämpft Mikroorganismen. Erstdosierung 1:4000.',
-    },
+    shortDesc: { en: 'DG Anti-Sludge Agent English DG Anti-Sludge Agent is a liquid, self-dispersing fuel oil treatment designed for use in the pre-combustion stage of heavy fuels in marine diesel engines.', pl: 'Dostępny format: koncentrat 25 L', de: 'DG Anti-Sludge Agent English DG Anti-Sludge Agent is a liquid, self-dispersing fuel oil treatment designed for use in the pre-combustion stage of heavy fuels in marine diesel engines.' },
+    description: { en: 'DG Anti-Sludge Agent English DG Anti-Sludge Agent is a liquid, self-dispersing fuel oil treatment designed for use in the pre-combustion stage of heavy fuels in marine diesel engines. It stabilizes fuel blends and eliminates compatibility issues, ensuring fuel remains stable while minimizing the accumulation of sludge in tanks and centrifugal separators. The product also effectively disperses existing deposits and prevents new sludge formation, while combating a wide range of microorganisms that contaminate fuel tanks and systems. How to use: Dose directly into the bunker tank prior to bunkering. The turbulence generated during bunkering ensures complete mixing and uniform distribution of the treatment throughout the fuel. Dosage rates should be determined based on the results of a fuel analysis. An initial dosage of 1:4000 is recommended for breaking up and dispersing existing sludge. Available format: 25 L concentrate', pl: 'Dostępny format: koncentrat 25 L', de: 'DG Anti-Sludge Agent English DG Anti-Sludge Agent is a liquid, self-dispersing fuel oil treatment designed for use in the pre-combustion stage of heavy fuels in marine diesel engines. It stabilizes fuel blends and eliminates compatibility issues, ensuring fuel remains stable while minimizing the accumulation of sludge in tanks and centrifugal separators. The product also effectively disperses existing deposits and prevents new sludge formation, while combating a wide range of microorganisms that contaminate fuel tanks and systems. How to use: Dose directly into the bunker tank prior to bunkering. The turbulence generated during bunkering ensures complete mixing and uniform distribution of the treatment throughout the fuel. Dosage rates should be determined based on the results of a fuel analysis. An initial dosage of 1:4000 is recommended for breaking up and dispersing existing sludge. Available format: 25 L concentrate' },
     zones: ['engine_room', 'fuel'],
     tags: ['fuel', 'sludge', 'bunker', 'heavy fuel', 'separator', 'stabiliser'],
     isBiological: false,
@@ -78,16 +54,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '4', slug: 'anti-fouling-agent',
     name: { en: 'DG Anti-Fouling Agent', pl: 'DG Anti-Fouling Agent', de: 'DG Anti-Fouling Agent' },
-    shortDesc: {
-      en: 'Protects seawater cooling systems against biofouling and corrosion by marine microorganisms.',
-      pl: 'Chroni układy chłodzenia wodą morską przed biozarastaniem i korozją przez mikroorganizmy morskie.',
-      de: 'Schützt Seekühlsysteme vor Bewuchs und Korrosion durch marine Mikroorganismen.',
-    },
-    description: {
-      en: 'DG Anti-Fouling Agent protects seawater cooling systems against biofouling and corrosion. It prevents the growth of marine microorganisms and algae on internal surfaces while acting as a corrosion inhibitor. Dose at 0.5 litres per 100 tonnes of seawater flow per hour.',
-      pl: 'DG Anti-Fouling Agent chroni układy chłodzenia wodą morską przed biozarastaniem i korozją. Zapobiega namnażaniu się mikroorganizmów i glonów. Dozować 0,5 L na 100 t/h przepływu wody morskiej.',
-      de: 'DG Anti-Fouling Agent schützt Seekühlsysteme vor Bewuchs und Korrosion. Verhindert Wachstum von Mikroorganismen und Algen. Dosierung: 0,5 L pro 100 t/h Seewasserdurchfluss.',
-    },
+    shortDesc: { en: 'Corrosion Inhibitor for Seawater Cooling Systems DG Anti-Fouling Agent is a concentrated liquid product designed to protect seawater cooling systems against biofouling and corrosion.', pl: 'DG Anti-Fouling Agent to skoncentrowany ciekły preparat chroniący układy chłodzenia wodą morską przed biozarastaniem i korozją.', de: 'Corrosion Inhibitor for Seawater Cooling Systems DG Anti-Fouling Agent is a concentrated liquid product designed to protect seawater cooling systems against biofouling and corrosion.' },
+    description: { en: 'Corrosion Inhibitor for Seawater Cooling Systems DG Anti-Fouling Agent is a concentrated liquid product designed to protect seawater cooling systems against biofouling and corrosion. It prevents the growth of marine microorganisms, algae, and other sea life on internal surfaces, while simultaneously acting as a corrosion inhibitor to extend the service life of the entire cooling circuit. The product is dosed directly into the seawater cooling system at a rate of 0.5 litres per 100 tonnes of seawater flow per hour, making it easy to integrate into existing dosing equipment. Key features: Prevents biofouling by microorganisms, algae, and marine organisms Acts as a corrosion inhibitor for seawater cooling circuits Simple, continuous dosing — 0.5 L per 100 t/h of seawater flow Protects heat exchangers, pipes, and valves from biological and chemical degradation Available as 25 L concentrate', pl: 'DG Anti-Fouling Agent to skoncentrowany ciekły preparat chroniący układy chłodzenia wodą morską przed biozarastaniem i korozją. Zapobiega namnażaniu się mikroorganizmów, glonów i innych organizmów morskich na wewnętrznych powierzchniach układu, jednocześnie działając jako inhibitor korozji, przedłużając żywotność całego obiegu chłodzenia. Produkt dozowany jest bezpośrednio do układu chłodzenia wodą morską w ilości 0,5 litra na każde 100 ton przepływu wody na godzinę, co umożliwia łatwą integrację z istniejącymi systemami dozowania. Główne cechy: Zapobiega biozarastaniu przez mikroorganizmy, glony i organizmy morskie Działa jako inhibitor korozji w obiegu chłodzenia wodą morską Prosta, ciągła dozacja — 0,5 L na 100 t/h przepływu wody morskiej Chroni wymienniki ciepła, rury i zawory przed degradacją biologiczną i chemiczną Dostępny jako koncentrat 25 L', de: 'Corrosion Inhibitor for Seawater Cooling Systems DG Anti-Fouling Agent is a concentrated liquid product designed to protect seawater cooling systems against biofouling and corrosion. It prevents the growth of marine microorganisms, algae, and other sea life on internal surfaces, while simultaneously acting as a corrosion inhibitor to extend the service life of the entire cooling circuit. The product is dosed directly into the seawater cooling system at a rate of 0.5 litres per 100 tonnes of seawater flow per hour, making it easy to integrate into existing dosing equipment. Key features: Prevents biofouling by microorganisms, algae, and marine organisms Acts as a corrosion inhibitor for seawater cooling circuits Simple, continuous dosing — 0.5 L per 100 t/h of seawater flow Protects heat exchangers, pipes, and valves from biological and chemical degradation Available as 25 L concentrate' },
     zones: ['cooling', 'ballast_tank'],
     tags: ['antifouling', 'seawater', 'cooling', 'biofouling', 'corrosion inhibitor', 'algae'],
     isBiological: false,
@@ -98,16 +66,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '5', slug: 'antifreeze-el',
     name: { en: 'DG Antifreeze/Coolant EL', pl: 'DG Antifreeze/Coolant EL', de: 'DG Antifreeze/Coolant EL' },
-    shortDesc: {
-      en: 'Premium long-life coolant with OAT technology providing freeze protection down to -37°C.',
-      pl: 'Płyn chłodniczy długiego działania z technologią OAT chroniący do -37°C.',
-      de: 'Premium-Langzeitkühlmittel mit OAT-Technologie, Frostschutz bis -37°C.',
-    },
-    description: {
-      en: 'DG Antifreeze/Coolant EL is a premium long-life coolant based on Mono Ethylene Glycol with OAT technology, providing protection against temperature extremes, rust, corrosion, and scale formation. Freeze protection down to -37°C. Change only with engine completely cold. Available as 25 L concentrate.',
-      pl: 'DG Antifreeze/Coolant EL to wysokiej jakości płyn chłodniczy długiego działania oparty na MEG z technologią OAT. Ochrona przed zamarzaniem do -37°C oraz zabezpieczenie przed korozją i osadem. Wymieniać wyłącznie przy zimnym silniku.',
-      de: 'DG Antifreeze/Coolant EL ist ein Premium-Langzeitkühlmittel auf MEG-Basis mit OAT-Technologie. Frostschutz bis -37°C. Wechsel nur bei vollständig kaltem Motor.',
-    },
+    shortDesc: { en: 'DG Antifreeze/Coolant EL is a premium long-life coolant designed for cooling systems of diesel, gasoline, and natural gas engines.', pl: 'DG Antifreeze/Coolant EL to wysokiej jakości płyn chłodniczy długiego działania, przeznaczony do układów chłodzenia silników diesla, benzynowych i gazowych.', de: 'DG Antifreeze/Coolant EL is a premium long-life coolant designed for cooling systems of diesel, gasoline, and natural gas engines.' },
+    description: { en: 'DG Antifreeze/Coolant EL is a premium long-life coolant designed for cooling systems of diesel, gasoline, and natural gas engines. Formulated from Mono Ethylene Glycol blended with deionized water and an organic liquid corrosion inhibitor (OAT technology), it delivers comprehensive protection against temperature extremes, rust, corrosion, scale formation, and premature water pump failure. Provides freeze protection down to -37°C. How to use: Change the coolant only after confirming the engine is completely cold. Follow the manufacturer\'s service instructions as outlined in the engine manual. The fluid must be replaced with the engine switched off — failure to do so poses a risk of burns. Top up to the level recommended by the engine manufacturer. Available format: 25 L concentrate.', pl: 'DG Antifreeze/Coolant EL to wysokiej jakości płyn chłodniczy długiego działania, przeznaczony do układów chłodzenia silników diesla, benzynowych i gazowych. Oparty na glikolu mono etylenowym zmieszanym z odjonizowaną wodą i organicznym cieczowym inhibitorem korozji (technologia OAT), zapewnia kompleksową ochronę przed ekstremalnymi temperaturami, rdzą, korozją, osadzaniem się kamienia kotłowego oraz przedwczesnym uszkodzeniem pompy wodnej. Ochrona przed zamarzaniem do -37°C. Płyn chłodniczy należy wymieniać wyłącznie po upewnieniu się, że silnik jest całkowicie zimny. Postępować zgodnie z instrukcją serwisową producenta zawartą w podręczniku silnika. Wymiana płynu musi odbywać się przy wyłączonym silniku – w przeciwnym razie istnieje ryzyko poparzeń. Uzupełniać do poziomu zalecanego przez producenta silnika. Dostępny format: koncentrat 25 L.', de: 'DG Antifreeze/Coolant EL is a premium long-life coolant designed for cooling systems of diesel, gasoline, and natural gas engines. Formulated from Mono Ethylene Glycol blended with deionized water and an organic liquid corrosion inhibitor (OAT technology), it delivers comprehensive protection against temperature extremes, rust, corrosion, scale formation, and premature water pump failure. Provides freeze protection down to -37°C. How to use: Change the coolant only after confirming the engine is completely cold. Follow the manufacturer\'s service instructions as outlined in the engine manual. The fluid must be replaced with the engine switched off — failure to do so poses a risk of burns. Top up to the level recommended by the engine manufacturer. Available format: 25 L concentrate.' },
     zones: ['cooling'],
     tags: ['antifreeze', 'coolant', 'OAT', 'freeze protection', 'corrosion', 'MEG'],
     isBiological: false,
@@ -118,16 +78,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '6', slug: 'antifreeze',
     name: { en: 'DG Antifreeze/Coolant', pl: 'DG Antifreeze/Coolant', de: 'DG Antifreeze/Coolant' },
-    shortDesc: {
-      en: 'Reliable multi-engine coolant with long-lasting inhibitors, freeze protection to -37°C.',
-      pl: 'Niezawodny płyn chłodniczy z długotrwałymi inhibitorami, ochrona do -37°C.',
-      de: 'Zuverlässiges Kühlmittel mit Langzeitinhibitoren, Frostschutz bis -37°C.',
-    },
-    description: {
-      en: 'DG Antifreeze/Coolant is a reliable multi-engine coolant based on Mono Ethylene Glycol with long-lasting inhibitors protecting against temperature extremes, rust, corrosion, and scale. Freeze protection to -37°C. Always consult manufacturer\'s instructions and change with engine switched off.',
-      pl: 'DG Antifreeze/Coolant to niezawodny płyn chłodniczy na bazie MEG z długotrwałymi inhibitorami chroniącymi przed korozją i zamarzaniem do -37°C. Wymieniać wyłącznie przy wyłączonym silniku.',
-      de: 'DG Antifreeze/Coolant ist ein zuverlässiges Kühlmittel auf MEG-Basis mit Langzeitinhibitoren. Frostschutz bis -37°C. Wechsel nur bei ausgeschaltetem Motor.',
-    },
+    shortDesc: { en: 'DG Antifreeze/Coolant is a reliable, multi-engine coolant designed for cooling systems of diesel, gasoline, and natural gas engines.', pl: 'DG Antifreeze/Coolant to niezawodny płyn chłodniczy do układów chłodzenia silników diesla, benzynowych i gazowych.', de: 'DG Antifreeze/Coolant is a reliable, multi-engine coolant designed for cooling systems of diesel, gasoline, and natural gas engines.' },
+    description: { en: 'DG Antifreeze/Coolant is a reliable, multi-engine coolant designed for cooling systems of diesel, gasoline, and natural gas engines. Based on Mono Ethylene Glycol blended with deionized water, it provides a premium blend of long-lasting inhibitors offering protection against temperature extremes, rust, corrosion, scale build-up, and premature water pump failure. Provides freeze protection down to -37°C. Change the coolant only after confirming the engine is completely cold. Always consult the manufacturer\'s service instructions in the engine manual. The fluid change must be carried out with the engine switched off to avoid the risk of burns. Top up to the level specified by the engine manufacturer. Available format: 25 L concentrate.', pl: 'DG Antifreeze/Coolant to niezawodny płyn chłodniczy do układów chłodzenia silników diesla, benzynowych i gazowych. Na bazie glikolu mono etylenowego zmieszanego z odjonizowaną wodą, dostarcza premium mieszankę długotrwałych inhibitorów chroniących przed ekstremalnymi temperaturami, rdzą, korozją, osadzaniem się kamienia i przedwczesnym uszkodzeniem pompy wodnej. Ochrona przed zamarzaniem do -37°C. Płyn chłodniczy należy wymieniać wyłącznie gdy silnik jest całkowicie zimny. Zawsze należy zapoznać się z instrukcją serwisową producenta silnika. Wymiana płynu musi odbywać się przy wyłączonym silniku – w przeciwnym razie istnieje ryzyko poparzeń. Uzupełniać do poziomu wskazanego przez producenta. Dostępny format: koncentrat 25 L.', de: 'DG Antifreeze/Coolant is a reliable, multi-engine coolant designed for cooling systems of diesel, gasoline, and natural gas engines. Based on Mono Ethylene Glycol blended with deionized water, it provides a premium blend of long-lasting inhibitors offering protection against temperature extremes, rust, corrosion, scale build-up, and premature water pump failure. Provides freeze protection down to -37°C. Change the coolant only after confirming the engine is completely cold. Always consult the manufacturer\'s service instructions in the engine manual. The fluid change must be carried out with the engine switched off to avoid the risk of burns. Top up to the level specified by the engine manufacturer. Available format: 25 L concentrate.' },
     zones: ['cooling'],
     tags: ['antifreeze', 'coolant', 'freeze protection', 'corrosion', 'MEG', 'inhibitor'],
     isBiological: false,
@@ -138,16 +90,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '7', slug: 'bilge-cleaner-hd',
     name: { en: 'DG Bilge Cleaner HD', pl: 'DG Bilge Cleaner HD', de: 'DG Bilge Cleaner HD' },
-    shortDesc: {
-      en: 'Heavy-duty alkaline cleaner for engine rooms and bilge areas at high dilution ratios.',
-      pl: 'Silnie zasadowy środek czyszczący do maszynowni i zęz przy wysokich rozcieńczeniach.',
-      de: 'Schwerlastalkalischer Reiniger für Maschinenräume und Bilgen bei hohen Verdünnungsraten.',
-    },
-    description: {
-      en: 'DG Bilge Cleaner HD is a heavy-duty alkaline cleaner for engine rooms and bilge areas. Its high-concentration formula combines anionic and non-ionic surfactants delivering effective degreasing at high dilution ratios. Compatible with steam cleaning (1:20–1:100) and immersion (1:10–1:50). Available as 25 L concentrate.',
-      pl: 'DG Bilge Cleaner HD to silnie zasadowy środek czyszczący przeznaczony do maszynowni i zęz. Formuła łączy surfaktanty anionowe i niejonowe, zapewniając efektywne odtłuszczanie przy wysokich rozcieńczeniach. Dostępny jako koncentrat 25 L.',
-      de: 'DG Bilge Cleaner HD ist ein schwerlastiger alkalischer Reiniger für Maschinenräume und Bilgen. Hochkonzentrierte Formel mit anionischen und nicht-ionischen Tensiden. Kompatibel mit Dampfreinigung (1:20–1:100) und Tauchen (1:10–1:50).',
-    },
+    shortDesc: { en: 'DG Bilge Cleaner HD is a heavy-duty alkaline cleaner for engine rooms and bilge areas.', pl: 'DG Bilge Cleaner HD to silnie zasadowy środek czyszczący klasy heavy- duty przeznaczony do maszynowni i zęz.', de: 'DG Bilge Cleaner HD is a heavy-duty alkaline cleaner for engine rooms and bilge areas.' },
+    description: { en: 'DG Bilge Cleaner HD is a heavy-duty alkaline cleaner for engine rooms and bilge areas. Its high-concentration formula combines anionic and non-ionic surfactants, sequestering and inhibiting agents, wetting agents, and alkali, delivering effective degreasing at very high dilution ratios. Suitable for machinery spaces, bulkheads, tank tops, bilges, and decks. Apply by foam nozzle, brush, cloth, atomiser, or in immersion cleaning. Compatible with steam cleaning (1:20–1:100) and immersion cleaning (1:10–1:50). Available as a 25 L concentrate.', pl: 'DG Bilge Cleaner HD to silnie zasadowy środek czyszczący klasy heavy- duty przeznaczony do maszynowni i zęz. Wysoko skoncentrowana formuła łączy anionowe i niejonowe surfaktanty, środki sekwestrujące, inhibitory i zasady, zapewniając efektywne odtłuszczanie przy bardzo wysokich rozcieńczeniach. Nadaje się do przestrzeni maszynowych, grodzi, denników, zęz i pokładów. Aplikacja: pianownica , pędzel, szmata, atomizer lub kąpiel zanurzeniowa. Kompatybilny z czyszczeniem parowym (1:20–1:100) i zanurzeniowym (1:10–1:50). Dostępny jako koncentrat 25 L.', de: 'DG Bilge Cleaner HD is a heavy-duty alkaline cleaner for engine rooms and bilge areas. Its high-concentration formula combines anionic and non-ionic surfactants, sequestering and inhibiting agents, wetting agents, and alkali, delivering effective degreasing at very high dilution ratios. Suitable for machinery spaces, bulkheads, tank tops, bilges, and decks. Apply by foam nozzle, brush, cloth, atomiser, or in immersion cleaning. Compatible with steam cleaning (1:20–1:100) and immersion cleaning (1:10–1:50). Available as a 25 L concentrate.' },
     zones: ['bilge', 'engine_room'],
     tags: ['bilge', 'degreaser', 'engine room', 'alkaline', 'heavy duty', 'surfactant'],
     isBiological: false,
@@ -158,16 +102,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '8', slug: 'bilge-water-flocculant-agent',
     name: { en: 'DG Bilge Water Flocculant Agent', pl: 'DG Bilge Water Flocculant Agent', de: 'DG Bilge Water Flocculant Agent' },
-    shortDesc: {
-      en: 'Iron-free liquid for separating oil residues from bilge water, achieving below 3 ppm oil.',
-      pl: 'Bezżelazny preparat do separacji olejów z wód zęzowych, osiągający poniżej 3 ppm oleju.',
-      de: 'Eisenfreies Mittel zur Öltrennung aus Bilgenwasser, Ergebnis unter 3 ppm Öl.',
-    },
-    description: {
-      en: 'DG Bilge Water Flocculant Agent is an iron-free, environmentally safe liquid for separating oil residues from bilge water. It breaks oil-in-water emulsions and builds flocs — discharged water typically contains less than 3 ppm oil. Operates across a wide pH range at 50–250 ppm dosage.',
-      pl: 'DG Bilge Water Flocculant Agent to bezpieczny dla środowiska preparat do separacji olejów z wód zęzowych. Rozbija emulsje olej-w-wodzie, osiągając zawartość oleju poniżej 3 ppm. Działa w szerokim zakresie pH przy dawce 50–250 ppm.',
-      de: 'DG Bilge Water Flocculant Agent ist ein eisenfreies, umweltsicheres Mittel zur Öltrennung aus Bilgenwasser. Bricht Öl-in-Wasser-Emulsionen auf. Dosierung 50–250 ppm, Ergebnis unter 3 ppm Öl.',
-    },
+    shortDesc: { en: 'DG Bilge Water Flocculant Agent (BWFA) is an iron-free, environmentally safe liquid treatment for separating oil residues from bilge water.', pl: 'DG Bilge Water Flocculant Agent (BWFA) to wolny od żelaza, bezpieczny dla środowiska preparat ciekły do separacji pozostałości olejowych z wód zęzowych.', de: 'DG Bilge Water Flocculant Agent (BWFA) is an iron-free, environmentally safe liquid treatment for separating oil residues from bilge water.' },
+    description: { en: 'DG Bilge Water Flocculant Agent (BWFA) is an iron-free, environmentally safe liquid treatment for separating oil residues from bilge water. It works by simultaneously breaking oil-in-water emulsions and building flocs, helping vessels meet environmental regulations on oil content — discharged water typically contains less than 3 ppm oil. BWFA operates across a wide pH range, eliminating the need to adjust water chemistry with acids or alkalis. Typical dosage: 50–250 ppm. It is applied undiluted via a dosage pump on the pressure side of the oil separator in multistage bilge water cleaning systems.', pl: 'DG Bilge Water Flocculant Agent (BWFA) to wolny od żelaza, bezpieczny dla środowiska preparat ciekły do separacji pozostałości olejowych z wód zęzowych. Działa dwutorowo: rozbija emulsje olej-w-wodzie i tworzy kłaczki, umożliwiając spełnienie norm środowiskowych dotyczących zawartości oleju — odprowadzana woda zawiera zazwyczaj poniżej 3 ppm oleju. BWFA działa w szerokim zakresie pH , co eliminuje konieczność regulowania chemii wody kwasami lub zasadami. Typowe dawkowanie: 50–250 ppm . Stosowany nierozcieńczony przez pompę dozującą po stronie ciśnieniowej separatora oleju w wielostopniowych systemach oczyszczania wód zęzowych.', de: 'DG Bilge Water Flocculant Agent (BWFA) is an iron-free, environmentally safe liquid treatment for separating oil residues from bilge water. It works by simultaneously breaking oil-in-water emulsions and building flocs, helping vessels meet environmental regulations on oil content — discharged water typically contains less than 3 ppm oil. BWFA operates across a wide pH range, eliminating the need to adjust water chemistry with acids or alkalis. Typical dosage: 50–250 ppm. It is applied undiluted via a dosage pump on the pressure side of the oil separator in multistage bilge water cleaning systems.' },
     zones: ['bilge'],
     tags: ['bilge water', 'flocculant', 'oil separator', 'oily water', 'MARPOL', 'emulsion'],
     isBiological: false,
@@ -178,16 +114,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '9', slug: 'bioactivae-descaling-agent',
     name: { en: 'DG Bioactivae Descaling Agent', pl: 'DG Bioactivae Descaling Agent', de: 'DG Bioactivae Descaling Agent' },
-    shortDesc: {
-      en: 'Non-hazardous organic acids and enzymes concentrate for removing scale, rust and biological deposits.',
-      pl: 'Nieszkodliwy koncentrat kwasów organicznych i enzymów do usuwania kamienia, rdzy i osadów biologicznych.',
-      de: 'Ungefährliches Konzentrat aus organischen Säuren und Enzymen zur Entfernung von Kalk und Rost.',
-    },
-    description: {
-      en: 'DG Bioactivae Descaling Agent is a non-hazardous concentrate of organic acids, enzymes, and corrosion inhibitors for removing scale, lime, rust, algae, and biological deposits from water systems. Non-corrosive and non-flammable. Optimal bath cleaning temperature 45–65°C. Available as 25 L concentrate.',
-      pl: 'DG Bioactivae Descaling Agent to nieszkodliwy koncentrat kwasów organicznych i enzymów do usuwania kamienia, rdzy, glonów i osadów biologicznych. Niekorozyjny i niepalny. Optymalna temperatura kąpieli: 45–65°C. Koncentrat 25 L.',
-      de: 'DG Bioactivae Descaling Agent ist ein ungefährliches Konzentrat aus organischen Säuren, Enzymen und Korrosionsinhibitoren. Entfernt Kalk, Rost, Algen und biologische Ablagerungen. Optimale Badtemperatur: 45–65°C.',
-    },
+    shortDesc: { en: 'Descaling and Cleaning Solution DG Bioactivae Descaling Agent is a non-hazardous, concentrated liquid cleaner formulated from a blend of organic acids, enzymes, and corrosion inhibitors.', pl: 'DG Bioactivae Descaling Agent to nieszkodliwy, skoncentrowany płynny środek czyszczący oparty na mieszaninie kwasów organicznych, enzymów i inhibitorów korozji.', de: 'Descaling and Cleaning Solution DG Bioactivae Descaling Agent is a non-hazardous, concentrated liquid cleaner formulated from a blend of organic acids, enzymes, and corrosion inhibitors.' },
+    description: { en: 'Descaling and Cleaning Solution DG Bioactivae Descaling Agent is a non-hazardous, concentrated liquid cleaner formulated from a blend of organic acids, enzymes, and corrosion inhibitors. It is designed to effectively remove inorganic scale, lime, rust, algae, humus, mussels, shellfish, cargo sediments, and other biological or mineral deposits from water systems, including pipes, vacuum pipes, and plate heat exchangers. The product is non-corrosive, non-flammable, and safe for system materials — it will not contribute to foaming in sewage treatment plants. It is not suitable for use in galvanised systems. Key features: Removes scale, lime, rust, algae, and biological deposits from water systems Enzyme-based, non-hazardous formula — safe for materials and the environment Two application methods: continuous dosing (1.2–1.4 L/day per station) or manual bath cleaning (1:5 dilution with water) Optimal bath cleaning temperature : 45–65°C Non-flammable; use only on acid-resistant surfaces Available as 25 L concentrate', pl: 'DG Bioactivae Descaling Agent to nieszkodliwy, skoncentrowany płynny środek czyszczący oparty na mieszaninie kwasów organicznych, enzymów i inhibitorów korozji. Skutecznie usuwa osady nieorganiczne, kamień, wapień, rdzę, glony, humus, małże, szkarłupnie, pozostałości ładunku oraz inne osady biologiczne i mineralne z instalacji wodnych, rurociągów, próżniowych układów rurowych i płytowych wymienników ciepła. Produkt jest niekorozyjny, niepalny i bezpieczny dla materiałów układu — nie powoduje pienienia w oczyszczalniach ścieków. Nie należy stosować w układach ocynkowanych. Główne cechy: Usuwa kamień, wapień, rdzę, glony i osady biologiczne z instalacji wodnych Formuła enzymatyczna — nieszkodliwa, bezpieczna dla materiałów i środowiska Dwie metody aplikacji: dozowanie ciągłe (1,2–1,4 L/dobę na punkt dozowania) lub kąpiel ręczna (rozcieńczenie 1:5 z wodą) Optymalna temperatura kąpieli myjącej: 45–65°C Niepalny; stosować wyłącznie na powierzchniach odpornych na kwasy Dostępny jako koncentrat 25 L', de: 'Descaling and Cleaning Solution DG Bioactivae Descaling Agent is a non-hazardous, concentrated liquid cleaner formulated from a blend of organic acids, enzymes, and corrosion inhibitors. It is designed to effectively remove inorganic scale, lime, rust, algae, humus, mussels, shellfish, cargo sediments, and other biological or mineral deposits from water systems, including pipes, vacuum pipes, and plate heat exchangers. The product is non-corrosive, non-flammable, and safe for system materials — it will not contribute to foaming in sewage treatment plants. It is not suitable for use in galvanised systems. Key features: Removes scale, lime, rust, algae, and biological deposits from water systems Enzyme-based, non-hazardous formula — safe for materials and the environment Two application methods: continuous dosing (1.2–1.4 L/day per station) or manual bath cleaning (1:5 dilution with water) Optimal bath cleaning temperature : 45–65°C Non-flammable; use only on acid-resistant surfaces Available as 25 L concentrate' },
     zones: ['cooling', 'engine_room'],
     tags: ['descaling', 'enzyme', 'biological', 'scale', 'lime', 'organic acid'],
     isBiological: true,
@@ -198,16 +126,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '10', slug: 'biver-hd',
     name: { en: 'DG Biver HD', pl: 'DG Biver HD', de: 'DG Biver HD' },
-    shortDesc: {
-      en: 'Highly concentrated alkaline cleaner with potassium hydroxide for oils, fats and carbon deposits.',
-      pl: 'Mocno skoncentrowany alkaliczny środek z wodorotlenkiem potasu do olejów, tłuszczów i osadów węglowych.',
-      de: 'Hochkonzentrierter alkalischer Reiniger mit Kaliumhydroxid für Öle, Fette und Kohlenstoff.',
-    },
-    description: {
-      en: 'DG Biver HD is a powerful highly concentrated alkaline cleaner with anionic and non-ionic surfactants and potassium hydroxide. Removes vegetable, fish, and animal oils and fats, greases, soot, and carbon deposits. Very high dilution ratios: 10–25% for spray, 1:10–1:50 for immersion, 1:20–1:100 for steam.',
-      pl: 'DG Biver HD to mocno skoncentrowany alkaliczny środek czyszczący z surfaktantami i wodorotlenkiem potasu. Usuwa oleje, tłuszcze, sadzę i osady węglowe przy bardzo wysokich rozcieńczeniach.',
-      de: 'DG Biver HD ist ein hochkonzentrierter alkalischer Reiniger mit Kaliumhydroxid. Entfernt Öle, Fette, Ruß und Kohlenstoffablagerungen. Hohe Verdünnungsraten: 10–25% Sprühen, 1:10–1:50 Eintauchen.',
-    },
+    shortDesc: { en: 'Caustic Alkaline Cleaner and Degreaser DG Biver HD is a powerful, highly concentrated alkaline cleaning agent formulated with a combination of anionic and non-ionic surfactants, sequestering agents, corrosion inhibitors, wetting agents, and potassium hydroxide.', pl: 'DG Biver HD to mocno skoncentrowany alkaliczny środek czyszczący oparty na kombinacji anionowych i niejonowych surfaktantów, środków sekwestrujących, inhibitorów korozji, zwilżaczy oraz wodorotlenku potasu.', de: 'Caustic Alkaline Cleaner and Degreaser DG Biver HD is a powerful, highly concentrated alkaline cleaning agent formulated with a combination of anionic and non-ionic surfactants, sequestering agents, corrosion inhibitors, wetting agents, and potassium hydroxide.' },
+    description: { en: 'Caustic Alkaline Cleaner and Degreaser DG Biver HD is a powerful, highly concentrated alkaline cleaning agent formulated with a combination of anionic and non-ionic surfactants, sequestering agents, corrosion inhibitors, wetting agents, and potassium hydroxide. The product is a homogeneous liquid with excellent viscosity, fully soluble in water, and effective at very high dilution ratios — making it both economical and versatile. Designed for heavy-duty marine and industrial cleaning, DG Biver HD removes vegetable, fish, and animal oils and fats, greases, waxes, sludge, soot, carbon deposits, dirt, and grime. It is also effective for cleaning after coal and petroleum coke operations. Key features : Removes oils, fats, greases, soot, carbon deposits, and cargo residues Very high dilution ratios: 10–25% for spray/foam cleaning, 1:10–1:50 for immersion, 1:20–1:100 for steam cleaning Compatible with foam equipment, brushes, atomisers, and immersion tanks Pre-washing with hot water recommended for best results Available as 25 L concentrate', pl: 'DG Biver HD to mocno skoncentrowany alkaliczny środek czyszczący oparty na kombinacji anionowych i niejonowych surfaktantów, środków sekwestrujących, inhibitorów korozji, zwilżaczy oraz wodorotlenku potasu. Produkt ma postać jednorodnej cieczy o dobrej lepkości, doskonale rozpuszczalnej w wodzie i skutecznej przy bardzo wysokich rozcieńczeniach — co czyni go zarówno ekonomicznym, jak i wszechstronnym rozwiązaniem. Przeznaczony do intensywnego czyszczenia morskiego i przemysłowego. DG Biver HD usuwa roślinne, rybne i zwierzęce oleje i tłuszcze, smary, woski, szlam, sadzę, osady węglowe, brud i zabrudzenia, a także skutecznie czyści po operacjach z węglem i koksem naftowym. Główne cechy: Usuwa oleje, tłuszcze, smary, sadzę, osady węglowe i pozostałości ładunku Bardzo wysokie rozcieńczenia: 10–25% do natrysku/piany, 1:10–1:50 do kąpieli, 1:20–1:100 do czyszczenia parą Kompatybilny z urządzeniami pianowymi, szczotkami, atomizatorami i wannami do kąpieli Zalecane wstępne płukanie gorącą wodą Dostępny jako koncentrat 25 L', de: 'Caustic Alkaline Cleaner and Degreaser DG Biver HD is a powerful, highly concentrated alkaline cleaning agent formulated with a combination of anionic and non-ionic surfactants, sequestering agents, corrosion inhibitors, wetting agents, and potassium hydroxide. The product is a homogeneous liquid with excellent viscosity, fully soluble in water, and effective at very high dilution ratios — making it both economical and versatile. Designed for heavy-duty marine and industrial cleaning, DG Biver HD removes vegetable, fish, and animal oils and fats, greases, waxes, sludge, soot, carbon deposits, dirt, and grime. It is also effective for cleaning after coal and petroleum coke operations. Key features : Removes oils, fats, greases, soot, carbon deposits, and cargo residues Very high dilution ratios: 10–25% for spray/foam cleaning, 1:10–1:50 for immersion, 1:20–1:100 for steam cleaning Compatible with foam equipment, brushes, atomisers, and immersion tanks Pre-washing with hot water recommended for best results Available as 25 L concentrate' },
     zones: ['engine_room', 'cargo_hold'],
     tags: ['alkaline cleaner', 'degreaser', 'cargo', 'heavy duty', 'potassium hydroxide', 'soot'],
     isBiological: false,
@@ -218,16 +138,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '11', slug: 'boiler-sludge-coagulant',
     name: { en: 'DG Boiler Sludge Coagulant', pl: 'DG Boiler Sludge Coagulant', de: 'DG Boiler Sludge Coagulant' },
-    shortDesc: {
-      en: 'Prevents sludge build-up on boiler surfaces by dispersing deposits for removal through blowdown.',
-      pl: 'Zapobiega osadzaniu szlamu w kotłach, kondycjonując go do usunięcia przez blowdown.',
-      de: 'Verhindert Schlammablagerungen in Kesseln durch Dispergierung für die Entfernung durch Abschlämmen.',
-    },
-    description: {
-      en: 'DG Boiler Sludge Coagulant prevents sludge and deposit build-up on internal boiler surfaces by dispersing sludge for removal through blowdown. Also handles minor oil contamination through coagulation. Used alongside standard boiler water treatment programmes. Available as 25 L concentrate.',
-      pl: 'DG Boiler Sludge Coagulant zapobiega osadzaniu szlamu na powierzchniach kotłów, kondycjonując go do usunięcia przez blowdown. Radzi sobie z niewielkim zanieczyszczeniem olejem. Stosowany ze standardowymi preparatami kotłowymi.',
-      de: 'DG Boiler Sludge Coagulant verhindert Schlammablagerungen in Kesseln durch Dispergierung für die Entfernung durch Abschlämmen. Ergänzt Standard-Kesselwasserbehandlungsprogramme.',
-    },
+    shortDesc: { en: 'Dispersant and Conditioner for Boiler Systems DG Boiler Sludge Coagulant is a highly efficient liquid treatment agent designed to prevent sludge and deposit build-up on internal boiler surfaces.', pl: 'DG Boiler Sludge Coagulant to wysoce wydajny płynny preparat zapobiegający osadzaniu się szlamu i złogów na wewnętrznych powierzchniach kotłów.', de: 'Dispersant and Conditioner for Boiler Systems DG Boiler Sludge Coagulant is a highly efficient liquid treatment agent designed to prevent sludge and deposit build-up on internal boiler surfaces.' },
+    description: { en: 'Dispersant and Conditioner for Boiler Systems DG Boiler Sludge Coagulant is a highly efficient liquid treatment agent designed to prevent sludge and deposit build-up on internal boiler surfaces. It keeps sludge dispersed in fine particles, conditioning it for removal through normal blowdown procedures — preventing tube overheating and maintaining boiler efficiency. The product is used alongside standard chemical boiler water treatment programmes and is also effective where minor oil contamination is present, coagulating small amounts of oil for blowdown removal. If oil contamination is continuous or excessive, off-line cleaning will be required and the contamination source must be eliminated immediately. Key features : Prevents sludge deposits on boiler tubes and internal surfaces Conditions sludge for removal by regular blowdown Handles minor oil contamination through coagulation Used in combination with standard boiler water treatment chemicals Compatible with a wide pH range — no additional pH adjustment required Available as 25 L concentrate', pl: 'DG Boiler Sludge Coagulant to wysoce wydajny płynny preparat zapobiegający osadzaniu się szlamu i złogów na wewnętrznych powierzchniach kotłów. Utrzymuje szlam w postaci drobno zdyspergowanych cząstek, kondycjonując go do usunięcia w trakcie standardowego odpowietrzania ( blowdown ) — zapobiegając przegrzewaniu rur i utrzymując sprawność kotła. Produkt stosowany jest łącznie ze standardowymi programami chemicznego uzdatniania wody kotłowej. Skutecznie radzi sobie również z niewielkim zanieczyszczeniem olejem, koagulując go do usunięcia przez blowdown . W przypadku ciągłego lub nadmiernego zanieczyszczenia olejem konieczne jest czyszczenie offline, a źródło zanieczyszczenia musi zostać natychmiast wyeliminowane. Główne cechy: Zapobiega osadzaniu szlamu na rurach i wewnętrznych powierzchniach kotła Kondycjonuje szlam do usuwania przez regularny blowdown Radzi sobie z niewielkim zanieczyszczeniem olejem przez koagulację Stosowany łącznie ze standardowymi chemikaliami do uzdatniania wody kotłowej Szeroki zakres pH — bez konieczności dodatkowej regulacji Dostępny jako koncentrat 25 L', de: 'Dispersant and Conditioner for Boiler Systems DG Boiler Sludge Coagulant is a highly efficient liquid treatment agent designed to prevent sludge and deposit build-up on internal boiler surfaces. It keeps sludge dispersed in fine particles, conditioning it for removal through normal blowdown procedures — preventing tube overheating and maintaining boiler efficiency. The product is used alongside standard chemical boiler water treatment programmes and is also effective where minor oil contamination is present, coagulating small amounts of oil for blowdown removal. If oil contamination is continuous or excessive, off-line cleaning will be required and the contamination source must be eliminated immediately. Key features : Prevents sludge deposits on boiler tubes and internal surfaces Conditions sludge for removal by regular blowdown Handles minor oil contamination through coagulation Used in combination with standard boiler water treatment chemicals Compatible with a wide pH range — no additional pH adjustment required Available as 25 L concentrate' },
     zones: ['engine_room'],
     tags: ['boiler', 'sludge', 'coagulant', 'water treatment', 'blowdown', 'scale'],
     isBiological: false,
@@ -238,16 +150,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '12', slug: 'carbon-remover',
     name: { en: 'DG Carbon Remover', pl: 'DG Carbon Remover', de: 'DG Carbon Remover' },
-    shortDesc: {
-      en: 'Powerful water-based liquid solvent for fast removal of all types of carbon deposits.',
-      pl: 'Silny wodny zmywacz do szybkiego usuwania wszelkich osadów węglowych.',
-      de: 'Leistungsstarkes wasserbasiertes Lösemittel zur schnellen Entfernung aller Kohlenstoffablagerungen.',
-    },
-    description: {
-      en: 'DG Carbon Remover is a powerful water-based liquid solvent for fast removal of all types of carbon deposits. Its formula quickly dissolves stubborn buildup without hard scraping. Non-flammable; dilute 1:10 to 1:100 for general use or 1:5 for heavy grease. Available in 25 L concentrate.',
-      pl: 'DG Carbon Remover to silny wodny zmywacz do szybkiego usuwania osadów węglowych bez mechanicznego skrobania. Niepalny; rozcieńczenie 1:10 do 1:100 do ogólnego czyszczenia, 1:5 przy silnym zabrudzeniu. Koncentrat 25 L.',
-      de: 'DG Carbon Remover ist ein leistungsstarkes wasserbasiertes Lösemittel zur Entfernung aller Kohlenstoffablagerungen ohne Kratzen. Nicht brennbar; Verdünnung 1:10 bis 1:100.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['engine_room'],
     tags: ['carbon', 'deposits', 'degreaser', 'engine', 'solvent', 'non-flammable'],
     isBiological: false,
@@ -258,16 +162,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '13', slug: 'cargo-marine-cleaner-hd',
     name: { en: 'DG Cargo Marine Cleaner HD', pl: 'DG Cargo Marine Cleaner HD', de: 'DG Cargo Marine Cleaner HD' },
-    shortDesc: {
-      en: 'Alkaline heavy-duty cleaner for cargo holds, highly effective after petcoke and coal cargoes.',
-      pl: 'Zasadowy środek heavy-duty do ładowni, wysoce skuteczny po petakoksie i węglu.',
-      de: 'Alkalischer Schwerlastenreiniger für Ladefächer, hochwirksam nach Petrocoke und Kohleladungen.',
-    },
-    description: {
-      en: 'DG Cargo Marine Cleaner HD is an alkaline heavy-duty multi-purpose cleaner for cargo holds on bulk carriers. Highly effective after petcoke, coal, and difficult cargoes. Safe on epoxy coatings and free from nonylphenol ethoxylates. Apply as 10% solution, leave 10–15 min, then high-pressure rinse.',
-      pl: 'DG Cargo Marine Cleaner HD to zasadowy środek czyszczący do ładowni masowców, skuteczny po przewozie petakoksu i węgla. Bezpieczny dla powłok epoksydowych. Stosować jako 10% roztwór, pozostawić 10–15 minut, spłukać wysokociśnieniowo.',
-      de: 'DG Cargo Marine Cleaner HD ist ein alkalischer Schwerlastenreiniger für Schiffsladefächer. Hochwirksam nach Petrocoke- und Kohleladungen. Sicher auf Epoxidbeschichtungen. 10%-Lösung, 10–15 Min. einwirken lassen.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['cargo_hold'],
     tags: ['cargo hold', 'bulk carrier', 'petcoke', 'coal', 'alkaline', 'epoxy safe'],
     isBiological: false,
@@ -278,16 +174,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '14', slug: 'cementosol',
     name: { en: 'DG Cementosol', pl: 'DG Cementosol', de: 'DG Cementosol' },
-    shortDesc: {
-      en: 'Strongly acidic liquid remover for cement, concrete, mortar, limescale and rust.',
-      pl: 'Silnie kwaśny zmywacz do cementu, betonu, zaprawy, kamienia kotłowego i rdzy.',
-      de: 'Stark saures Mittel zur Entfernung von Zement, Beton, Mörtel, Kalk und Rost.',
-    },
-    description: {
-      en: 'DG Cementosol is a concentrated strongly acidic liquid remover for cement, concrete, mortar, limescale, and rust. Effective on glass, walls, floors, and sanitary equipment. Apply undiluted or diluted 1:1 to 1:15; leave 30 seconds to 5 minutes, then rinse. Use on acid-resistant surfaces only.',
-      pl: 'DG Cementosol to skoncentrowany kwaśny zmywacz do cementu, betonu, kamienia kotłowego i rdzy. Stosować nierozcieńczony lub rozcieńczony 1:1 do 1:15, pozostawić 30 sek–5 min, spłukać. Wyłącznie na powierzchniach kwasoodpornych.',
-      de: 'DG Cementosol ist ein konzentriertes stark saures Mittel zur Entfernung von Zement, Beton, Mörtel, Kalk und Rost. Nur für säurebeständige Oberflächen. Verdünnung 1:1 bis 1:15.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['deck', 'cargo_hold'],
     tags: ['cement', 'concrete', 'descaler', 'rust', 'acid', 'mortar'],
     isBiological: false,
@@ -298,16 +186,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '15', slug: 'cip-descaler',
     name: { en: 'DG CIP Descaler', pl: 'DG CIP Descaler', de: 'DG CIP Descaler' },
-    shortDesc: {
-      en: 'Highly concentrated acids and enzymes for removing scale from pipes, heat exchangers and ballast systems.',
-      pl: 'Wysoce skoncentrowana mieszanina kwasów i enzymów do usuwania kamienia z rur i wymienników.',
-      de: 'Hochkonzentriertes Gemisch aus Säuren und Enzymen zur Entkalkung von Rohren und Wärmetauschern.',
-    },
-    description: {
-      en: 'DG CIP Descaler is a highly concentrated mixture of acids, enzymes, and tensides for removing scale, magnetite, algae, lime, and rust from pipes, plate heat exchangers, separators, and ballast water systems. Non-flammable, low-foaming, biodegradable. Use as 5% solution; monitor pH; rinse after use.',
-      pl: 'DG CIP Descaler to wysoce skoncentrowana mieszanina kwasów i enzymów do usuwania kamienia, magnetytu i rdzy. Niepalny, niskopienisty, biodegradowalny. Stosować jako 5% roztwór przy 55–65°C; kontrolować pH. Spłukać po użyciu.',
-      de: 'DG CIP Descaler ist ein hochkonzentriertes Gemisch aus Säuren, Enzymen und Tensiden zur Entfernung von Kalk, Magnetit und Rost. Nicht entflammbar, schaumarm, biologisch abbaubar. 5%-Lösung bei 55–65°C.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['cooling', 'engine_room'],
     tags: ['CIP', 'descaler', 'scale', 'heat exchanger', 'ballast', 'enzyme', 'biodegradable'],
     isBiological: true,
@@ -318,16 +198,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '16', slug: 'citrasolv-ex',
     name: { en: 'DG CitraSolv EX', pl: 'DG CitraSolv EX', de: 'DG CitraSolv EX' },
-    shortDesc: {
-      en: 'Biodegradable industrial degreaser with orange terpenes for grease, oil, tar and adhesives.',
-      pl: 'Biodegradowalny odtłuszczacz przemysłowy z terpenami pomarańczowymi do tłuszczów, olejów i klejów.',
-      de: 'Biologisch abbaubarer Industrieentfetter mit Orangenterpenen für Fette, Öle und Klebstoffe.',
-    },
-    description: {
-      en: 'DG CitraSolv EX is a highly concentrated water-based biodegradable industrial degreaser containing powerful orange terpenes. Removes grease, oil, tar, inks, waxes, and adhesives from glass, metal, ceramics, and plastics. Dilute 1:20–1:100 for general use; 1:10–1:50 for immersion. Available as 25 L concentrate.',
-      pl: 'DG CitraSolv EX to skoncentrowany biodegradowalny odtłuszczacz z terpenami pomarańczowymi. Usuwa smary, oleje, smołę i kleje. Rozcieńczenie 1:20–1:100 ogólne; 1:10–1:50 zanurzenie. Koncentrat 25 L.',
-      de: 'DG CitraSolv EX ist ein hochkonzentrierter biologisch abbaubarer Industrieentfetter mit Orangenterpenen. Entfernt Fette, Öle, Teer und Klebstoffe. Verdünnung 1:20–1:100 allgemein; 1:10–1:50 Eintauchen.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['cooling', 'engine_room', 'galley'],
     tags: ['citrus', 'terpene', 'degreaser', 'biodegradable', 'solvent', 'orange'],
     isBiological: false,
@@ -338,16 +210,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '17', slug: 'coldfuel-conditioner',
     name: { en: 'DG ColdFuel Conditioner', pl: 'DG ColdFuel Conditioner', de: 'DG ColdFuel Conditioner' },
-    shortDesc: {
-      en: 'Dissolves fuel sludge, inhibits paraffin wax separation and reduces filter clogging.',
-      pl: 'Dysperguje szlam paliwowy, hamuje separację parafiny i redukuje zatkania filtrów.',
-      de: 'Löst Kraftstoffschlamm, hemmt Paraffinausscheidung und reduziert Filterverstopfungen.',
-    },
-    description: {
-      en: 'DG ColdFuel Conditioner dissolves and disperses sludge in marine diesel fuel, inhibits paraffin wax separation, and reduces filter clogging. Breaks water-oil emulsions and improves purifier efficiency. Contains a corrosion inhibitor. Dose at 1:1000 to 1:2000 directly into the bunker tank before bunkering.',
-      pl: 'DG ColdFuel Conditioner dysperguje szlam paliwowy, hamuje separację parafiny i redukuje zatkania filtrów. Rozbija emulsje woda-olej i poprawia wydajność oczyszczarki. Dozować 1:1000 do 1:2000 do zbiornika bunkrowego.',
-      de: 'DG ColdFuel Conditioner löst Kraftstoffschlamm, hemmt Paraffinausscheidung und verbessert die Trennleistung. Dosierung 1:1000 bis 1:2000 in den Bunkertank.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['fuel'],
     tags: ['fuel conditioner', 'sludge', 'paraffin', 'cold weather', 'bunker', 'filter'],
     isBiological: false,
@@ -358,16 +222,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '18', slug: 'condensate-auto-boiler',
     name: { en: 'DG Condensate Auto Boiler', pl: 'DG Condensate Auto Boiler', de: 'DG Condensate Auto Boiler' },
-    shortDesc: {
-      en: 'Concentrated boiler water treatment with amines for automatic dosing units.',
-      pl: 'Skoncentrowany preparat do kotłów z aminami, przeznaczony do automatycznych jednostek dozujących.',
-      de: 'Konzentriertes Kesselspeisewasserbehandlungsmittel mit Aminen für automatische Dosieranlagen.',
-    },
-    description: {
-      en: 'DG Condensate Auto Boiler (DG CAB) is a concentrated boiler water treatment containing amines, anti-foam, scale controlling agent, and potassium hydroxide for corrosion control in steam and condensate systems. Designed for use with automatic dosing units. Initial dose: 2.4 L per ton of boiler capacity.',
-      pl: 'DG Condensate Auto Boiler to skoncentrowany preparat do kotłów zawierający aminy i inhibitory dla ochrony przed korozją układów parowych. Przeznaczony do automatycznych jednostek dozujących. Dawka wstępna: 2,4 L/tonę pojemności kotła.',
-      de: 'DG Condensate Auto Boiler ist ein konzentriertes Kesselspeisewasserbehandlungsmittel mit Aminen, Anti-Schaum und pH-Regulierung für automatische Dosieranlagen. Startdosis: 2,4 L pro Tonne Kesselinhalt.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['engine_room'],
     tags: ['boiler', 'condensate', 'amine', 'corrosion', 'steam', 'auto dosing'],
     isBiological: false,
@@ -378,16 +234,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '19', slug: 'condensate-control',
     name: { en: 'DG Condensate Control', pl: 'DG Condensate Control', de: 'DG Condensate Control' },
-    shortDesc: {
-      en: 'Corrosion control agent with amines for steam and condensate water systems at all pressures.',
-      pl: 'Środek korozji z aminami dla parowych układów kondensatowych pod każdym ciśnieniem.',
-      de: 'Korrosionsschutzmittel mit Aminen für Dampf- und Kondensatsysteme bei allen Drücken.',
-    },
-    description: {
-      en: 'DG Condensate Control is a concentrated corrosion control agent with amines, anti-foam, and scale controlling agent for steam and condensate water systems at all pressures. Optimal pH range 8.2–9.5. Recommended dosage approximately 50 ml per 24 hours for an average 1 m³ system. Available in 25 L concentrate.',
-      pl: 'DG Condensate Control to skoncentrowany środek korozji dla parowych układów kondensatowych. Optymalny zakres pH: 8,2–9,5. Dawkowanie ok. 50 ml na 24 h dla układu 1 m³. Koncentrat 25 L.',
-      de: 'DG Condensate Control ist ein konzentriertes Korrosionsschutzmittel mit Aminen für Dampf- und Kondenssysteme. Optimaler pH: 8,2–9,5. Dosierung ca. 50 ml/24 h für 1 m³-Anlagen.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['engine_room'],
     tags: ['boiler', 'condensate', 'corrosion', 'amine', 'pH', 'steam'],
     isBiological: false,
@@ -398,16 +246,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '20', slug: 'cooltreat-fa',
     name: { en: 'DG Cooltreat FA', pl: 'DG Cooltreat FA', de: 'DG Cooltreat FA' },
-    shortDesc: {
-      en: 'Nitrite-free corrosion inhibitor for closed cooling systems including aluminium components.',
-      pl: 'Bezoazotynowy inhibitor korozji dla zamkniętych układów chłodzenia, w tym elementów aluminiowych.',
-      de: 'Nitritfreier Korrosionsinhibitor für geschlossene Kühlsysteme inkl. Aluminiumkomponenten.',
-    },
-    description: {
-      en: 'DG Cooltreat FA is a concentrated liquid corrosion inhibitor for all engine types and closed cooling water systems including aluminium components. Free from nitrites and silicates for long-term stability. Initial dosage: 82 L per ton of distilled water; maintains protection 2–5 years. Compatible with glycols.',
-      pl: 'DG Cooltreat FA to skoncentrowany inhibitor korozji dla zamkniętych układów chłodzenia, w tym elementów aluminiowych. Bez azotynów i krzemianów. Dawka wstępna: 82 L/tonę wody; ochrona 2–5 lat. Kompatybilny z glikolami.',
-      de: 'DG Cooltreat FA ist ein konzentrierter Korrosionsinhibitor für geschlossene Kühlsysteme inkl. Aluminiumkomponenten. Nitrit- und silikatfrei. Startdosis: 82 L/t Destillat; Schutz 2–5 Jahre.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['cooling'],
     tags: ['coolant', 'corrosion inhibitor', 'aluminium', 'closed cooling', 'nitrite-free', 'glycol'],
     isBiological: false,
@@ -418,16 +258,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '21', slug: 'deck-cleaner-marine',
     name: { en: 'DG Deck Cleaner Marine', pl: 'DG Deck Cleaner Marine', de: 'DG Deck Cleaner Marine' },
-    shortDesc: {
-      en: 'Slightly alkaline multi-purpose cleaner for deck and engine room, removing oils and carbon deposits.',
-      pl: 'Lekko zasadowy środek wielofunkcyjny do pokładów i maszynowni, usuwający oleje i osady.',
-      de: 'Leicht alkalischer Mehrzweckreiniger für Decks und Maschinenräume, entfernt Öle und Ablagerungen.',
-    },
-    description: {
-      en: 'DG Deck Cleaner Marine is a slightly alkaline water-based multi-purpose cleaner for deck and engine room surfaces. Removes greasy grime, oil, diesel spillages, sludge, wax, and carbon deposits. Apply undiluted or diluted up to 1:50; compatible with steam cleaning (1:10–1:50). Available as 25 L concentrate.',
-      pl: 'DG Deck Cleaner Marine to lekko zasadowy środek czyszczący do pokładów i maszynowni. Usuwa oleje, rozlane paliwo, szlam i osady węglowe. Rozcieńczenie do 1:50; kompatybilny z czyszczeniem parowym. Koncentrat 25 L.',
-      de: 'DG Deck Cleaner Marine ist ein leicht alkalischer Mehrzweckreiniger für Decks und Maschinenräume. Entfernt Öle, Kraftstoffverschüttungen und Kohlenstoffablagerungen. Verdünnung bis 1:50.',
-    },
+    shortDesc: { en: 'DG Deck Cleaner Marine is a slightly alkaline, water-based multi-purpose cleaner and degreaser formulated with advanced surfactants for deck and engine room cleaning.', pl: 'DG Deck Cleaner Marine to lekko zasadowy, wielofunkcyjny środek czyszczący i odtłuszczający na bazie wodnej, przeznaczony do czyszczenia pokładów i maszynowni.', de: 'DG Deck Cleaner Marine is a slightly alkaline, water-based multi-purpose cleaner and degreaser formulated with advanced surfactants for deck and engine room cleaning.' },
+    description: { en: 'DG Deck Cleaner Marine is a slightly alkaline, water-based multi-purpose cleaner and degreaser formulated with advanced surfactants for deck and engine room cleaning. It removes greasy grime, oil, diesel spillages, sludge, wax, and carbon deposits from a wide range of marine and industrial surfaces. Apply undiluted or diluted up to 1:50 depending on soiling level — by foam nozzle, brush, cloth, atomiser, or in immersion cleaning. Compatible with steam cleaning (1:10–1:50). Available as a 25 L concentrate .', pl: 'DG Deck Cleaner Marine to lekko zasadowy, wielofunkcyjny środek czyszczący i odtłuszczający na bazie wodnej, przeznaczony do czyszczenia pokładów i maszynowni. Usuwa zatłuszczony brud, oleje, rozlane paliwo, szlam, wosk i osady węglowe z szerokiej gamy powierzchni morskich i przemysłowych. Stosować nierozcieńczony lub rozcieńczony do 1:50 zależnie od stopnia zabrudzenia — pianownicą , pędzlem, szmatą, atomizerem lub metodą zanurzeniową. Kompatybilny z czyszczeniem parowym (1:10–1:50). Dostępny jako koncentrat 25 L.', de: 'DG Deck Cleaner Marine is a slightly alkaline, water-based multi-purpose cleaner and degreaser formulated with advanced surfactants for deck and engine room cleaning. It removes greasy grime, oil, diesel spillages, sludge, wax, and carbon deposits from a wide range of marine and industrial surfaces. Apply undiluted or diluted up to 1:50 depending on soiling level — by foam nozzle, brush, cloth, atomiser, or in immersion cleaning. Compatible with steam cleaning (1:10–1:50). Available as a 25 L concentrate .' },
     zones: ['deck', 'engine_room'],
     tags: ['deck', 'cleaner', 'degreaser', 'marine', 'oil', 'carbon', 'alkaline'],
     isBiological: false,
@@ -438,16 +270,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '22', slug: 'defoam-c',
     name: { en: 'DG Defoam C', pl: 'DG Defoam C', de: 'DG Defoam C' },
-    shortDesc: {
-      en: 'Highly concentrated non-toxic defoamer for water tanks, sewage treatment and industrial wastewater.',
-      pl: 'Wysoce skoncentrowany niepalny środek odpieniający do zbiorników wodnych i oczyszczalni ścieków.',
-      de: 'Hochkonzentriertes nicht toxisches Entschäumungsmittel für Wassertanks und Abwasserbehandlung.',
-    },
-    description: {
-      en: 'DG Defoam C is a highly concentrated liquid defoamer with fast foam suppression and minimal dosage requirements. Non-corrosive, non-toxic, non-flammable. Suitable for water tanks, sewage treatment, and industrial wastewater under alkaline conditions. Dosage 50–500 ml per ton; apply by drops or spray. Available in 25 L concentrate.',
-      pl: 'DG Defoam C to wysoce skoncentrowany środek odpieniający o szybkim działaniu. Niekorozyjny, niepalny. Do zbiorników wodnych i oczyszczalni ścieków. Dawka 50–500 ml/tonę. Koncentrat 25 L.',
-      de: 'DG Defoam C ist ein hochkonzentriertes Entschäumungsmittel mit schneller Wirkung. Nicht korrosiv, nicht brennbar. Für Wassertanks und Abwasserbehandlung. Dosierung 50–500 ml/t.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['engine_room', 'accommodation'],
     tags: ['defoamer', 'foam control', 'sewage', 'water treatment', 'alkaline', 'non-toxic'],
     isBiological: false,
@@ -458,16 +282,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '23', slug: 'degreaser-hd',
     name: { en: 'DG Degreaser HD', pl: 'DG Degreaser HD', de: 'DG Degreaser HD' },
-    shortDesc: {
-      en: 'Concentrated biodegradable heavy-duty degreaser with orange terpenes for all surfaces.',
-      pl: 'Skoncentrowany biodegradowalny odtłuszczacz heavy-duty z terpenami pomarańczowymi.',
-      de: 'Konzentrierter biologisch abbaubarer Schwerlastentfetter mit Orangenterpenen.',
-    },
-    description: {
-      en: 'DG Degreaser HD is a highly concentrated water-based biodegradable heavy-duty degreaser with orange terpenes. Removes grease, oil, tar, inks, waxes, and adhesives from glass, metal, ceramics, and plastics. Dilute 1:1 to 1:20 for general cleaning; 1:5–1:20 for immersion. Contact time: 5 min to 2 h.',
-      pl: 'DG Degreaser HD to skoncentrowany biodegradowalny odtłuszczacz z terpenami pomarańczowymi. Usuwa tłuszcze, oleje, smołę i kleje. Rozcieńczenie 1:1 do 1:20 ogólne; 1:5–1:20 zanurzenie. Czas kontaktu: 5 min–2 h.',
-      de: 'DG Degreaser HD ist ein hochkonzentrierter biologisch abbaubarer Schwerlastentfetter mit Orangenterpenen. Entfernt Fette, Öle und Klebstoffe. Kontaktzeit: 5 Min. bis 2 Std.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['engine_room', 'deck'],
     tags: ['degreaser', 'heavy duty', 'terpene', 'biodegradable', 'orange', 'grease'],
     isBiological: false,
@@ -478,16 +294,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '24', slug: 'descaler-ca-bioactivae',
     name: { en: 'DG Descaler CA BioActivae', pl: 'DG Descaler CA BioActivae', de: 'DG Descaler CA BioActivae' },
-    shortDesc: {
-      en: 'Concentrated mixed acids and enzymes for safe removal of scale, magnetite and rust from water systems.',
-      pl: 'Skoncentrowana mieszanina kwasów i enzymów do bezpiecznego usuwania kamienia i rdzy.',
-      de: 'Konzentriertes Gemisch aus Säuren und Enzymen zur sicheren Entkalkung und Rostentfernung.',
-    },
-    description: {
-      en: 'DG Descaler CA BioActivae is a highly concentrated liquid of mixed acids and enzymes for safe removal of scale, magnetite, algae, lime, and rust from water systems. Non-corrosive, non-flammable, biodegradable. Use 10–20% in circulating systems or 10–50% in immersion at 55–65°C. Available as 25 L concentrate.',
-      pl: 'DG Descaler CA BioActivae to skoncentrowana mieszanina kwasów i enzymów do usuwania kamienia i rdzy. Niekorozyjny, biodegradowalny. Stosować 10–20% w obiegach lub 10–50% w kąpieli w 55–65°C. Koncentrat 25 L.',
-      de: 'DG Descaler CA BioActivae ist ein hochkonzentriertes Gemisch aus Säuren und Enzymen zur Entkalkung. Nicht korrosiv, biologisch abbaubar. 10–20% in Umlaufsystemen oder 10–50% als Tauchbad bei 55–65°C.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['cooling', 'engine_room'],
     tags: ['descaler', 'enzyme', 'scale', 'heat exchanger', 'biodegradable', 'magnetite'],
     isBiological: false,
@@ -498,16 +306,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '25', slug: 'descaler-l',
     name: { en: 'DG Descaler L', pl: 'DG Descaler L', de: 'DG Descaler L' },
-    shortDesc: {
-      en: 'Concentrated acidic descaling agent based on mixed strong acids for limestone, scale and rust.',
-      pl: 'Skoncentrowany kwaśny środek odkamieniający na bazie mocnych kwasów do wapienia, kamienia i rdzy.',
-      de: 'Konzentriertes saures Entkalkungsmittel auf Basis starker Säuren für Kalk, Stein und Rost.',
-    },
-    description: {
-      en: 'DG Descaler L is a highly concentrated acidic descaling agent based on mixed strong acids for removing limestone, scale, rust, concrete, and cement. Contains corrosion inhibitors and anti-foam. Use as 15–30% solution in circulating systems or 10–50% in immersion baths (max 55°C). For acid-resistant surfaces only.',
-      pl: 'DG Descaler L to skoncentrowany kwaśny środek odkamieniający na bazie mocnych kwasów. Do usuwania wapienia, kamienia i rdzy. Stosować 15–30% w obiegach lub 10–50% w kąpieli (maks. 55°C). Tylko na powierzchniach kwasoodpornych.',
-      de: 'DG Descaler L ist ein hochkonzentriertes saures Entkalkungsmittel auf Basis starker Säuren. Entfernt Kalk, Rost und Beton. 15–30% in Umlaufsystemen oder 10–50% als Tauchbad (max. 55°C).',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['cooling', 'engine_room'],
     tags: ['descaler', 'acid', 'limescale', 'boiler', 'heat exchanger', 'strong acid'],
     isBiological: false,
@@ -518,16 +318,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '26', slug: 'diesel-lubricity-agent',
     name: { en: 'DG Diesel Lubricity Agent', pl: 'DG Diesel Lubricity Agent', de: 'DG Diesel Lubricity Agent' },
-    shortDesc: {
-      en: 'Improves lubricity of Ultra Low Sulphur Distillate marine fuels, reducing fuel pump wear.',
-      pl: 'Poprawia smarność morskich paliw ULSD, redukując zużycie pomp paliwowych.',
-      de: 'Verbessert die Schmierfähigkeit von ULSD-Kraftstoffen, reduziert Verschleiß in Kraftstoffpumpen.',
-    },
-    description: {
-      en: 'DG Diesel Lubricity Agent improves lubricity of Ultra Low Sulphur Distillate marine fuels, reducing wear in fuel pumps. Fully compatible with other diesel detergent packages. Dose 1 L per 10,000–40,000 L of fuel; add directly to tank before bunkering. Shelf life 24 months. Available as 25 L concentrate.',
-      pl: 'DG Diesel Lubricity Agent poprawia smarność morskich paliw ULSD, redukując zużycie pomp. Dawkowanie 1 L na 10 000–40 000 L paliwa; dodawać do zbiornika przed bunkrowaniem. Trwałość 24 miesiące.',
-      de: 'DG Diesel Lubricity Agent verbessert die Schmierfähigkeit von ULSD-Kraftstoffen, reduziert Verschleiß in Kraftstoffpumpen. 1 L pro 10.000–40.000 L Kraftstoff; vor dem Bunkern hinzufügen.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['fuel'],
     tags: ['lubricity', 'ULSD', 'fuel additive', 'diesel', 'wear protection', 'pump'],
     isBiological: false,
@@ -538,16 +330,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '27', slug: 'diesel-prt',
     name: { en: 'DG Diesel PRT', pl: 'DG Diesel PRT', de: 'DG Diesel PRT' },
-    shortDesc: {
-      en: 'Biodegradable corrosion and scale inhibitor for closed heating and cooling water systems.',
-      pl: 'Biodegradowalny inhibitor korozji i kamienia dla zamkniętych układów grzewczych i chłodniczych.',
-      de: 'Biologisch abbaubarer Korrosions- und Kalkschutzinhibitor für geschlossene Heiz- und Kühlsysteme.',
-    },
-    description: {
-      en: 'DG Diesel PRT is a safe water-based biodegradable corrosion and scale inhibitor for closed heating and cooling water systems. Compatible with glycol for frost protection. Starting dosage: 8 L per m³ of distilled water to achieve minimum 1000 ppm nitrite. Maintain nitrite level 1000–2000 ppm. Available as 25 L concentrate.',
-      pl: 'DG Diesel PRT to biodegradowalny inhibitor korozji i kamienia dla zamkniętych układów grzewczych i chłodniczych. Kompatybilny z glikolem. Dawka startowa: 8 L/m³; utrzymywać azotynu 1000–2000 ppm.',
-      de: 'DG Diesel PRT ist ein sicherer wasserbasierter Korrosions- und Kalkschutzinhibitor für geschlossene Heiz- und Kühlsysteme. Startdosis: 8 L/m³; Nitritspiegel 1000–2000 ppm halten.',
-    },
+    shortDesc: { en: '', pl: '', de: '' },
+    description: { en: '', pl: '', de: '' },
     zones: ['fuel', 'engine_room'],
     tags: ['corrosion inhibitor', 'cooling water', 'nitrite', 'scale', 'closed system', 'glycol'],
     isBiological: false,
@@ -558,16 +342,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '28', slug: 'elektrocleaner-fast-fry',
     name: { en: 'DG Elektrocleaner Fast Dry', pl: 'DG Elektrocleaner Fast Dry', de: 'DG Elektrocleaner Fast Dry' },
-    shortDesc: {
-      en: 'Fast-drying non-conductive solvent cleaner for electrical machines and components.',
-      pl: 'Szybkoschnący nieprzewodzący rozpuszczalnik do maszyn i podzespołów elektrycznych.',
-      de: 'Schnelltrocknender nicht-leitender Lösemittelreiniger für Elektromotoren und -komponenten.',
-    },
-    description: {
-      en: 'DG Elektrocleaner Fast Dry is a fast-drying non-conductive solvent cleaner for electrical machines and components. Free from chlorinated solvents and virtually odourless. Penetrates rapidly and leaves no moisture residue. Apply by brush, swab, spray, or immersion; residual solvent evaporates quickly.',
-      pl: 'DG Elektrocleaner Fast Dry to szybkoschnący nieprzewodzący rozpuszczalnik do maszyn elektrycznych. Bez chlorowanych rozpuszczalników, praktycznie bezwonny. Stosować pędzlem, wacikiem, natryskiem lub zanurzeniem; pozostałości odparowują samoistnie.',
-      de: 'DG Elektrocleaner Fast Dry ist ein schnelltrocknender nicht-leitender Lösemittelreiniger für Elektromotoren. Chlorlösemittelfrei, geruchsarm. Rückstände verdampfen schnell.',
-    },
+    shortDesc: { en: 'DG Electro Cleaner FD is a fast-drying, non-conductive solvent cleaner designed for the removal of oil, grease, and contamination from electrical machines, components, and equipment.', pl: 'DG Electro Cleaner FD to szybkoschnący, nieprzewodzący rozpuszczalnik czyszczący, przeznaczony do usuwania olejów, smarów i zanieczyszczeń z maszyn elektrycznych, komponentów i urządzeń.', de: 'DG Electro Cleaner FD is a fast-drying, non-conductive solvent cleaner designed for the removal of oil, grease, and contamination from electrical machines, components, and equipment.' },
+    description: { en: 'DG Electro Cleaner FD is a fast-drying, non-conductive solvent cleaner designed for the removal of oil, grease, and contamination from electrical machines, components, and equipment. Free from chlorinated solvents and virtually odourless, it penetrates rapidly and leaves no moisture residue after evaporation. It can be applied by brush, swab, spray, or immersion bath and is safe for use on standard components. The remaining solvent evaporates quickly — aided by compressed air if required.', pl: 'DG Electro Cleaner FD to szybkoschnący, nieprzewodzący rozpuszczalnik czyszczący, przeznaczony do usuwania olejów, smarów i zanieczyszczeń z maszyn elektrycznych, komponentów i urządzeń. Nie zawiera chlorowanych rozpuszczalników, jest praktycznie bezwonny i szybko przenika w głąb czyszczonych elementów, nie pozostawiając wilgotnych osadów. Można go stosować pędzelkiem, wacikiem, przez natrysk lub w kąpieli zanurzeniowej. Pozostałości rozpuszczalnika odparowują samoistnie lub przy użyciu sprężonego powietrza.', de: 'DG Electro Cleaner FD is a fast-drying, non-conductive solvent cleaner designed for the removal of oil, grease, and contamination from electrical machines, components, and equipment. Free from chlorinated solvents and virtually odourless, it penetrates rapidly and leaves no moisture residue after evaporation. It can be applied by brush, swab, spray, or immersion bath and is safe for use on standard components. The remaining solvent evaporates quickly — aided by compressed air if required.' },
     zones: ['engine_room'],
     tags: ['electrical', 'solvent cleaner', 'fast dry', 'motor', 'non-conductive', 'chlorine-free'],
     isBiological: false,
@@ -578,16 +354,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '29', slug: 'elektrocleaner',
     name: { en: 'DG Elektrocleaner', pl: 'DG Elektrocleaner', de: 'DG Elektrocleaner' },
-    shortDesc: {
-      en: 'Non-conductive solvent cleaner with high flash point for electrical machinery and equipment.',
-      pl: 'Nieprzewodzący rozpuszczalnik o wysokiej temperaturze zapłonu do maszyn elektrycznych.',
-      de: 'Nicht-leitender Lösemittelreiniger mit hohem Flammpunkt für Elektromaschinen.',
-    },
-    description: {
-      en: 'DG Elektrocleaner is a non-conductive solvent cleaner for oil and grease removal from electrical machinery and equipment. No chlorinated solvents, virtually odourless, high flash point for enhanced safety. Quick-acting, penetrates effectively, and leaves no residue. Suitable for brush, swab, spray, or immersion.',
-      pl: 'DG Elektrocleaner to nieprzewodzący rozpuszczalnik do maszyn elektrycznych. Bez chlorowanych rozpuszczalników, wysoka temperatura zapłonu. Szybkie działanie, bez pozostałości. Stosować pędzlem, wacikiem, natryskiem lub zanurzeniem.',
-      de: 'DG Elektrocleaner ist ein nicht-leitender Lösemittelreiniger für Elektromaschinen. Chlorlösemittelfrei, hoher Flammpunkt für mehr Sicherheit. Schnell wirkend, hinterlässt keine Rückstände.',
-    },
+    shortDesc: { en: 'DG Electro Cleaner is a non-conductive solvent cleaner specially formulated for the removal of oil and grease from electrical machinery, components, and equipment.', pl: 'DG Electro Cleaner to nieprzewodzący rozpuszczalnik czyszczący, sformułowany specjalnie do usuwania olejów i smarów z maszyn elektrycznych, komponentów i urządzeń.', de: 'DG Electro Cleaner is a non-conductive solvent cleaner specially formulated for the removal of oil and grease from electrical machinery, components, and equipment.' },
+    description: { en: 'DG Electro Cleaner is a non-conductive solvent cleaner specially formulated for the removal of oil and grease from electrical machinery, components, and equipment. It contains no chlorinated solvents, is virtually odourless, and features a high flash point for enhanced safety. Its quick-acting formula penetrates cleaned elements effectively and leaves no residue after drying. Suitable for brush, swab, spray, or immersion bath application — ideal for heavily fouled electrical parts.', pl: 'DG Electro Cleaner to nieprzewodzący rozpuszczalnik czyszczący, sformułowany specjalnie do usuwania olejów i smarów z maszyn elektrycznych, komponentów i urządzeń. Nie zawiera chlorowanych rozpuszczalników, jest praktycznie bezwonny i charakteryzuje się wysoką temperaturą zapłonu zapewniającą zwiększone bezpieczeństwo. Szybko działa, wnika w głąb czyszczonych elementów i nie pozostawia osadów po wyschnięciu. Nadaje się do aplikacji pędzelkiem, wacikiem, przez natrysk lub w kąpieli zanurzeniowej.', de: 'DG Electro Cleaner is a non-conductive solvent cleaner specially formulated for the removal of oil and grease from electrical machinery, components, and equipment. It contains no chlorinated solvents, is virtually odourless, and features a high flash point for enhanced safety. Its quick-acting formula penetrates cleaned elements effectively and leaves no residue after drying. Suitable for brush, swab, spray, or immersion bath application — ideal for heavily fouled electrical parts.' },
     zones: ['engine_room'],
     tags: ['electrical', 'solvent cleaner', 'motor', 'non-conductive', 'degreaser', 'high flash'],
     isBiological: false,
@@ -598,16 +366,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '30', slug: 'engine-cleaner',
     name: { en: 'DG Engine Cleaner', pl: 'DG Engine Cleaner', de: 'DG Engine Cleaner' },
-    shortDesc: {
-      en: 'Heavy-duty water-based micro-emulsion cleaner and degreaser for engine room maintenance.',
-      pl: 'Przemysłowy środek czyszczący w postaci mikroemulsji do konserwacji siłowni okrętowych.',
-      de: 'Schwerlastiger wasserbasierter Mikro-Emulsionsreiniger für die Maschinenraumwartung.',
-    },
-    description: {
-      en: 'DG Engine Cleaner is a heavy-duty water-based micro-emulsion cleaner and degreaser for engine room maintenance. Effectively removes grease, carbon deposits, grime, oil, and dirt from all surface types. Non-flammable; apply by brush, hand spray, or immersion at dilution ratios up to 1:5.',
-      pl: 'DG Engine Cleaner to przemysłowy wodny środek czyszczący w postaci mikroemulsji do siłowni okrętowych. Usuwa smary, osady węglowe, oleje i zanieczyszczenia. Niepalny; rozcieńczenie do 1:5.',
-      de: 'DG Engine Cleaner ist ein schwerlastiger wasserbasierter Mikro-Emulsionsreiniger für Maschinenräume. Entfernt Fette, Kohlenstoff und Öle. Nicht brennbar; Verdünnung bis 1:5.',
-    },
+    shortDesc: { en: 'DG Engine Cleaner is a heavy-duty, water-based micro-emulsion cleaner and degreaser formulated for comprehensive engine room maintenance.', pl: 'DG Engine Cleaner to przemysłowy, wodny środek czyszczący i odtłuszczający w postaci mikroemulsji , przeznaczony do kompleksowej konserwacji siłowni okrętowych.', de: 'DG Engine Cleaner is a heavy-duty, water-based micro-emulsion cleaner and degreaser formulated for comprehensive engine room maintenance.' },
+    description: { en: 'DG Engine Cleaner is a heavy-duty, water-based micro-emulsion cleaner and degreaser formulated for comprehensive engine room maintenance. It effectively removes grease, carbon deposits, grime, oil, and dirt from all types of surfaces. Its powerful formula rapidly dissolves stubborn deposits, eliminating the need for hard scraping. Non-flammable and safe to use, it can be applied by brush or hand spray, or used in immersion cleaning at dilution ratios up to 1:5.', pl: 'DG Engine Cleaner to przemysłowy, wodny środek czyszczący i odtłuszczający w postaci mikroemulsji , przeznaczony do kompleksowej konserwacji siłowni okrętowych. Skutecznie usuwa smary, osady węglowe, brud, oleje i zanieczyszczenia z wszelkich powierzchni. Wydajna formuła szybko rozpuszcza trudne osady, eliminując konieczność mechanicznego skrobania. Niepalny i bezpieczny w użyciu — stosowany przez natrysk, szczotkowanie lub w kąpieli zanurzeniowej przy rozcieńczeniu do 1:5.', de: 'DG Engine Cleaner is a heavy-duty, water-based micro-emulsion cleaner and degreaser formulated for comprehensive engine room maintenance. It effectively removes grease, carbon deposits, grime, oil, and dirt from all types of surfaces. Its powerful formula rapidly dissolves stubborn deposits, eliminating the need for hard scraping. Non-flammable and safe to use, it can be applied by brush or hand spray, or used in immersion cleaning at dilution ratios up to 1:5.' },
     zones: ['engine_room'],
     tags: ['engine room', 'degreaser', 'micro-emulsion', 'carbon', 'heavy duty', 'machinery'],
     isBiological: false,
@@ -618,16 +378,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '31', slug: 'envirocleaner',
     name: { en: 'DG Envirocleaner', pl: 'DG Envirocleaner', de: 'DG Envirocleaner' },
-    shortDesc: {
-      en: 'Safe multi-purpose degreaser on natural orange extracts for decks and machinery surfaces.',
-      pl: 'Bezpieczny wielofunkcyjny odtłuszczacz na naturalnych ekstraktach pomarańczowych do pokładów i maszyn.',
-      de: 'Sicherer Mehrzweckentfetter auf Basis natürlicher Orangenextrakte für Decks und Maschinen.',
-    },
-    description: {
-      en: 'DG Envirocleaner is a safe water-based multi-purpose degreaser formulated on natural orange solvent extracts and advanced surfactants. Cleans and degreases decks, machinery, and surfaces — removing oil, diesel spillages, sludge, and carbon deposits. Use undiluted for heavy soiling or diluted up to 1:50.',
-      pl: 'DG Envirocleaner to bezpieczny odtłuszczacz wielofunkcyjny na bazie naturalnych ekstraktów pomarańczowych. Usuwa oleje, rozlane paliwo, szlam i osady węglowe. Rozcieńczenie do 1:50 przy lekkich zabrudzeniach.',
-      de: 'DG Envirocleaner ist ein sicherer Mehrzweckentfetter auf Basis natürlicher Orangenextrakte. Reinigt Decks und Maschinen, entfernt Öle und Kraftstoffrückstände. Unverdünnt oder bis 1:50 verdünnt.',
-    },
+    shortDesc: { en: 'DG Enviro Cleaner is a safe, water-based multi-purpose degreaser formulated on a blend of natural orange solvent extracts and advanced surfactant technology.', pl: 'DG Enviro Cleaner to bezpieczny, wodny odtłuszczacz wielofunkcyjny, opracowany na bazie naturalnych ekstraktów z pomarańczy i zaawansowanych surfaktantów.', de: 'DG Enviro Cleaner is a safe, water-based multi-purpose degreaser formulated on a blend of natural orange solvent extracts and advanced surfactant technology.' },
+    description: { en: 'DG Enviro Cleaner is a safe, water-based multi-purpose degreaser formulated on a blend of natural orange solvent extracts and advanced surfactant technology. Suitable for a wide range of marine and industrial applications, it effectively cleans and degreases decks, machinery, and surfaces — removing greasy grime, oil, diesel spillages, sludge, wax, and carbon deposits with ease. It can be used undiluted for heavy soiling or diluted up to 1:50 for light general cleaning, and is compatible with foam applicators, brushes, cloths, atomisers, and immersion systems.', pl: 'DG Enviro Cleaner to bezpieczny, wodny odtłuszczacz wielofunkcyjny, opracowany na bazie naturalnych ekstraktów z pomarańczy i zaawansowanych surfaktantów. Przeznaczony do szerokiego zastosowania w marynarce i przemyśle — skutecznie czyści i odtłuszcza pokłady, maszyny oraz powierzchnie, usuwając tłuste zanieczyszczenia, oleje, rozlane paliwo diesla, szlam, wosk i osady węglowe. Można go stosować bez rozcieńczenia przy silnych zabrudzeniach lub rozcieńczać do 1:50 przy ogólnym myciu. Kompatybilny z aplikatorami pianowymi, szczotkami, szmatami, atomizatorami i systemami zanurzeniowymi.', de: 'DG Enviro Cleaner is a safe, water-based multi-purpose degreaser formulated on a blend of natural orange solvent extracts and advanced surfactant technology. Suitable for a wide range of marine and industrial applications, it effectively cleans and degreases decks, machinery, and surfaces — removing greasy grime, oil, diesel spillages, sludge, wax, and carbon deposits with ease. It can be used undiluted for heavy soiling or diluted up to 1:50 for light general cleaning, and is compatible with foam applicators, brushes, cloths, atomisers, and immersion systems.' },
     zones: ['deck', 'accommodation'],
     tags: ['eco', 'orange', 'natural', 'degreaser', 'deck', 'biodegradable', 'solvent'],
     isBiological: false,
@@ -638,16 +390,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '32', slug: 'fastmax',
     name: { en: 'DG FastMAX', pl: 'DG FastMAX', de: 'DG FastMAX' },
-    shortDesc: {
-      en: 'Powerful alkaline cleaner for heavy-duty use in engine rooms, decks and cargo spaces.',
-      pl: 'Wydajny alkaliczny środek do intensywnego czyszczenia siłowni, pokładów i przestrzeni ładunkowych.',
-      de: 'Leistungsstarker alkalischer Reiniger für Schwerlastanwendungen in Maschinenräumen und Laderäumen.',
-    },
-    description: {
-      en: 'DG FastMAX is a powerful water-based alkaline cleaner and degreaser for heavy-duty use in engine rooms, decks, and cargo spaces. Removes grease, oil, carbon deposits, sludge, and diesel spillages. Apply by foam nozzle, brush, cloth, or immersion at dilution ratios 1:10 to 1:100 for general cleaning.',
-      pl: 'DG FastMAX to wydajny alkaliczny środek czyszczący do siłowni, pokładów i przestrzeni ładunkowych. Usuwa tłuszcze, oleje, szlam. Rozcieńczenie 1:10 do 1:100 ogólne, 1:25 zanurzenie.',
-      de: 'DG FastMAX ist ein leistungsstarker wasserbasierter alkalischer Reiniger für Schwerlastanwendungen in Maschinenräumen, Decks und Laderäumen. Verdünnung 1:10 bis 1:100.',
-    },
+    shortDesc: { en: 'DG Fast MAX is a powerful, water-based alkaline cleaner and degreaser formulated on advanced surfactant technology.', pl: 'DG Fast MAX to wydajny, alkaliczny środek czyszczący i odtłuszczający na bazie wodnej, oparty na zaawansowanej formulacji surfaktantów.', de: 'DG Fast MAX is a powerful, water-based alkaline cleaner and degreaser formulated on advanced surfactant technology.' },
+    description: { en: 'DG Fast MAX is a powerful, water-based alkaline cleaner and degreaser formulated on advanced surfactant technology. Designed for heavy-duty use in engine rooms, on decks, and in cargo spaces, it effectively removes grease, oil, carbon deposits, sludge, wax, and diesel spillages. The product can be applied by foam nozzle, brush, cloth, atomiser, or immersion system, and is suitable for dilution ratios from 1:10 up to 1:100 for general cleaning and 1:25 for immersion use.', pl: 'DG Fast MAX to wydajny, alkaliczny środek czyszczący i odtłuszczający na bazie wodnej, oparty na zaawansowanej formulacji surfaktantów. Przeznaczony do intensywnego czyszczenia siłowni, pokładów i przestrzeni ładunkowych — usuwa tłuszcze, oleje, osady węglowe, szlam, wosk i rozlane paliwo diesla. Można go stosować przez aplikator pianowy, pędzel, szmatę, atomizer lub w kąpieli zanurzeniowej przy rozcieńczeniu od 1:10 do 1:100 przy ogólnym czyszczeniu i 1:25 przy czyszczeniu zanurzeniowym.', de: 'DG Fast MAX is a powerful, water-based alkaline cleaner and degreaser formulated on advanced surfactant technology. Designed for heavy-duty use in engine rooms, on decks, and in cargo spaces, it effectively removes grease, oil, carbon deposits, sludge, wax, and diesel spillages. The product can be applied by foam nozzle, brush, cloth, atomiser, or immersion system, and is suitable for dilution ratios from 1:10 up to 1:100 for general cleaning and 1:25 for immersion use.' },
     zones: ['engine_room', 'deck'],
     tags: ['alkaline', 'degreaser', 'fast', 'heavy duty', 'foam', 'cargo'],
     isBiological: false,
@@ -658,16 +402,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '33', slug: 'filtercleaner',
     name: { en: 'DG Filtercleaner', pl: 'DG Filtercleaner', de: 'DG Filtercleaner' },
-    shortDesc: {
-      en: 'Specialist heavy-duty cleaner for fuel filters, oil coolers and separator bowls.',
-      pl: 'Specjalistyczny środek heavy-duty do filtrów paliwowych, chłodnic oleju i mis separatorów.',
-      de: 'Spezieller Schwerlastenreiniger für Kraftstofffilter, Ölkühler und Separatorschüsseln.',
-    },
-    description: {
-      en: 'DG Filtercleaner is a specialist heavy-duty cleaner for fuel filters, pre-heaters, oil coolers, burner tips, and metal or ceramic oil filters. After cleaning, separates into oil and water phases for easy disposal. Free from chlorinated solvents. Use undiluted at max 70°C; contact time 2–8 hours.',
-      pl: 'DG Filtercleaner to specjalistyczny środek do filtrów paliwowych, chłodnic oleju i dysz palnikowych. Po czyszczeniu rozdziela się na fazę olejową i wodną. Bez chlorowanych rozpuszczalników. Stosować nierozcieńczony w maks. 70°C przez 2–8 h.',
-      de: 'DG Filtercleaner ist ein Spezialreiniger für Kraftstofffilter, Ölkühler und Brennerdüsen. Trennt sich nach der Reinigung in Öl- und Wasserphase. Chlorlösemittelfrei. Unverdünnt bei max. 70°C.',
-    },
+    shortDesc: { en: 'DG Filter Cleaner is a specialist heavy-duty cleaner and degreaser based on hydrocarbons, non-ionic surfactants, petroleum solvents, and orange terpenes.', pl: 'DG Filter Cleaner to specjalistyczny środek czyszczący i odtłuszczający na bazie węglowodorów, niejonowych surfaktantów, rozpuszczalników naftowych i terpenów pomarańczowych.', de: 'DG Filter Cleaner is a specialist heavy-duty cleaner and degreaser based on hydrocarbons, non-ionic surfactants, petroleum solvents, and orange terpenes.' },
+    description: { en: 'DG Filter Cleaner is a specialist heavy-duty cleaner and degreaser based on hydrocarbons, non-ionic surfactants, petroleum solvents, and orange terpenes. It is specifically designed for cleaning fuel filters, pre-heaters, oil coolers, burner tips, and metal or ceramic oil filters. After the cleaning process, the product separates into distinct oil and water phases for easy disposal. It is free from chlorinated solvents and must be used undiluted at temperatures not exceeding 70 °C. Recommended contact time: 2 to 8 hours depending on contamination level.', pl: 'DG Filter Cleaner to specjalistyczny środek czyszczący i odtłuszczający na bazie węglowodorów, niejonowych surfaktantów, rozpuszczalników naftowych i terpenów pomarańczowych. Przeznaczony przede wszystkim do czyszczenia filtrów paliwowych, podgrzewaczy, chłodnic oleju, dysz palnikowych oraz metalowych i ceramicznych filtrów olejowych. Po procesie czyszczenia produkt rozdziela się na fazę olejową i wodną, ułatwiając utylizację. Nie zawiera chlorowanych rozpuszczalników. Stosować nierozcieńczony w temperaturach nieprzekraczających 70 °C. Zalecany czas kontaktu: 2–8 godzin w zależności od stopnia zabrudzenia.', de: 'DG Filter Cleaner is a specialist heavy-duty cleaner and degreaser based on hydrocarbons, non-ionic surfactants, petroleum solvents, and orange terpenes. It is specifically designed for cleaning fuel filters, pre-heaters, oil coolers, burner tips, and metal or ceramic oil filters. After the cleaning process, the product separates into distinct oil and water phases for easy disposal. It is free from chlorinated solvents and must be used undiluted at temperatures not exceeding 70 °C. Recommended contact time: 2 to 8 hours depending on contamination level.' },
     zones: ['engine_room', 'fuel'],
     tags: ['filter', 'fuel filter', 'oil cooler', 'burner', 'specialist', 'separator'],
     isBiological: false,
@@ -678,16 +414,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '34', slug: 'high-pressure-cleaner',
     name: { en: 'DG High Pressure Cleaner', pl: 'DG High Pressure Cleaner', de: 'DG High Pressure Cleaner' },
-    shortDesc: {
-      en: 'Alkaline biodegradable high-foam cleaning agent for high-pressure washers and foam equipment.',
-      pl: 'Alkaliczny biodegradowalny środek wysokopienisty do myjek wysokociśnieniowych i urządzeń pianowych.',
-      de: 'Alkalischer biologisch abbaubarer Hochschaum-Reiniger für Hochdruckreiniger und Schaumgeräte.',
-    },
-    description: {
-      en: 'DG High Pressure Cleaner is a powerful alkaline water-soluble biodegradable cleaning agent with high-foam effect. Combines surfactants, sequestering agents, inhibitors, and alkali in high concentration. Removes oils, fats, greases, soot, and cargo residues. Use with high-pressure washers (10–25%) or foam equipment (1–2%).',
-      pl: 'DG High Pressure Cleaner to alkaliczny biodegradowalny środek wysokopienisty. Usuwa oleje, tłuszcze, sadzę i pozostałości ładunku. Do myjek wysokociśnieniowych (10–25%) lub urządzeń pianowych (1–2%).',
-      de: 'DG High Pressure Cleaner ist ein alkalischer, biologisch abbaubarer Reiniger mit hohem Schaum. Für Hochdruckreiniger (10–25%) oder Schaumgeräte (1–2%). Entfernt Öle, Fette und Fracht.',
-    },
+    shortDesc: { en: 'DG High Pressure Cleaner (HPC) is a powerful alkaline, water-soluble, biodegradable cleaning agent with a high-foam effect.', pl: 'DG High Pressure Cleaner (HPC) to wydajny, alkaliczny, rozpuszczalny w wodzie i biodegradowalny środek czyszczący o wysokim efekcie pienienia.', de: 'DG High Pressure Cleaner (HPC) is a powerful alkaline, water-soluble, biodegradable cleaning agent with a high-foam effect.' },
+    description: { en: 'DG High Pressure Cleaner (HPC) is a powerful alkaline, water-soluble, biodegradable cleaning agent with a high-foam effect. It combines anionic and non-ionic surfactants, sequestering agents, inhibitors, wetting agents, and alkali in high concentration. Suitable for a wide range of applications including removal of vegetable, fish, and animal oils and fats, greases, waxes, sludge, soot, carbon deposits, and dirt. Also effective for post-coal and pet coke cleaning. Ideal for use with high-pressure washers (10–25% dilution) or spray foam equipment (1–2% dilution).', pl: 'DG High Pressure Cleaner (HPC) to wydajny, alkaliczny, rozpuszczalny w wodzie i biodegradowalny środek czyszczący o wysokim efekcie pienienia. Zawiera w wysokim stężeniu surfaktanty anionowe i niejonowe, środki sekwestrujące, inhibitory, środki zwilżające i alkalia. Przeznaczony do usuwania olejów i tłuszczów roślinnych, rybich i zwierzęcych, smarów, wosków, szlamu, sadzy, osadów węglowych i brudu, a także do czyszczenia po węglu i pet coke . Idealny do myjek wysokociśnieniowych (rozcieńczenie 10–25%) oraz urządzeń do pianowania (1–2%).', de: 'DG High Pressure Cleaner (HPC) is a powerful alkaline, water-soluble, biodegradable cleaning agent with a high-foam effect. It combines anionic and non-ionic surfactants, sequestering agents, inhibitors, wetting agents, and alkali in high concentration. Suitable for a wide range of applications including removal of vegetable, fish, and animal oils and fats, greases, waxes, sludge, soot, carbon deposits, and dirt. Also effective for post-coal and pet coke cleaning. Ideal for use with high-pressure washers (10–25% dilution) or spray foam equipment (1–2% dilution).' },
     zones: ['deck', 'engine_room'],
     tags: ['high pressure', 'foam', 'alkaline', 'biodegradable', 'cargo', 'soot'],
     isBiological: false,
@@ -698,16 +426,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '35', slug: 'multicleaner-eco',
     name: { en: 'DG Multicleaner ECO', pl: 'DG Multicleaner ECO', de: 'DG Multicleaner ECO' },
-    shortDesc: {
-      en: 'Biodegradable universal cleaner with water softeners and fresh lemon scent.',
-      pl: 'Biodegradowalny uniwersalny środek czyszczący ze zmiękczaczami wody i świeżym zapachem cytryny.',
-      de: 'Biologisch abbaubarer Universalreiniger mit Wasserenthärtern und frischem Zitronenduft.',
-    },
-    description: {
-      en: 'DG Multicleaner ECO is a safe water-soluble biodegradable universal cleaner and degreaser with water softeners. Removes grease, oils, tar, inks, wax, and adhesives from glass, metal, ceramics, and plastics — leaving a fresh lemon scent. Dilute 1:1–1:10 general, 1:10–1:50 steam cleaning.',
-      pl: 'DG Multicleaner ECO to biodegradowalny uniwersalny środek czyszczący ze zmiękczaczami wody. Usuwa tłuszcze, oleje, smołę i kleje ze szkła, metalu i ceramiki. Świeży zapach cytryny. Rozcieńczenie 1:1–1:10 ogólne.',
-      de: 'DG Multicleaner ECO ist ein biologisch abbaubarer Universalreiniger mit Wasserenthärtern. Entfernt Öle, Teer und Klebstoffe. Frischer Zitronenduft. Verdünnung 1:1–1:10 allgemein.',
-    },
+    shortDesc: { en: 'DG Multicleaner Eco is a safe, water-soluble, biodegradable universal cleaning agent and degreaser enriched with water softeners for enhanced cleaning power.', pl: 'DG Multicleaner Eco to bezpieczny, rozpuszczalny w wodzie i biodegradowalny uniwersalny środek czyszczący i odtłuszczający, wzbogacony o zmiękczacze wody zwiększające efektywność czyszczenia.', de: 'DG Multicleaner Eco is a safe, water-soluble, biodegradable universal cleaning agent and degreaser enriched with water softeners for enhanced cleaning power.' },
+    description: { en: 'DG Multicleaner Eco is a safe, water-soluble, biodegradable universal cleaning agent and degreaser enriched with water softeners for enhanced cleaning power. Suitable for use on glass, metal, ceramics, and plastics, it removes grease, oils, tar, asphalt, inks, wax, lubricants, adhesives, and many other types of tough dirt — leaving a fresh lemon scent. Compatible with foam nozzles, brushes, cloths, atomisers, and immersion cleaning. Dilution: 1:1–1:10 for general cleaning, 1:10–1:50 for steam cleaning, undiluted or up to 1:5 for greases and fats.', pl: 'DG Multicleaner Eco to bezpieczny, rozpuszczalny w wodzie i biodegradowalny uniwersalny środek czyszczący i odtłuszczający, wzbogacony o zmiękczacze wody zwiększające efektywność czyszczenia. Przeznaczony do szkła, metalu, ceramiki i tworzyw sztucznych — usuwa smary, oleje, smołę, asfalt, tusze, wosk, lubrykanty , kleje i wiele innych trudnych zabrudzeń, pozostawiając świeży zapach cytryny. Kompatybilny z aplikatorami pianowymi, pędzlami, szmatami, atomizatorami i czyszczeniem zanurzeniowym. Rozcieńczenie: 1:1–1:10 przy ogólnym czyszczeniu, 1:10–1:50 przy czyszczeniu parowym, nierozcieńczony lub do 1:5 przy usuwaniu tłuszczów.', de: 'DG Multicleaner Eco is a safe, water-soluble, biodegradable universal cleaning agent and degreaser enriched with water softeners for enhanced cleaning power. Suitable for use on glass, metal, ceramics, and plastics, it removes grease, oils, tar, asphalt, inks, wax, lubricants, adhesives, and many other types of tough dirt — leaving a fresh lemon scent. Compatible with foam nozzles, brushes, cloths, atomisers, and immersion cleaning. Dilution: 1:1–1:10 for general cleaning, 1:10–1:50 for steam cleaning, undiluted or up to 1:5 for greases and fats.' },
     zones: ['deck', 'accommodation'],
     tags: ['eco', 'biodegradable', 'lemon', 'universal', 'degreaser', 'water softener'],
     isBiological: false,
@@ -718,16 +438,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '36', slug: 'multicleaner-forte',
     name: { en: 'DG Multicleaner Forte', pl: 'DG Multicleaner Forte', de: 'DG Multicleaner Forte' },
-    shortDesc: {
-      en: 'Universal alkaline high-foam biodegradable cleaner with powerful water-softening properties.',
-      pl: 'Alkaliczny wysokopienisty biodegradowalny środek z silnymi właściwościami zmiękczającymi wodę.',
-      de: 'Universeller alkalischer Hochschaum-Reiniger mit starken Wasserenthärtungseigenschaften.',
-    },
-    description: {
-      en: 'DG Multicleaner Forte is a universal alkaline high-foam biodegradable cleaner with powerful water-softening properties. Removes grease, oils, tar, inks, wax, and adhesives from glass, metal, ceramics, and plastics. Fresh lemon scent. Dilute 1:5 to 1:50 general, 1:5–1:20 immersion. For alkali-resistant surfaces.',
-      pl: 'DG Multicleaner Forte to alkaliczny wysokopienisty biodegradowalny środek ze zmiękczaczami wody. Usuwa tłuszcze, oleje, smołę i kleje. Świeży zapach cytryny. Rozcieńczenie 1:5 do 1:50.',
-      de: 'DG Multicleaner Forte ist ein universeller alkalischer Hochschaum-Reiniger mit Wasserenthärtungseigenschaften. Frischer Zitronenduft. Verdünnung 1:5 bis 1:50.',
-    },
+    shortDesc: { en: 'DG Multicleaner Forte is a universal alkaline, high-foam, biodegradable cleaner with powerful water-softening properties.', pl: 'DG Multicleaner Forte to uniwersalny, zasadowy środek czyszczący o wysokim pienieniu, biologicznie degradowalny , z silnymi właściwościami zmiękczającymi wodę.', de: 'DG Multicleaner Forte is a universal alkaline, high-foam, biodegradable cleaner with powerful water-softening properties.' },
+    description: { en: 'DG Multicleaner Forte is a universal alkaline, high-foam, biodegradable cleaner with powerful water-softening properties. It removes grease, oils, tar, asphalt, inks, wax, lubricants, and adhesives from glass, metal, ceramics, and plastics — leaving a fresh lemon scent. Ideal for hand, steam, and immersion cleaning. Dilute 1:5 to 1:50 for general cleaning, up to 1:5 for heavy grease removal, or 1:5 to 1:20 for immersion cleaning. For use on alkali-resistant surfaces only. Available as a 25 L concentrate.', pl: 'DG Multicleaner Forte to uniwersalny, zasadowy środek czyszczący o wysokim pienieniu, biologicznie degradowalny , z silnymi właściwościami zmiękczającymi wodę. Usuwa tłuszcze, oleje, smołę, asfalt, atramenty, wosk, smary i kleje ze szkła, metali, ceramiki i tworzyw sztucznych — pozostawiając świeży zapach cytryny. Idealny do czyszczenia ręcznego, parowego i zanurzeniowego. Rozcieńczenie: 1:5 do 1:50 (ogólne), do 1:5 (odtłuszczanie), 1:5 do 1:20 (zanurzenie). Wyłącznie do powierzchni odpornych na zasady. Dostępny jako koncentrat 25 L.', de: 'DG Multicleaner Forte is a universal alkaline, high-foam, biodegradable cleaner with powerful water-softening properties. It removes grease, oils, tar, asphalt, inks, wax, lubricants, and adhesives from glass, metal, ceramics, and plastics — leaving a fresh lemon scent. Ideal for hand, steam, and immersion cleaning. Dilute 1:5 to 1:50 for general cleaning, up to 1:5 for heavy grease removal, or 1:5 to 1:20 for immersion cleaning. For use on alkali-resistant surfaces only. Available as a 25 L concentrate.' },
     zones: ['deck', 'engine_room'],
     tags: ['alkaline', 'high foam', 'lemon', 'universal', 'biodegradable', 'water softener'],
     isBiological: false,
@@ -738,16 +450,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '37', slug: 'oil-dispersant',
     name: { en: 'DG Oil Dispersant', pl: 'DG Oil Dispersant', de: 'DG Oil Dispersant' },
-    shortDesc: {
-      en: 'Concentrated biodegradable formulation for dispersing accidental oil spills on deck and at sea.',
-      pl: 'Skoncentrowana biodegradowalna mieszanina do rozpraszania rozlewów olejowych na pokładzie i morzu.',
-      de: 'Konzentriertes biologisch abbaubares Mittel zur Dispersion von Ölverschüttungen.',
-    },
-    description: {
-      en: 'DG Oil Dispersant is a concentrated water-based biodegradable formulation for dispersing accidental oil spills on deck and at sea. Disperses mineral oils, crude oil, fuel oil, and lubricant oil. Can also be used as a tank cleaner at 5–10% dilution. Apply undiluted on spills; rinse with high-pressure unit.',
-      pl: 'DG Oil Dispersant to skoncentrowana biodegradowalna mieszanina do rozpraszania rozlewów olejowych na pokładzie i na morzu. Działa na oleje mineralne, ropę i oleje smarowe. Stosować nierozcieńczony na plamie, spłukać wysokociśnieniowo.',
-      de: 'DG Oil Dispersant ist ein konzentriertes biologisch abbaubares Mittel zur Dispersion von Ölverschüttungen auf Deck und auf See. Wirkt auf Mineralöle, Rohöl und Schmieröle.',
-    },
+    shortDesc: { en: 'DG Oil Dispersant is a concentrated, water-based, biodegradable formulation of solvents, emulsifying agents, surfactants, and hydrocarbons designed to disperse and clear accidental oil spills on deck and at sea.', pl: 'DG Oil Dispersant to skoncentrowana, wodna, biodegradowalna mieszanina rozpuszczalników, emulgatorów, surfaktantów i węglowodorów, przeznaczona do rozpraszania i usuwania przypadkowych rozlewów olejowych na pokładzie i na morzu.', de: 'DG Oil Dispersant is a concentrated, water-based, biodegradable formulation of solvents, emulsifying agents, surfactants, and hydrocarbons designed to disperse and clear accidental oil spills on deck and at sea.' },
+    description: { en: 'DG Oil Dispersant is a concentrated, water-based, biodegradable formulation of solvents, emulsifying agents, surfactants, and hydrocarbons designed to disperse and clear accidental oil spills on deck and at sea. It disperses mineral oils, crude oil, fuel oil, lubricant oil, and similar products. Can also be used as a tank cleaner (5–10% dilution). For spill response: apply undiluted directly onto the spill and allow a few minutes for the product to react and disperse the oil before washing down with a high-pressure unit. For small spills , a hand spray is sufficient .', pl: 'DG Oil Dispersant to skoncentrowana, wodna, biodegradowalna mieszanina rozpuszczalników, emulgatorów, surfaktantów i węglowodorów, przeznaczona do rozpraszania i usuwania przypadkowych rozlewów olejowych na pokładzie i na morzu. Skutecznie działa na oleje mineralne, ropę naftową, olej opałowy, oleje smarowe i podobne produkty. Może być również stosowany jako środek do czyszczenia zbiorników (rozcieńczenie 5–10%). Przy rozlewach: nanosić nierozcieńczony bezpośrednio na plamę, odczekać kilka minut na reakcję i rozproszenie oleju, następnie spłukać myjką wysokociśnieniową.', de: 'DG Oil Dispersant is a concentrated, water-based, biodegradable formulation of solvents, emulsifying agents, surfactants, and hydrocarbons designed to disperse and clear accidental oil spills on deck and at sea. It disperses mineral oils, crude oil, fuel oil, lubricant oil, and similar products. Can also be used as a tank cleaner (5–10% dilution). For spill response: apply undiluted directly onto the spill and allow a few minutes for the product to react and disperse the oil before washing down with a high-pressure unit. For small spills , a hand spray is sufficient .' },
     zones: ['bilge', 'deck'],
     tags: ['oil spill', 'dispersant', 'pollution', 'deck', 'environmental', 'biodegradable'],
     isBiological: false,
@@ -758,16 +462,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '38', slug: 'paint-remover',
     name: { en: 'DG Paint Remover', pl: 'DG Paint Remover', de: 'DG Paint Remover' },
-    shortDesc: {
-      en: 'Removes paints, varnishes and oils from metals and plastics without mechanical scraping.',
-      pl: 'Usuwa farby, lakiery i oleje z metali i tworzyw sztucznych bez mechanicznego skrobania.',
-      de: 'Entfernt Farben, Lacke und Öle von Metallen und Kunststoffen ohne Kratzen.',
-    },
-    description: {
-      en: 'DG Paint Remover removes paints, varnishes, and oils from iron, aluminium, zinc, nickel, and plastics. Penetrates between coating and surface for removal without scraping. Most effective at 55–65°C. Use undiluted or diluted 1:1 with hot water. Immerse 30 minutes to 4–5 hours; rinse and dry.',
-      pl: 'DG Paint Remover usuwa farby, lakiery i oleje z metali i tworzyw sztucznych bez mechanicznego skrobania. Najskuteczniejszy w 55–65°C. Zanurzać 30 min–4–5 h, spłukać i osuszyć.',
-      de: 'DG Paint Remover entfernt Farben, Lacke und Öle von Eisen, Aluminium, Zink und Kunststoff ohne Kratzen. Wirksamste Temperatur: 55–65°C. Eintauchdauer 30 Min. bis 5 Std.',
-    },
+    shortDesc: { en: 'DG Paint Remover ZF01 is a specialist agent for removing paints, varnishes, and oils from most metals including iron, aluminium, zinc, nickel, and plastic surfaces.', pl: 'DG Paint Remover ZF01 to specjalistyczny preparat do usuwania farb, lakierów i olejów z większości metali, w tym żelaza, aluminium, cynku, niklu oraz tworzyw sztucznych.', de: 'DG Paint Remover ZF01 is a specialist agent for removing paints, varnishes, and oils from most metals including iron, aluminium, zinc, nickel, and plastic surfaces.' },
+    description: { en: 'DG Paint Remover ZF01 is a specialist agent for removing paints, varnishes, and oils from most metals including iron, aluminium, zinc, nickel, and plastic surfaces. It penetrates between the coating and the surface, causing the paint to detach without mechanical scraping. Most effective in the temperature range 55–65 °C, it can be used undiluted or diluted 1:1 with hot water. Suitable for immersion baths, hand washing, showering, and ultrasonic cleaning. Immerse the part for 30 minutes to 4–5 hours, then remove, rinse with fresh water, and dry.', pl: 'DG Paint Remover ZF01 to specjalistyczny preparat do usuwania farb, lakierów i olejów z większości metali, w tym żelaza, aluminium, cynku, niklu oraz tworzyw sztucznych. Przenika między powłokę a powierzchnię, powodując oddzielenie farby bez mechanicznego skrobania. Najskuteczniejszy w zakresie temperatur 55–65 °C — stosować nierozcieńczony lub rozcieńczony 1:1 z gorącą wodą. Nadaje się do kąpieli zanurzeniowych, mycia ręcznego, natrysku i czyszczenia ultradźwiękowego. Zanurzać element przez 30 minut do 4–5 godzin, następnie wyjąć, spłukać świeżą wodą i osuszyć.', de: 'DG Paint Remover ZF01 is a specialist agent for removing paints, varnishes, and oils from most metals including iron, aluminium, zinc, nickel, and plastic surfaces. It penetrates between the coating and the surface, causing the paint to detach without mechanical scraping. Most effective in the temperature range 55–65 °C, it can be used undiluted or diluted 1:1 with hot water. Suitable for immersion baths, hand washing, showering, and ultrasonic cleaning. Immerse the part for 30 minutes to 4–5 hours, then remove, rinse with fresh water, and dry.' },
     zones: ['deck'],
     tags: ['paint remover', 'varnish', 'coating', 'aluminium', 'metal', 'stripping'],
     isBiological: false,
@@ -778,16 +474,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '39', slug: 'petrosolv',
     name: { en: 'DG Petrosolv', pl: 'DG Petrosolv', de: 'DG Petrosolv' },
-    shortDesc: {
-      en: 'Heavy-duty degreaser of natural solvents for marine surfaces, biodegradable and orange-scented.',
-      pl: 'Silnie działający odtłuszczacz z naturalnych rozpuszczalników do powierzchni morskich, biodegradowalny.',
-      de: 'Schwerlastentfetter aus natürlichen Lösemitteln für marine Oberflächen, biologisch abbaubar.',
-    },
-    description: {
-      en: 'DG Petrosolv is a heavy-duty degreaser of natural solvents and non-ionic surfactants for marine surfaces. Highly biodegradable and safe on metals and painted surfaces. Apply by brush, spray, immersion, or soaking; rinse after 15–45 minutes contact time with hot high-pressure water. Orange-scented.',
-      pl: 'DG Petrosolv to silnie działający odtłuszczacz z naturalnych rozpuszczalników do powierzchni morskich. Wysoce biodegradowalny i bezpieczny dla metali. Spłukać po 15–45 min. Przyjemny zapach pomarańczowy.',
-      de: 'DG Petrosolv ist ein Schwerlastentfetter aus natürlichen Lösemitteln für marine Oberflächen. Biologisch abbaubar, sicher auf Metallen. Kontaktzeit 15–45 Min., dann mit Heißwasser abspülen.',
-    },
+    shortDesc: { en: 'DG Petrosolv is a heavy-duty degreaser designed for the effective removal of oil and grease from marine surfaces.', pl: 'DG Petrosolv to silnie działający odtłuszczacz przeznaczony do skutecznego usuwania olejów i smarów z powierzchni morskich.', de: 'DG Petrosolv is a heavy-duty degreaser designed for the effective removal of oil and grease from marine surfaces.' },
+    description: { en: 'DG Petrosolv is a heavy-duty degreaser designed for the effective removal of oil and grease from marine surfaces. It contains a blend of safe, natural solvents and non-ionic surfactants, making it highly biodegradable and safe for use on all common metals and painted or waterproof surfaces. Suitable for deck and machinery cleaning, tank tops, and bulkheads, it can be applied by brush, spray, immersion, or soaking — either undiluted or diluted with water. After a contact time of 15–45 minutes, rinse with water (preferably hot, using a high-pressure jet) for best results. Non- corrosive , non- toxic , and pleasantly orange-scented .', pl: 'DG Petrosolv to silnie działający odtłuszczacz przeznaczony do skutecznego usuwania olejów i smarów z powierzchni morskich. Zawiera mieszaninę bezpiecznych, naturalnych rozpuszczalników i niejonowych surfaktantów, dzięki czemu jest wysoce biodegradowalny i bezpieczny dla wszystkich pospolitych metali oraz powierzchni malowanych i wodoodpornych. Nadaje się do czyszczenia pokładów, maszyn, denników i grodzi — można go aplikować pędzlem, natryskiem, przez zanurzenie lub moczenie, zarówno w stężeniu rozcieńczonym, jak i nierozcieńczonym. Po czasie kontaktu 15–45 minut należy spłukać powierzchnię wodą (najlepiej gorącą, strumieniem wysokociśnieniowym). Produkt nie jest korozyjny ani toksyczny, a jego przyjemny pomarańczowy zapach wyróżnia go spośród innych środków odtłuszczających.', de: 'DG Petrosolv is a heavy-duty degreaser designed for the effective removal of oil and grease from marine surfaces. It contains a blend of safe, natural solvents and non-ionic surfactants, making it highly biodegradable and safe for use on all common metals and painted or waterproof surfaces. Suitable for deck and machinery cleaning, tank tops, and bulkheads, it can be applied by brush, spray, immersion, or soaking — either undiluted or diluted with water. After a contact time of 15–45 minutes, rinse with water (preferably hot, using a high-pressure jet) for best results. Non- corrosive , non- toxic , and pleasantly orange-scented .' },
     zones: ['fuel', 'engine_room'],
     tags: ['natural solvent', 'biodegradable', 'degreaser', 'orange', 'marine', 'petroleum'],
     isBiological: false,
@@ -798,16 +486,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '40', slug: 'pipe-cleaner',
     name: { en: 'DG Pipe Cleaner', pl: 'DG Pipe Cleaner', de: 'DG Pipe Cleaner' },
-    shortDesc: {
-      en: 'Concentrated acidic descaling agent for boilers, condensers, heat exchangers and pipe systems.',
-      pl: 'Skoncentrowany kwaśny środek odkamieniający do kotłów, skraplaczy, wymienników i rurociągów.',
-      de: 'Konzentriertes saures Entkalkungsmittel für Kessel, Kondensatoren, Wärmetauscher und Rohrsysteme.',
-    },
-    description: {
-      en: 'DG Pipe Cleaner is a highly concentrated acidic descaling agent based on mixed strong acids for removing limestone, scale, rust, concrete, and cement from boilers, condensers, evaporators, heat exchangers, and pipe systems. Use as 10–30% solution in circulating systems (max 55°C). Acid-resistant surfaces only.',
-      pl: 'DG Pipe Cleaner to skoncentrowany kwaśny środek odkamieniający do kotłów, skraplaczy i rurociągów. Stosować jako 10–30% w obiegach lub 10–50% w kąpieli (maks. 55°C). Wyłącznie na kwasoodpornych powierzchniach.',
-      de: 'DG Pipe Cleaner ist ein hochkonzentriertes saures Entkalkungsmittel für Kessel, Kondensatoren und Rohrsysteme. 10–30% in Umlaufsystemen oder 10–50% als Tauchbad (max. 55°C).',
-    },
+    shortDesc: { en: 'DG Pipe Cleaner is a highly concentrated acidic liquid descaling agent based on a mixture of strong acids.', pl: 'DG Pipe Cleaner to wysoce skoncentrowany, kwaśny preparat do odkamieniania w postaci cieczy, oparty na mieszaninie mocnych kwasów.', de: 'DG Pipe Cleaner is a highly concentrated acidic liquid descaling agent based on a mixture of strong acids.' },
+    description: { en: 'DG Pipe Cleaner is a highly concentrated acidic liquid descaling agent based on a mixture of strong acids. It effectively removes limestone, scale, rust, concrete, and cement deposits from surfaces and equipment. It contains corrosion inhibitors and an anti-foaming agent, making it suitable for use in engine rooms — in boilers, condensers, evaporators, heat exchangers, and pipe systems. The product should always be added to water (never the reverse) and can be used as a 10–30% solution in circulating systems or a 10–50% solution in immersion baths. The solution may be heated to a maximum of 55°C for faster results. Compatible with acid-resistant surfaces only — do not use on aluminium, tin, or zinc.', pl: 'DG Pipe Cleaner to wysoce skoncentrowany, kwaśny preparat do odkamieniania w postaci cieczy, oparty na mieszaninie mocnych kwasów. Skutecznie usuwa osady wapienne, kamień, rdzę, beton i cement z powierzchni oraz urządzeń. Zawiera inhibitory korozji i środek przeciwpieniący , dzięki czemu nadaje się do stosowania w maszynowniach — w kotłach, skraplaczach, wyparnikach , wymiennikach ciepła oraz instalacjach rurowych. Produkt zawsze należy dodawać do wody (nigdy odwrotnie); stosować jako 10–30% roztwór w systemach cyrkulacyjnych lub 10–50% roztwór w kąpielach zanurzeniowych. Roztwór można podgrzać do maksymalnie 55°C w celu przyspieszenia działania. Przeznaczony wyłącznie do powierzchni odpornych na kwasy — nie stosować na aluminium, cynę ani cynk.', de: 'DG Pipe Cleaner is a highly concentrated acidic liquid descaling agent based on a mixture of strong acids. It effectively removes limestone, scale, rust, concrete, and cement deposits from surfaces and equipment. It contains corrosion inhibitors and an anti-foaming agent, making it suitable for use in engine rooms — in boilers, condensers, evaporators, heat exchangers, and pipe systems. The product should always be added to water (never the reverse) and can be used as a 10–30% solution in circulating systems or a 10–50% solution in immersion baths. The solution may be heated to a maximum of 55°C for faster results. Compatible with acid-resistant surfaces only — do not use on aluminium, tin, or zinc.' },
     zones: ['engine_room', 'cooling'],
     tags: ['pipe', 'descaler', 'acid', 'boiler', 'heat exchanger', 'condenser'],
     isBiological: false,
@@ -818,16 +498,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '41', slug: 'rust-remover',
     name: { en: 'DG Rust Remover', pl: 'DG Rust Remover', de: 'DG Rust Remover' },
-    shortDesc: {
-      en: 'Phosphoric acid-based liquid for removing rust from steel, cast iron, aluminium and copper.',
-      pl: 'Preparat na bazie kwasu fosforowego do usuwania rdzy ze stali, żeliwa, aluminium i miedzi.',
-      de: 'Phosphorsäurebasiertes Mittel zur Rostentfernung von Stahl, Gusseisen, Aluminium und Kupfer.',
-    },
-    description: {
-      en: 'DG Rust Remover is a concentrated acidic liquid based on phosphoric acid and surfactants for removing rust from steel and cast iron. Also removes tarnish from aluminium and copper, and eliminates limescale. Non-flammable. Apply by immersion (2–20 min) or brush. Available as 25 L concentrate.',
-      pl: 'DG Rust Remover to skoncentrowany preparat na bazie kwasu fosforowego do usuwania rdzy ze stali i żeliwa. Usuwa też przebarwienia z aluminium i miedzi. Niepalny; zanurzenie 2–20 min lub pędzel. Koncentrat 25 L.',
-      de: 'DG Rust Remover ist ein konzentriertes phosphorsäurebasiertes Mittel zur Rostentfernung. Entfernt auch Anlauffarben von Aluminium und Kupfer. Nicht brennbar. Eintauchen 2–20 Min. oder Bürsten.',
-    },
+    shortDesc: { en: 'DG Rust Remover is a concentrated acidic liquid for removing rust from steel and cast iron surfaces, based on phosphoric acid and surfactants.', pl: 'DG Rust Remover to skoncentrowany, kwaśny preparat do usuwania rdzy z powierzchni stalowych i żeliwnych, oparty na kwasie fosforowym i surfaktantach.', de: 'DG Rust Remover is a concentrated acidic liquid for removing rust from steel and cast iron surfaces, based on phosphoric acid and surfactants.' },
+    description: { en: 'DG Rust Remover is a concentrated acidic liquid for removing rust from steel and cast iron surfaces, based on phosphoric acid and surfactants. It also removes tarnish from non-ferrous metals (aluminium, copper) and eliminates limescale. Non-flammable; for use on acid-resistant surfaces only. Apply by immersion (2–20 minutes) or brush; for aluminium and copper use a 10–35% solution. In case of sedimentation, gently heat in a water bath and stir until dissolved. ADR Class 8, UN 1805. Available as a 25 L concentrate .', pl: 'DG Rust Remover to skoncentrowany, kwaśny preparat do usuwania rdzy z powierzchni stalowych i żeliwnych, oparty na kwasie fosforowym i surfaktantach. Usuwa również przebarwienia z metali nieżelaznych (aluminium, miedź) i odkamieniuje powierzchnie. Niepalny — wyłącznie do powierzchni odpornych na kwasy. Nakładać przez zanurzenie (2–20 minut) lub pędzlem; do aluminium i miedzi stosować roztwór 10–35%. W przypadku sedymentacji delikatnie podgrzać w kąpieli wodnej i mieszać do rozpuszczenia. ADR klasa 8, UN 1805. Dostępny jako koncentrat 25 L.', de: 'DG Rust Remover is a concentrated acidic liquid for removing rust from steel and cast iron surfaces, based on phosphoric acid and surfactants. It also removes tarnish from non-ferrous metals (aluminium, copper) and eliminates limescale. Non-flammable; for use on acid-resistant surfaces only. Apply by immersion (2–20 minutes) or brush; for aluminium and copper use a 10–35% solution. In case of sedimentation, gently heat in a water bath and stir until dissolved. ADR Class 8, UN 1805. Available as a 25 L concentrate .' },
     zones: ['engine_room', 'deck'],
     tags: ['rust', 'rust remover', 'phosphoric acid', 'steel', 'limescale', 'corrosion'],
     isBiological: false,
@@ -838,16 +510,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '42', slug: 'separator-cleaner',
     name: { en: 'DG Separator Cleaner', pl: 'DG Separator Cleaner', de: 'DG Separator Cleaner' },
-    shortDesc: {
-      en: 'Acid-based liquid for cleaning separator discs and bowls, passivating stainless steel.',
-      pl: 'Kwaśny preparat do czyszczenia tarcz i mis separatorów, pasywizujący stal nierdzewną.',
-      de: 'Säurebasiertes Mittel zur Reinigung von Separatorscheiben, passiviert Edelstahl.',
-    },
-    description: {
-      en: 'DG Separator Cleaner is a powerful acid-based liquid for cleaning separator discs and bowls. Removes carbonised oil and lubricating oil from fuel and lube oil separators; passivates stainless steel. Use undiluted or as 20% solution in fresh water. Soak 30 min to 2 hours; rinse with fresh water jet.',
-      pl: 'DG Separator Cleaner to kwasowy preparat do czyszczenia tarcz i mis separatorów. Usuwa zwęglony olej i pasywizuje stal nierdzewną. Stosować nierozcieńczony lub 20% w słodkiej wodzie. Zanurzenie 30 min–2 h.',
-      de: 'DG Separator Cleaner ist ein säurebasiertes Mittel zur Reinigung von Separatorscheiben. Entfernt verkohltes Öl, passiviert Edelstahl. 20%-Lösung oder unverdünnt, 30 Min. bis 2 Std. einweichen.',
-    },
+    shortDesc: { en: 'DG Separator Cleaner is a powerful acid-based liquid blend of acids, surfactants, and emulsifying agents for cleaning separator discs and bowls.', pl: 'DG Separator Cleaner to silnie działający, kwasowy preparat ciekły oparty na mieszaninie kwasów, surfaktantów i środków emulgujących do czyszczenia tarcz i mis separatorów.', de: 'DG Separator Cleaner is a powerful acid-based liquid blend of acids, surfactants, and emulsifying agents for cleaning separator discs and bowls.' },
+    description: { en: 'DG Separator Cleaner is a powerful acid-based liquid blend of acids, surfactants, and emulsifying agents for cleaning separator discs and bowls. It removes carbonised oil and lubricating oil from fuel and lube oil separators, passivates stainless steel, and contains no petroleum solvents. Use undiluted or as a 20% solution in fresh water. Soak discs for 30 minutes to 2 hours with sufficient spacing; rinse thoroughly with a fresh water jet after cleaning. ADR Class 8, UN 1805. Available as a 25 L concentrate .', pl: 'DG Separator Cleaner to silnie działający, kwasowy preparat ciekły oparty na mieszaninie kwasów, surfaktantów i środków emulgujących do czyszczenia tarcz i mis separatorów. Usuwa zwęglony olej i olej smarowy z separatorów, pasywizuje stal nierdzewną, nie zawiera rozpuszczalników naftowych. Stosować nierozcieńczony lub jako 20% roztwór w słodkiej wodzie. Zanurzyć tarcze na 30 minut do 2 godzin z odpowiednimi odstępami; po czyszczeniu opłukać strumieniem słodkiej wody. ADR klasa 8, UN 1805. Dostępny jako koncentrat 25 L.', de: 'DG Separator Cleaner is a powerful acid-based liquid blend of acids, surfactants, and emulsifying agents for cleaning separator discs and bowls. It removes carbonised oil and lubricating oil from fuel and lube oil separators, passivates stainless steel, and contains no petroleum solvents. Use undiluted or as a 20% solution in fresh water. Soak discs for 30 minutes to 2 hours with sufficient spacing; rinse thoroughly with a fresh water jet after cleaning. ADR Class 8, UN 1805. Available as a 25 L concentrate .' },
     zones: ['engine_room'],
     tags: ['separator', 'oil separator', 'fuel oil', 'stainless steel', 'acid', 'lube oil'],
     isBiological: false,
@@ -858,16 +522,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '43', slug: 'tankcleaner-plus',
     name: { en: 'DG Tankcleaner Plus', pl: 'DG Tankcleaner Plus', de: 'DG Tankcleaner Plus' },
-    shortDesc: {
-      en: 'Enhanced emulsifying and degreasing formulation for thorough oil removal from cargo and storage tanks.',
-      pl: 'Wzmocniona formulacja emulgująca i odtłuszczająca do gruntownego usuwania olejów ze zbiorników.',
-      de: 'Verbesserte Emulgier- und Entfettungsformulierung zur gründlichen Öl-Entfernung aus Tanks.',
-    },
-    description: {
-      en: 'DG Tankcleaner Plus is an enhanced concentrated water-based emulsifying and degreasing formulation for thorough oil and fat removal from cargo and storage tanks. Compatible with steel, plastic, epoxy, and zinc coatings. Use 10–25% solution for machine washing (35–55°C) or undiluted for direct injection.',
-      pl: 'DG Tankcleaner Plus to wzmocniona wersja do gruntownego usuwania olejów i tłuszczów ze zbiorników. Kompatybilny ze stalą, plastikiem, powłokami epoksydowymi. Roztwór 10–25% do mycia maszynowego (35–55°C).',
-      de: 'DG Tankcleaner Plus ist eine verbesserte wasserbasierte Formulierung zur Entölung von Cargo- und Lagertanks. Kompatibel mit Stahl, Kunststoff und Epoxidbeschichtungen. 10–25% bei 35–55°C.',
-    },
+    shortDesc: { en: 'DG Tankcleaner Plus is an enhanced version of DG Tankcleaner — a concentrated, water-based emulsifying and degreasing formulation for thorough removal of oil and fats from cargo and storage tanks.', pl: 'DG Tankcleaner Plus to wzmocniona wersja DG Tankcleaner — skoncentrowany środek emulgujący i odtłuszczający na bazie wodnej do gruntownego usuwania olejów i tłuszczów z ładowni i zbiorników magazynowych.', de: 'DG Tankcleaner Plus is an enhanced version of DG Tankcleaner — a concentrated, water-based emulsifying and degreasing formulation for thorough removal of oil and fats from cargo and storage tanks.' },
+    description: { en: 'DG Tankcleaner Plus is an enhanced version of DG Tankcleaner — a concentrated, water-based emulsifying and degreasing formulation for thorough removal of oil and fats from cargo and storage tanks. Compatible with steel, plastic, epoxy, and zinc coatings; disperses mineral oils, crude oil, fuel oil, and lubricating oil. Application methods and dosing are identical to DG Tankcleaner: 10–25% solution for machine washing (35–55°C), undiluted for direct injection (0.2 L/100 L, 3–10 hours), or undiluted for hand cleaning with high-pressure water rinse. Available as a 25 L concentrate .', pl: 'DG Tankcleaner Plus to wzmocniona wersja DG Tankcleaner — skoncentrowany środek emulgujący i odtłuszczający na bazie wodnej do gruntownego usuwania olejów i tłuszczów z ładowni i zbiorników magazynowych. Kompatybilny ze stalą, tworzywami sztucznymi, powłokami epoksydowymi i cynkowymi — dysperguje oleje mineralne, ropę naftową, olej napędowy i smarowy. Sposoby aplikacji i dawkowanie identyczne jak w DG Tankcleaner : roztwór 10–25% do mycia maszynowego (35–55°C), nierozcieńczony do wtrysku bezpośredniego (0,2 L/100 L, 3–10 godz.) lub nierozcieńczony do czyszczenia ręcznego ze spłukaniem wodą wysokociśnieniową. Dostępny jako koncentrat 25 L.', de: 'DG Tankcleaner Plus is an enhanced version of DG Tankcleaner — a concentrated, water-based emulsifying and degreasing formulation for thorough removal of oil and fats from cargo and storage tanks. Compatible with steel, plastic, epoxy, and zinc coatings; disperses mineral oils, crude oil, fuel oil, and lubricating oil. Application methods and dosing are identical to DG Tankcleaner: 10–25% solution for machine washing (35–55°C), undiluted for direct injection (0.2 L/100 L, 3–10 hours), or undiluted for hand cleaning with high-pressure water rinse. Available as a 25 L concentrate .' },
     zones: ['cargo_hold', 'ballast_tank'],
     tags: ['tank cleaner', 'cargo tank', 'emulsifier', 'degreaser', 'oil', 'epoxy safe'],
     isBiological: false,
@@ -878,16 +534,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '44', slug: 'tankcleaner',
     name: { en: 'DG Tankcleaner', pl: 'DG Tankcleaner', de: 'DG Tankcleaner' },
-    shortDesc: {
-      en: 'Concentrated emulsifying and degreasing agent for oil and fat removal from cargo tanks.',
-      pl: 'Skoncentrowany środek emulgujący i odtłuszczający do usuwania olejów ze zbiorników ładunkowych.',
-      de: 'Konzentriertes Emulgier- und Entfettungsmittel zur Öl-Entfernung aus Cargo-Tanks.',
-    },
-    description: {
-      en: 'DG Tankcleaner is a concentrated water-based emulsifying and degreasing agent based on petroleum solvents and surfactants for oil and fat removal from cargo and storage tanks. Compatible with steel, plastic, epoxy, and zinc coatings. Use 10–25% solution in heated water (35–55°C) for machine washing.',
-      pl: 'DG Tankcleaner to skoncentrowany środek emulgujący i odtłuszczający do usuwania olejów i tłuszczów ze zbiorników. Kompatybilny ze stalą i powłokami epoksydowymi. Roztwór 10–25% w 35–55°C do mycia maszynowego.',
-      de: 'DG Tankcleaner ist ein konzentriertes wasserbasiertes Emulgier- und Entfettungsmittel für Cargo- und Lagertanks. 10–25% Lösung in erwärmtem Wasser (35–55°C).',
-    },
+    shortDesc: { en: 'DG Tankcleaner is a concentrated, water-based emulsifying and degreasing agent based on petroleum solvents and surfactants for the removal of oil and fats from cargo and storage tanks.', pl: 'DG Tankcleaner to skoncentrowany środek emulgujący i odtłuszczający na bazie wodnej, oparty na rozpuszczalnikach naftowych i surfaktantach, do usuwania olejów i tłuszczów z ładowni i zbiorników magazynowych.', de: 'DG Tankcleaner is a concentrated, water-based emulsifying and degreasing agent based on petroleum solvents and surfactants for the removal of oil and fats from cargo and storage tanks.' },
+    description: { en: 'DG Tankcleaner is a concentrated, water-based emulsifying and degreasing agent based on petroleum solvents and surfactants for the removal of oil and fats from cargo and storage tanks. Compatible with steel, plastic, epoxy, and zinc coatings; disperses mineral oils, crude oil, fuel oil, and lubricating oil. For machine washing, use a 10–25% solution in heated water (35–55°C). For direct injection, use undiluted at 0.2 L per 100 L of wash water (cleaning time: 3–10 hours). For hand cleaning, apply undiluted and rinse with high-pressure water. Available as a 25 L concentrate .', pl: 'DG Tankcleaner to skoncentrowany środek emulgujący i odtłuszczający na bazie wodnej, oparty na rozpuszczalnikach naftowych i surfaktantach, do usuwania olejów i tłuszczów z ładowni i zbiorników magazynowych. Kompatybilny ze stalą, tworzywami sztucznymi, powłokami epoksydowymi i cynkowymi — dysperguje oleje mineralne, ropę naftową, olej napędowy i smarowy. Do mycia maszynowego: 10–25% roztwór w wodzie podgrzanej do 35–55°C. Do wtrysku bezpośredniego: nierozcieńczony, 0,2 L na 100 L wody (czas czyszczenia 3–10 godz.). Do czyszczenia ręcznego nakładać nierozcieńczony i spłukiwać wodą wysokociśnieniową. Dostępny jako koncentrat 25 L.', de: 'DG Tankcleaner is a concentrated, water-based emulsifying and degreasing agent based on petroleum solvents and surfactants for the removal of oil and fats from cargo and storage tanks. Compatible with steel, plastic, epoxy, and zinc coatings; disperses mineral oils, crude oil, fuel oil, and lubricating oil. For machine washing, use a 10–25% solution in heated water (35–55°C). For direct injection, use undiluted at 0.2 L per 100 L of wash water (cleaning time: 3–10 hours). For hand cleaning, apply undiluted and rinse with high-pressure water. Available as a 25 L concentrate .' },
     zones: ['cargo_hold', 'ballast_tank'],
     tags: ['tank cleaner', 'cargo', 'emulsifier', 'petroleum solvent', 'oil', 'surfactant'],
     isBiological: false,
@@ -898,16 +546,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '45', slug: 'ultrasonic-cleaner',
     name: { en: 'DG Ultrasonic Cleaner', pl: 'DG Ultrasonic Cleaner', de: 'DG Ultrasonic Cleaner' },
-    shortDesc: {
-      en: 'Specialised low-foaming cleaning agent with softening agents for ultrasonic bath cleaning.',
-      pl: 'Specjalistyczny niskopienisty środek ze środkami zmiękczającymi do kąpieli ultradźwiękowych.',
-      de: 'Spezielles schaumarmes Reinigungsmittel mit Weichmachern für Ultraschallbäder.',
-    },
-    description: {
-      en: 'DG Ultrasonic Cleaner is a specialised low-foaming cleaning agent with softening and complexing agents for use in ultrasonic baths. Free of hydrocarbon solvents. Use as 5–20% solution at 55–75°C; cleaning time 5–30 minutes. Rinse with high-pressure fresh water. Solution can be reused if not heavily contaminated.',
-      pl: 'DG Ultrasonic Cleaner to niskopienisty środek do kąpieli ultradźwiękowych ze środkami zmiękczającymi. Stosować 5–20% w 55–75°C, czas 5–30 min. Spłukać wodą wysokociśnieniową. Roztwór można ponownie użyć.',
-      de: 'DG Ultrasonic Cleaner ist ein niedrigschäumendes Reinigungsmittel für Ultraschallbäder. 5–20% Lösung bei 55–75°C, Reinigungszeit 5–30 Min. Lösung kann wiederverwendet werden.',
-    },
+    shortDesc: { en: 'DG Ultrasonic Cleaner is a specialised low-foaming cleaning agent with softening and complexing agents for use in ultrasonic baths.', pl: 'DG Ultrasonic Cleaner to specjalistyczny środek czyszczący o niskim pienieniu ze środkami zmiękczającymi i kompleksującymi, przeznaczony do kąpieli ultradźwiękowych.', de: 'DG Ultrasonic Cleaner is a specialised low-foaming cleaning agent with softening and complexing agents for use in ultrasonic baths.' },
+    description: { en: 'DG Ultrasonic Cleaner is a specialised low-foaming cleaning agent with softening and complexing agents for use in ultrasonic baths. Free of hydrocarbon solvents. Not suitable for zinc, galvanised parts, or magnesium alloys. Use as a 5–20% solution in water at 55–75°C; cleaning time is typically 5–30 minutes. After cleaning, remove parts and rinse with high-pressure fresh water. The solution can be reused if not heavily contaminated. Available as a 25 L concentrate.', pl: 'DG Ultrasonic Cleaner to specjalistyczny środek czyszczący o niskim pienieniu ze środkami zmiękczającymi i kompleksującymi, przeznaczony do kąpieli ultradźwiękowych. Wolny od rozpuszczalników węglowodorowych. Nie stosować do elementów cynkowych, ocynkowanych ani ze stopów magnezu. Stosować jako 5–20% roztwór w wodzie w temperaturze 55–75°C; czas czyszczenia wynosi zazwyczaj 5–30 minut. Po czyszczeniu wyjąć elementy i opłukać czystą wodą pod wysokim ciśnieniem. Roztwór można ponownie użyć, jeśli nie jest mocno zanieczyszczony. Dostępny jako koncentrat 25 L.', de: 'DG Ultrasonic Cleaner is a specialised low-foaming cleaning agent with softening and complexing agents for use in ultrasonic baths. Free of hydrocarbon solvents. Not suitable for zinc, galvanised parts, or magnesium alloys. Use as a 5–20% solution in water at 55–75°C; cleaning time is typically 5–30 minutes. After cleaning, remove parts and rinse with high-pressure fresh water. The solution can be reused if not heavily contaminated. Available as a 25 L concentrate.' },
     zones: ['engine_room'],
     tags: ['ultrasonic', 'bath cleaner', 'low foam', 'precision cleaning', 'specialist', 'complexing'],
     isBiological: false,
@@ -918,16 +558,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '46', slug: 'vacuum-pipe-cleaner-bioactivae',
     name: { en: 'DG Vacuum Pipe Cleaner BioActivae', pl: 'DG Vacuum Pipe Cleaner BioActivae', de: 'DG Vacuum Pipe Cleaner BioActivae' },
-    shortDesc: {
-      en: 'Concentrated acidic descaling agent with enzymes for removing scale from vacuum toilet piping.',
-      pl: 'Skoncentrowany kwaśny środek z enzymami do usuwania kamienia z próżniowych rurociągów toaletowych.',
-      de: 'Konzentrierter saurer Entkalker mit Enzymen für Vakuum-Toilettenrohre.',
-    },
-    description: {
-      en: 'DG Vacuum Pipe Cleaner BioActivae is a concentrated acidic descaling agent with mixed acids and enzymes for removing inorganic scale from vacuum toilet piping. Non-flammable, safe for system materials except galvanised installations. Daily dosage: 1.2–1.4 L per dosing station (approx. 8–10 toilets).',
-      pl: 'DG Vacuum Pipe Cleaner BioActivae to skoncentrowany kwaśny środek z enzymami do usuwania kamienia z próżniowych rurociągów toaletowych. Niepalny. Dawka dzienna: 1,2–1,4 L/stację dozującą (ok. 8–10 toalet).',
-      de: 'DG Vacuum Pipe Cleaner BioActivae ist ein konzentrierter saurer Entkalker mit Enzymen für Vakuum-Toilettenrohre. Tägliche Dosierung: 1,2–1,4 L pro Dosierstation (ca. 8–10 Toiletten).',
-    },
+    shortDesc: { en: 'DG Vacuum Pipes Cleaner BioActivae is a highly concentrated acidic liquid descaling agent based on mixed acids and a special enzyme blend, designed for removing built-up inorganic scale in vacuum toilet piping systems.', pl: 'DG Vacuum Pipes Cleaner BioActivae to wysoce skoncentrowany, kwaśny środek do odkamieniania w postaci cieczy, oparty na mieszaninie kwasów i specjalnej mieszaninie enzymów, przeznaczony do usuwania nagromadzonych osadów nieorganicznych w próżniowych rurociągach toaletowych.', de: 'DG Vacuum Pipes Cleaner BioActivae is a highly concentrated acidic liquid descaling agent based on mixed acids and a special enzyme blend, designed for removing built-up inorganic scale in vacuum toilet piping systems.' },
+    description: { en: 'DG Vacuum Pipes Cleaner BioActivae is a highly concentrated acidic liquid descaling agent based on mixed acids and a special enzyme blend, designed for removing built-up inorganic scale in vacuum toilet piping systems. Non-flammable and safe for all system materials except galvanised installations. Will not contribute to foaming in sewage treatment plants. Daily dosage: 1.2–1.4 L per day per dosing station until scale is removed; then switch to weekly maintenance at the same rate. Dosage calculated for approx. 8–10 toilets. Available as a 25 L concentrate.', pl: 'DG Vacuum Pipes Cleaner BioActivae to wysoce skoncentrowany, kwaśny środek do odkamieniania w postaci cieczy, oparty na mieszaninie kwasów i specjalnej mieszaninie enzymów, przeznaczony do usuwania nagromadzonych osadów nieorganicznych w próżniowych rurociągach toaletowych. Niepalny i bezpieczny dla materiałów instalacji, z wyjątkiem systemów ocynkowanych. Nie powoduje pieniacza w oczyszczalniach ścieków. Codzienne dawkowanie: 1,2–1,4 L/dobę na stację dozującą do usunięcia kamienia; następnie przejść na dawkowanie tygodniowe. Dawka obliczona dla ok. 8–10 toalet. Dostępny jako koncentrat 25 L.', de: 'DG Vacuum Pipes Cleaner BioActivae is a highly concentrated acidic liquid descaling agent based on mixed acids and a special enzyme blend, designed for removing built-up inorganic scale in vacuum toilet piping systems. Non-flammable and safe for all system materials except galvanised installations. Will not contribute to foaming in sewage treatment plants. Daily dosage: 1.2–1.4 L per day per dosing station until scale is removed; then switch to weekly maintenance at the same rate. Dosage calculated for approx. 8–10 toilets. Available as a 25 L concentrate.' },
     zones: ['accommodation', 'engine_room'],
     tags: ['vacuum toilet', 'vacuum pipes', 'scale', 'enzyme', 'sanitary', 'biological'],
     isBiological: true,
@@ -938,16 +570,8 @@ export const MOCK_PRODUCTS: Product[] = [
   {
     id: '47', slug: 'vapor-control',
     name: { en: 'DG Vapor Control', pl: 'DG Vapor Control', de: 'DG Vapor Control' },
-    shortDesc: {
-      en: 'Concentrated polymer for controlling scale and foam in seawater evaporators.',
-      pl: 'Skoncentrowany preparat polimerowy do kontrolowania kamienia i piany w wyparnikach.',
-      de: 'Konzentriertes Polymerprodukt zur Kontrolle von Kalk und Schaum in Seewasserverdampfern.',
-    },
-    description: {
-      en: 'DG Vapor Control is a safe water-soluble concentrated polymer for controlling scale and foam in seawater evaporators. Prevents scaling, reduces foaming, and maintains optimum evaporator performance. Standard dosage: 25–45 ml per ton of distillate, continuously injected. Available as 25 L concentrate.',
-      pl: 'DG Vapor Control to skoncentrowany preparat polimerowy do kontrolowania kamienia i piany w wyparnikach. Zapobiega osadzaniu i utrzymuje optymalną pracę wyparnika. Dawka: 25–45 ml/tonę destylatu.',
-      de: 'DG Vapor Control ist ein konzentriertes Polymerprodukt zur Kontrolle von Kalk und Schaum in Seewasserverdampfern. Dosierung: 25–45 ml pro Tonne Destillat, kontinuierlich injiziert.',
-    },
+    shortDesc: { en: 'DG Vapor Control is a safe, water-soluble, concentrated polymer-based liquid for controlling scale and foam in seawater evaporators.', pl: 'DG Vapor Control to bezpieczny, rozpuszczalny w wodzie, skoncentrowany preparat polimerowy do kontrolowania kamienia i piany w wyparnikach wody morskiej.', de: 'DG Vapor Control is a safe, water-soluble, concentrated polymer-based liquid for controlling scale and foam in seawater evaporators.' },
+    description: { en: 'DG Vapor Control is a safe, water-soluble, concentrated polymer-based liquid for controlling scale and foam in seawater evaporators. It prevents scaling, reduces foaming, and maintains optimum plant performance while minimising downtime. Compatible with stainless steel, carbon steel, copper alloys, glass, rubber, plastics, painted surfaces, and aluminium alloys. Standard dosage: 25–45 ml per ton of distillate, continuously injected via the evaporator inlet or saltwater supply line. For deposits exceeding 2 mm, use DG Descaler L. Not classified as corrosive or harmful. Available as a 25 L concentrate.', pl: 'DG Vapor Control to bezpieczny, rozpuszczalny w wodzie, skoncentrowany preparat polimerowy do kontrolowania kamienia i piany w wyparnikach wody morskiej. Zapobiega osadzaniu się kamienia, ogranicza pieniacza i utrzymuje optymalne działanie instalacji, minimalizując przestoje. Kompatybilny ze stalą nierdzewną, stalą węglową, stopami miedzi, szkłem, gumą, tworzywami sztucznymi, powierzchniami malowanymi i stopami aluminium. Standardowe dawkowanie: 25–45 ml na tonę destylatu, podawane ciągłe przez wlot wyparnika lub linię zasilającą w wodę słoną. Przy osadach przekraczających 2 mm stosować DG Descaler L. Produkt nie jest sklasyfikowany jako żrący ani szkodliwy. Dostępny jako koncentrat 25 L.', de: 'DG Vapor Control is a safe, water-soluble, concentrated polymer-based liquid for controlling scale and foam in seawater evaporators. It prevents scaling, reduces foaming, and maintains optimum plant performance while minimising downtime. Compatible with stainless steel, carbon steel, copper alloys, glass, rubber, plastics, painted surfaces, and aluminium alloys. Standard dosage: 25–45 ml per ton of distillate, continuously injected via the evaporator inlet or saltwater supply line. For deposits exceeding 2 mm, use DG Descaler L. Not classified as corrosive or harmful. Available as a 25 L concentrate.' },
     zones: ['engine_room', 'cooling'],
     tags: ['evaporator', 'scale control', 'foam control', 'seawater', 'polymer', 'distillate'],
     isBiological: false,
