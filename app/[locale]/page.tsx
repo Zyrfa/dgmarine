@@ -29,7 +29,7 @@ export default async function HomePage({ params }: Props) {
         <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(4,10,20,0.62), rgba(8,20,40,0.68))', pointerEvents: 'none' }} />
 
         <div style={{ position: 'relative', maxWidth: 760, margin: '0 auto' }}>
-          <div style={{ marginBottom: '1.75rem' }}>
+          <div style={{ marginBottom: '1.75rem', display: 'flex', justifyContent: 'center' }}>
             <LogoImage style={{ objectFit: 'contain', height: 72, width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.95 }} />
           </div>
 
