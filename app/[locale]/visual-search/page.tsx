@@ -16,14 +16,16 @@ export default async function VisualSearchPage({ params }: Props) {
   const tz = await getTranslations({ locale, namespace: 'zones' })
   const tn = await getTranslations({ locale, namespace: 'nav' })
   const tv = await getTranslations({ locale, namespace: 'visual' })
+  const tp = await getTranslations({ locale, namespace: 'products' })
 
   const zoneLabels = Object.fromEntries(
     ZONE_IDS.map((id) => [id, tz(id)])
   ) as Record<ZoneId, string>
 
   return (
-    <main className="max-w-5xl mx-auto px-4 py-8">
+    <main className="page" style={{ maxWidth: 1100 }}>
       <VisualSearchClient
+        locale={locale}
         zoneLabels={zoneLabels}
         ui={{
           title: tn('visualSearch'),
@@ -31,6 +33,9 @@ export default async function VisualSearchPage({ params }: Props) {
           selectPrompt: tv('selectPrompt'),
           productsFor: tv('productsFor'),
           clearLabel: tv('clear'),
+          addRfqLabel: tp('addToRfq'),
+          addedLabel: tp('addedToRfq'),
+          compareLabel: tp('compare'),
         }}
       />
     </main>
