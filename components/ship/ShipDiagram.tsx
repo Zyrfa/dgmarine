@@ -81,29 +81,39 @@ const ZONES: ZonePoly[] = [
 ]
 
 // ── Geometry helpers ──────────────────────────────────────────────────────────
-function centroid(pts: [number, number][]): [number, number] {
-  return [
-    pts.reduce((s, p) => s + p[0], 0) / pts.length,
-    pts.reduce((s, p) => s + p[1], 0) / pts.length,
-  ]
-}
-
 function bbox(pts: [number, number][]) {
   const xs = pts.map(p => p[0]), ys = pts.map(p => p[1])
   return { minX: Math.min(...xs), minY: Math.min(...ys), maxX: Math.max(...xs), maxY: Math.max(...ys) }
 }
 
-function labelSize(pts: [number, number][]): number {
-  const { minX, minY, maxX, maxY } = bbox(pts)
-  const w = maxX - minX, h = maxY - minY
-  if (h < 18 || w < 55) return 0
-  if (w < 95)  return 9
-  if (w < 180) return 10
-  return 12
-}
-
 function ptsStr(pts: [number, number][]) {
   return pts.map(p => p.join(',')).join(' ')
+}
+
+// ── Fixed label anchors — logical visual centre of each zone ─────────────────
+const LABEL_POS: Record<ZoneId, [number, number]> = {
+  accommodation: [245, 268],
+  deck:          [720, 384],
+  engine_room:   [215, 437],
+  galley:        [244, 354],
+  cargo_hold:    [840, 437],
+  cooling:       [306, 486],
+  fuel:          [200, 490],
+  ballast_tank:  [845, 488],
+  bilge:         [715, 511],
+}
+
+// font size in SVG units (scales with diagram)
+const LABEL_FS: Record<ZoneId, number> = {
+  accommodation: 14,
+  deck:          13,
+  engine_room:   12,
+  galley:        11,
+  cargo_hold:    14,
+  cooling:       11,
+  fuel:          10,
+  ballast_tank:  13,
+  bilge:         10,
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -151,21 +161,25 @@ export function ShipDiagram({ activeZone, onZoneClick, zoneLabels }: Props) {
 
       {/* ── Interactive zone overlays ── */}
       {ZONES.map((z) => {
-        const active  = activeZone === z.id
-        const hover   = hovered    === z.id
-        const color   = ZONE_COLORS[z.id]
-        const fillOp  = active ? 0.70 : hover ? 0.55 : 0.12
-        const sw      = active ? 2.5  : hover ? 2    : 0.8
-        const sc      = (active || hover) ? color : 'rgba(0,0,0,0.15)'
-        const [cx, cy] = centroid(z.pts)
-        const size    = labelSize(z.pts)
-        const bb      = bbox(z.pts)
+        const active = activeZone === z.id
+        const hover  = hovered    === z.id
+        const color  = ZONE_COLORS[z.id]
+        const fillOp = active ? 0.70 : hover ? 0.55 : 0.12
+        const sw     = active ? 2.5  : hover ? 2    : 0.8
+        const sc     = (active || hover) ? color : 'rgba(0,0,0,0.15)'
+
+        const [lx, ly] = LABEL_POS[z.id]
+        const fs       = LABEL_FS[z.id]
+        const lbl      = zoneLabels[z.id]
+        const pw       = lbl.length * fs * 0.62 + 16
+        const ph       = fs + 10
+        const badgeOp  = active ? 0.95 : hover ? 0.85 : 0.60
 
         return (
           <g
             key={z.id}
             role="button"
-            aria-label={zoneLabels[z.id]}
+            aria-label={lbl}
             tabIndex={0}
             style={{ cursor: 'pointer', outline: 'none' }}
             onClick={() => onZoneClick(z.id)}
@@ -182,47 +196,23 @@ export function ShipDiagram({ activeZone, onZoneClick, zoneLabels }: Props) {
               strokeLinejoin="round"
             />
 
-            {/* zone label — visible on hover / active */}
-            {(hover || active) && size > 0 && (
+            {/* pill badge — always visible, fixed anchor, no random centroid */}
+            <g style={{ pointerEvents: 'none' }}>
+              <rect
+                x={lx - pw / 2} y={ly - ph / 2} width={pw} height={ph}
+                fill={color} fillOpacity={badgeOp} rx={ph / 2}
+              />
               <text
-                x={cx} y={cy}
+                x={lx} y={ly}
                 textAnchor="middle" dominantBaseline="middle"
-                fill="#ffffff" fontSize={size} fontWeight="800"
-                stroke="rgba(0,0,0,0.75)" strokeWidth="3.5" paintOrder="stroke fill"
-                style={{ pointerEvents: 'none' }}
+                fill="#ffffff" fontSize={fs} fontWeight="700"
               >
-                {zoneLabels[z.id].toUpperCase()}
+                {lbl}
               </text>
-            )}
+            </g>
           </g>
         )
       })}
-
-      {/* ── Tooltip above hovered / active zone ── */}
-      {(hovered ?? activeZone) && (() => {
-        const id  = (hovered ?? activeZone)!
-        const z   = ZONES.find(z => z.id === id)!
-        const bb  = bbox(z.pts)
-        const tx  = Math.min(Math.max((bb.minX + bb.maxX) / 2, 90), 1318)
-        const ty  = Math.max(bb.minY - 12, 46)
-        const lbl = zoneLabels[id]
-        const tw  = Math.max(lbl.length * 8.5 + 32, 112)
-        return (
-          <g style={{ pointerEvents: 'none' }}>
-            <rect
-              x={tx - tw / 2} y={ty - 30} width={tw} height={26}
-              fill={ZONE_COLORS[id]} rx={7} opacity={0.95}
-            />
-            <text
-              x={tx} y={ty - 14}
-              textAnchor="middle" dominantBaseline="middle"
-              fill="#ffffff" fontSize={12} fontWeight={700}
-            >
-              {lbl}
-            </text>
-          </g>
-        )
-      })()}
     </svg>
   )
 }
