@@ -90,31 +90,6 @@ function ptsStr(pts: [number, number][]) {
   return pts.map(p => p.join(',')).join(' ')
 }
 
-// ── Fixed label anchors — logical visual centre of each zone ─────────────────
-const LABEL_POS: Record<ZoneId, [number, number]> = {
-  accommodation: [245, 268],
-  deck:          [720, 384],
-  engine_room:   [215, 437],
-  galley:        [244, 354],
-  cargo_hold:    [840, 437],
-  cooling:       [306, 486],
-  fuel:          [200, 490],
-  ballast_tank:  [845, 488],
-  bilge:         [715, 511],
-}
-
-// font size in SVG units (scales with diagram)
-const LABEL_FS: Record<ZoneId, number> = {
-  accommodation: 14,
-  deck:          13,
-  engine_room:   12,
-  galley:        11,
-  cargo_hold:    14,
-  cooling:       11,
-  fuel:          10,
-  ballast_tank:  13,
-  bilge:         10,
-}
 
 // ── Component ─────────────────────────────────────────────────────────────────
 interface Props {
@@ -168,18 +143,11 @@ export function ShipDiagram({ activeZone, onZoneClick, zoneLabels }: Props) {
         const sw     = active ? 2.5  : hover ? 2    : 0.8
         const sc     = (active || hover) ? color : 'rgba(0,0,0,0.15)'
 
-        const [lx, ly] = LABEL_POS[z.id]
-        const fs       = LABEL_FS[z.id]
-        const lbl      = zoneLabels[z.id]
-        const pw       = lbl.length * fs * 0.62 + 16
-        const ph       = fs + 10
-        const badgeOp  = active ? 0.95 : hover ? 0.85 : 0.60
-
         return (
           <g
             key={z.id}
             role="button"
-            aria-label={lbl}
+            aria-label={zoneLabels[z.id]}
             tabIndex={0}
             style={{ cursor: 'pointer', outline: 'none' }}
             onClick={() => onZoneClick(z.id)}
@@ -195,24 +163,37 @@ export function ShipDiagram({ activeZone, onZoneClick, zoneLabels }: Props) {
               strokeWidth={sw}
               strokeLinejoin="round"
             />
-
-            {/* pill badge — always visible, fixed anchor, no random centroid */}
-            <g style={{ pointerEvents: 'none' }}>
-              <rect
-                x={lx - pw / 2} y={ly - ph / 2} width={pw} height={ph}
-                fill={color} fillOpacity={badgeOp} rx={ph / 2}
-              />
-              <text
-                x={lx} y={ly}
-                textAnchor="middle" dominantBaseline="middle"
-                fill="#ffffff" fontSize={fs} fontWeight="700"
-              >
-                {lbl}
-              </text>
-            </g>
           </g>
         )
       })}
+
+      {/* ── Zone name banner — large, fixed below hull, always readable ── */}
+      {(hovered ?? activeZone) && (() => {
+        const id    = (hovered ?? activeZone)!
+        const lbl   = zoneLabels[id]
+        const color = ZONE_COLORS[id]
+        const fs    = 26
+        const pw    = lbl.length * fs * 0.58 + 48
+        const ph    = 44
+        const cx    = 704
+        const cy    = 660
+        return (
+          <g style={{ pointerEvents: 'none' }}>
+            <rect
+              x={cx - pw / 2} y={cy - ph / 2} width={pw} height={ph}
+              fill={color} opacity={0.93} rx={ph / 2}
+            />
+            <text
+              x={cx} y={cy}
+              textAnchor="middle" dominantBaseline="middle"
+              fill="#ffffff" fontSize={fs} fontWeight="700"
+              letterSpacing="0.5"
+            >
+              {lbl}
+            </text>
+          </g>
+        )
+      })()}
     </svg>
   )
 }
