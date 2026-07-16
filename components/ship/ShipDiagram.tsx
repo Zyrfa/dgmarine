@@ -64,8 +64,8 @@ const ZONES: ZonePoly[] = [
   // Galley / utility — upper right of stern block
   { id: 'galley',        pts: parse('337,400 416,400 416,470 337,470') },
 
-  // Cargo holds — upper centre + upper bow section
-  { id: 'cargo_hold',    pts: parse('416,400 1306,400 1388,458 1372,470 416,470') },
+  // Cargo holds — user-calibrated, includes deck hatches + tank body + bow curve
+  { id: 'cargo_hold',    pts: parse('72,367 330,371 385,373 386,361 389,354 520,354 526,360 528,370 599,370 599,361 603,355 733,351 738,358 742,369 810,366 814,359 818,352 950,352 954,359 954,368 1025,366 1029,358 1029,352 1164,347 1165,355 1168,357 1168,363 1196,345 1260,339 1268,330 1336,328 1304,400 355,406 72,409 72,367 357,409 357,469 1337,471 1335,464 1332,456 1325,447 1317,442 1306,437 1300,434 1295,429 1295,422 1297,411 355,408') },
 
   // Cooling systems — lower left of hull
   { id: 'cooling',       pts: parse('108,470 337,470 337,533 108,533') },
