@@ -67,14 +67,14 @@ const ZONES: ZonePoly[] = [
   // Cargo holds — top edge matches deck bottom exactly, no gap
   { id: 'cargo_hold',    pts: parse('355,406 1304,400 1297,411 1295,422 1295,429 1300,434 1306,437 1317,442 1325,447 1332,456 1335,464 1337,471 357,469') },
 
-  // Cooling systems — user-calibrated
-  { id: 'cooling',       pts: parse('266,471 264,518 350,519 352,470') },
+  // Cooling systems — top snapped to engine_room floor (352,467), left snapped to fuel (260,467)
+  { id: 'cooling',       pts: parse('260,467 260,518 352,519 352,467') },
 
-  // Fuel system — user-calibrated
-  { id: 'fuel',          pts: parse('149,470 148,474 144,481 138,482 135,482 133,473 132,468 128,463 123,465 125,476 128,483 125,486 122,488 125,492 128,498 126,503 128,510 130,514 135,507 135,498 139,494 146,501 149,505 156,504 162,503 173,503 196,504 258,507 260,469') },
+  // Fuel system — first point snapped to engine_room floor (148,468), last snapped to cooling left (260,467)
+  { id: 'fuel',          pts: parse('148,468 148,474 144,481 138,482 135,482 133,473 132,468 128,463 123,465 125,476 128,483 125,486 122,488 125,492 128,498 126,503 128,510 130,514 135,507 135,498 139,494 146,501 149,505 156,504 162,503 173,503 196,504 258,507 260,467') },
 
-  // Ballast tanks — user-calibrated
-  { id: 'ballast_tank',  pts: parse('353,471 352,502 1199,497 1208,497 1208,504 1276,505 1329,501 1332,494 1336,484 1338,476 1338,470') },
+  // Ballast tanks — bottom snapped to bilge top (y≈504-505)
+  { id: 'ballast_tank',  pts: parse('353,471 352,505 1199,504 1208,505 1276,505 1323,504 1332,494 1336,484 1338,476 1338,470') },
 
   // Bilge — user-calibrated
   { id: 'bilge',         pts: parse('144,502 196,505 196,506 1200,504 1208,505 1273,506 1323,504 1317,509 1311,511 1304,514 1295,517 1287,519 1280,519 176,520 165,518 159,513 152,507') },
