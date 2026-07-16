@@ -73,8 +73,8 @@ const ZONES: ZonePoly[] = [
   // Fuel tanks — lower right of stern block
   { id: 'fuel',          pts: parse('337,470 416,470 416,533 337,533') },
 
-  // Ballast tanks — lower centre + lower bow section
-  { id: 'ballast_tank',  pts: parse('416,470 1372,470 1288,533 416,533') },
+  // Ballast tanks — user-calibrated
+  { id: 'ballast_tank',  pts: parse('353,471 352,502 1199,497 1208,497 1208,504 1276,505 1329,501 1332,494 1336,484 1338,476 1338,470') },
 
   // Bilge — bottom strip, full width including bow bottom
   { id: 'bilge',         pts: parse('108,533 1288,533 1268,548 108,548') },
