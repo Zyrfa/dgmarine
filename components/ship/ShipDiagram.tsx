@@ -55,8 +55,8 @@ const ZONES: ZonePoly[] = [
   // Superstructure / crew quarters — traced from schematic by user
   { id: 'accommodation', pts: parse('332,370 330,251 337,234 332,225 248,224 248,259 236,260 236,284 220,285 221,340 210,342 209,210 200,206 199,200 186,190 186,197 190,208 170,209 158,312 159,366') },
 
-  // Main deck strip — follows bow taper on the right
-  { id: 'deck',          pts: parse('108,373 1268,373 1388,458 1306,400 108,400') },
+  // Main deck strip — user-calibrated, includes hatch coamings
+  { id: 'deck',          pts: parse('72,367 330,371 385,373 386,361 389,354 520,354 526,360 528,370 599,370 599,361 603,355 733,351 738,358 742,369 810,366 814,359 818,352 950,352 954,359 954,368 1025,366 1029,358 1029,352 1164,347 1165,355 1168,357 1168,363 1196,345 1260,339 1268,330 1336,328 1304,400 355,406 72,409') },
 
   // Engine room — upper left of hull interior
   { id: 'engine_room',   pts: parse('108,400 337,400 337,470 108,470') },
