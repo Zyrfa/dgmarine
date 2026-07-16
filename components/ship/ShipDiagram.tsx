@@ -64,8 +64,8 @@ const ZONES: ZonePoly[] = [
   // Galley — user-calibrated
   { id: 'galley',        pts: parse('158,340 158,367 330,372 330,337') },
 
-  // Cargo holds — top edge matches deck bottom exactly, no gap
-  { id: 'cargo_hold',    pts: parse('355,406 1304,400 1297,411 1295,422 1295,429 1300,434 1306,437 1317,442 1325,447 1332,456 1335,464 1337,471 357,469') },
+  // Cargo holds — left edge snapped to engine_room right (352)
+  { id: 'cargo_hold',    pts: parse('352,407 1304,400 1297,411 1295,422 1295,429 1300,434 1306,437 1317,442 1325,447 1332,456 1335,464 1337,471 352,467') },
 
   // Cooling systems — bottom trimmed to bilge top (y=505)
   { id: 'cooling',       pts: parse('260,467 260,505 352,505 352,467') },
@@ -81,11 +81,6 @@ const ZONES: ZonePoly[] = [
 ]
 
 // ── Geometry helpers ──────────────────────────────────────────────────────────
-function bbox(pts: [number, number][]) {
-  const xs = pts.map(p => p[0]), ys = pts.map(p => p[1])
-  return { minX: Math.min(...xs), minY: Math.min(...ys), maxX: Math.max(...xs), maxY: Math.max(...ys) }
-}
-
 function ptsStr(pts: [number, number][]) {
   return pts.map(p => p.join(',')).join(' ')
 }
