@@ -24,11 +24,11 @@ export default async function RfqPage({ params }: Props) {
     success: t('success'),
     error: t('error'),
     browseProducts: tn('products'),
-    remove: locale === 'pl' ? 'Usuń' : locale === 'de' ? 'Entfernen' : 'Remove',
-    clearAll: locale === 'pl' ? 'Wyczyść wszystko' : locale === 'de' ? 'Alle entfernen' : 'Clear all',
-    product: locale === 'pl' ? 'produkt' : locale === 'de' ? 'Produkt' : 'product',
-    unit: locale === 'pl' ? 'Jednostka' : locale === 'de' ? 'Einheit' : 'Unit',
-    deliveryDetails: locale === 'pl' ? 'Dane dostawy' : locale === 'de' ? 'Lieferdetails' : 'Delivery details',
+    remove: t('remove'),
+    clearAll: t('clearAll'),
+    product: t('product'),
+    unit: t('unit'),
+    deliveryDetails: t('deliveryDetails'),
   }
 
   return (

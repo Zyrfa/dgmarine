@@ -23,7 +23,7 @@ export default async function ProductsPage({ params }: Props) {
           {tp('filter')}
         </h1>
         <p style={{ color: 'var(--fg-muted)', margin: '.35rem 0 0' }}>
-          {MOCK_PRODUCTS.length} {locale === 'pl' ? 'produktów' : locale === 'de' ? 'Produkte' : 'products'}
+          {MOCK_PRODUCTS.length} {tp('count')}
         </p>
       </div>
 
@@ -38,8 +38,9 @@ export default async function ProductsPage({ params }: Props) {
           addToRfq: tp('addToRfq'),
           added: tp('addedToRfq'),
           compare: tp('compare'),
-          all: locale === 'pl' ? 'Wszystkie' : locale === 'de' ? 'Alle' : 'All',
-          biological: locale === 'pl' ? 'Biologiczne' : locale === 'de' ? 'Biologisch' : 'Biological',
+          details: tp('details'),
+          all: tp('all'),
+          biological: tp('biologicalFilter'),
         }}
       />
     </main>

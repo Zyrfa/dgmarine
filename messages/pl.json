@@ -8,14 +8,31 @@
   },
   "home": {
     "hero": {
+      "badge": "⚓ Profesjonalna chemia morska",
       "title": "Chemia morska najwyższej klasy",
       "subtitle": "Profesjonalne rozwiązania chemiczne dla przemysłu morskiego",
       "cta": "Przeglądaj produkty"
+    },
+    "cta": {
+      "title": "Gotowy na zapytanie ofertowe?",
+      "subtitle": "Dodaj produkty do listy i wyślij jedno zbiorcze zapytanie."
+    },
+    "features": {
+      "ship": "Interaktywna mapa statku",
+      "dosage": "Kalkulator dawkowania",
+      "rfq": "Zapytania ofertowe B2B",
+      "bio": "Produkty biologiczne"
     }
   },
   "products": {
     "search": "Szukaj produktów...",
     "filter": "Filtruj",
+    "all": "Wszystkie",
+    "biologicalFilter": "Biologiczne",
+    "details": "Szczegóły",
+    "tags": "Tagi",
+    "count": "produktów",
+    "related": "Powiązane produkty",
     "addToRfq": "Dodaj do zapytania",
     "addedToRfq": "Dodano",
     "compare": "Porównaj",
@@ -40,7 +57,18 @@
     "send": "Wyślij zapytanie",
     "sending": "Wysyłanie...",
     "success": "Zapytanie wysłane. Odpiszemy wkrótce.",
-    "error": "Błąd wysyłki. Spróbuj ponownie."
+    "error": "Błąd wysyłki. Spróbuj ponownie.",
+    "remove": "Usuń",
+    "clearAll": "Wyczyść wszystko",
+    "product": "produkt",
+    "unit": "Jednostka",
+    "deliveryDetails": "Dane dostawy"
+  },
+  "visual": {
+    "subtitle": "Kliknij w strefę statku, aby zobaczyć dedykowane produkty chemiczne.",
+    "selectPrompt": "Wybierz strefę klikając na diagram lub przyciski poniżej",
+    "productsFor": "Produkty dla",
+    "clear": "wyczyść"
   },
   "biological": {
     "badge": "🌿 Linia biologiczna",
@@ -54,7 +82,8 @@
     "b3Title": "Zgodność z MARPOL",
     "b3": "Zatwierdzone do stosowania i zrzutu za burtą zgodnie z przepisami IMO / MARPOL.",
     "productsTitle": "Nasze produkty biologiczne",
-    "cta": "Zobacz wszystkie produkty"
+    "cta": "Zobacz wszystkie produkty",
+    "catalogueCta": "Szukasz pełnego katalogu chemii morskiej?"
   },
   "compare": {
     "title": "Porównaj produkty",
@@ -79,6 +108,10 @@
     "fuel": "System paliwowy",
     "galley": "Kuchnia / Mess",
     "accommodation": "Kabiny załogi"
+  },
+  "about": {
+    "title": "O firmie DG Marine",
+    "placeholder": "Historia firmy, certyfikaty — wkrótce"
   },
   "theme": {
     "light": "Tryb jasny",

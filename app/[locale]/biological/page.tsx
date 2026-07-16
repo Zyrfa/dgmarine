@@ -156,6 +156,7 @@ export default async function BiologicalPage({ params }: Props) {
               product={product}
               locale={locale}
               zoneLabels={zoneLabels}
+              detailsLabel={tp('details')}
               addRfqLabel={tp('addToRfq')}
               addedLabel={tp('addedToRfq')}
               compareLabel={tp('compare')}
@@ -170,11 +171,7 @@ export default async function BiologicalPage({ params }: Props) {
         padding: '2.5rem 1rem', textAlign: 'center',
       }}>
         <p style={{ margin: '0 0 1.25rem', fontSize: '1.05rem', fontWeight: 600, opacity: .95 }}>
-          {locale === 'pl'
-            ? 'Szukasz pełnego katalogu chemii morskiej?'
-            : locale === 'de'
-            ? 'Suchen Sie den vollständigen Katalog für Meereschemie?'
-            : 'Looking for the full marine chemistry catalogue?'}
+          {t('catalogueCta')}
         </p>
         <Link href={`/${locale}/products`} style={{
           display: 'inline-block', padding: '.65rem 2rem',

@@ -8,14 +8,31 @@
   },
   "home": {
     "hero": {
+      "badge": "⚓ Professional Marine Chemistry",
       "title": "Premium Marine Chemicals",
       "subtitle": "Professional chemical solutions for the maritime industry",
       "cta": "Browse Products"
+    },
+    "cta": {
+      "title": "Ready to request a quote?",
+      "subtitle": "Add products to your list and send one consolidated request."
+    },
+    "features": {
+      "ship": "Interactive ship search",
+      "dosage": "Dosage calculator",
+      "rfq": "B2B quote requests",
+      "bio": "Biological products"
     }
   },
   "products": {
     "search": "Search products...",
     "filter": "Filter",
+    "all": "All",
+    "biologicalFilter": "Biological",
+    "details": "Details",
+    "tags": "Tags",
+    "count": "products",
+    "related": "Related products",
     "addToRfq": "Add to RFQ",
     "addedToRfq": "Added",
     "compare": "Compare",
@@ -40,7 +57,18 @@
     "send": "Send request",
     "sending": "Sending...",
     "success": "Request sent. We will get back to you shortly.",
-    "error": "Error sending request. Please try again."
+    "error": "Error sending request. Please try again.",
+    "remove": "Remove",
+    "clearAll": "Clear all",
+    "product": "product",
+    "unit": "Unit",
+    "deliveryDetails": "Delivery details"
+  },
+  "visual": {
+    "subtitle": "Click a zone on the ship to see the matching chemical products.",
+    "selectPrompt": "Select a zone by clicking the diagram or the buttons below",
+    "productsFor": "Products for",
+    "clear": "clear"
   },
   "biological": {
     "badge": "🌿 Biological line",
@@ -54,7 +82,8 @@
     "b3Title": "MARPOL compliant",
     "b3": "Approved for use and overboard discharge under IMO / MARPOL regulations.",
     "productsTitle": "Our biological products",
-    "cta": "View all products"
+    "cta": "View all products",
+    "catalogueCta": "Looking for the full marine chemistry catalogue?"
   },
   "compare": {
     "title": "Compare Products",
@@ -79,6 +108,10 @@
     "fuel": "Fuel System",
     "galley": "Galley",
     "accommodation": "Accommodation"
+  },
+  "about": {
+    "title": "About DG Marine",
+    "placeholder": "Company history, certificates — coming soon"
   },
   "theme": {
     "light": "Light mode",

@@ -8,14 +8,31 @@
   },
   "home": {
     "hero": {
+      "badge": "⚓ Professionelle Meereschemie",
       "title": "Premium Marine-Chemikalien",
       "subtitle": "Professionelle chemische Lösungen für die Schifffahrtsindustrie",
       "cta": "Produkte ansehen"
+    },
+    "cta": {
+      "title": "Bereit für ein Angebot?",
+      "subtitle": "Fügen Sie Produkte zur Liste hinzu und senden Sie eine Sammelanfrage."
+    },
+    "features": {
+      "ship": "Interaktive Schiffskarte",
+      "dosage": "Dosierrechner",
+      "rfq": "B2B-Angebotsanfragen",
+      "bio": "Biologische Produkte"
     }
   },
   "products": {
     "search": "Produkte suchen...",
     "filter": "Filtern",
+    "all": "Alle",
+    "biologicalFilter": "Biologisch",
+    "details": "Details",
+    "tags": "Tags",
+    "count": "Produkte",
+    "related": "Verwandte Produkte",
     "addToRfq": "Zur Anfrage hinzufügen",
     "addedToRfq": "Hinzugefügt",
     "compare": "Vergleichen",
@@ -40,7 +57,18 @@
     "send": "Anfrage senden",
     "sending": "Wird gesendet...",
     "success": "Anfrage gesendet. Wir melden uns in Kürze.",
-    "error": "Fehler beim Senden. Bitte versuchen Sie es erneut."
+    "error": "Fehler beim Senden. Bitte versuchen Sie es erneut.",
+    "remove": "Entfernen",
+    "clearAll": "Alle entfernen",
+    "product": "Produkt",
+    "unit": "Einheit",
+    "deliveryDetails": "Lieferdetails"
+  },
+  "visual": {
+    "subtitle": "Klicken Sie auf einen Schiffsbereich, um passende Chemikalien anzuzeigen.",
+    "selectPrompt": "Wählen Sie einen Bereich im Diagramm oder über die Schaltflächen",
+    "productsFor": "Produkte für",
+    "clear": "löschen"
   },
   "biological": {
     "badge": "🌿 Biologische Linie",
@@ -54,7 +82,8 @@
     "b3Title": "MARPOL-konform",
     "b3": "Zugelassen für den Einsatz und Overboard-Entsorgung gemäß IMO / MARPOL-Vorschriften.",
     "productsTitle": "Unsere biologischen Produkte",
-    "cta": "Alle Produkte ansehen"
+    "cta": "Alle Produkte ansehen",
+    "catalogueCta": "Suchen Sie den vollständigen Katalog für Meereschemie?"
   },
   "compare": {
     "title": "Produkte vergleichen",
@@ -79,6 +108,10 @@
     "fuel": "Kraftstoffsystem",
     "galley": "Kombüse",
     "accommodation": "Unterkunft"
+  },
+  "about": {
+    "title": "Über DG Marine",
+    "placeholder": "Unternehmensgeschichte, Zertifikate — demnächst"
   },
   "theme": {
     "light": "Heller Modus",

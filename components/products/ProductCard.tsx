@@ -11,12 +11,13 @@ interface Props {
   product: Product
   locale: string
   zoneLabels: Record<string, string>
+  detailsLabel: string
   addRfqLabel: string
   addedLabel: string
   compareLabel: string
 }
 
-export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLabel, compareLabel }: Props) {
+export function ProductCard({ product, locale, zoneLabels, detailsLabel, addRfqLabel, addedLabel, compareLabel }: Props) {
   const { add: addRFQ, has: hasRFQ } = useRFQStore()
   const { add: addCompare, has: hasCompare, isFull } = useCompareStore()
   const [basePath, setBasePath] = useState('')
@@ -96,7 +97,7 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
       {/* Actions */}
       <div style={{ padding: '0 1.1rem 1.1rem', display: 'flex', gap: '.5rem' }}>
         <Link href={`/${locale}/products/${product.slug}`} className="btn-ghost" style={{ flex: 1, justifyContent: 'center', fontSize: '.8rem' }}>
-          Details
+          {detailsLabel}
         </Link>
         <button
           onClick={() => !inCompare && !isFull() && addCompare({ id: product.id, name, slug: product.slug, zones: product.zones, tags: product.tags, dosage: { baseConc: product.dosage.baseConc, unit: product.dosage.unit } })}

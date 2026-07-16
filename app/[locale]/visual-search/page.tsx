@@ -15,6 +15,7 @@ export default async function VisualSearchPage({ params }: Props) {
 
   const tz = await getTranslations({ locale, namespace: 'zones' })
   const tn = await getTranslations({ locale, namespace: 'nav' })
+  const tv = await getTranslations({ locale, namespace: 'visual' })
 
   const zoneLabels = Object.fromEntries(
     ZONE_IDS.map((id) => [id, tz(id)])
@@ -26,18 +27,10 @@ export default async function VisualSearchPage({ params }: Props) {
         zoneLabels={zoneLabels}
         ui={{
           title: tn('visualSearch'),
-          subtitle: locale === 'pl'
-            ? 'Kliknij w strefę statku, aby zobaczyć dedykowane produkty chemiczne.'
-            : locale === 'de'
-            ? 'Klicken Sie auf einen Schiffsbereich, um passende Chemikalien anzuzeigen.'
-            : 'Click a zone on the ship to see the matching chemical products.',
-          selectPrompt: locale === 'pl'
-            ? 'Wybierz strefę klikając na diagram lub przyciski poniżej'
-            : locale === 'de'
-            ? 'Wählen Sie einen Bereich im Diagramm oder über die Schaltflächen'
-            : 'Select a zone by clicking the diagram or the buttons below',
-          productsFor: locale === 'pl' ? 'Produkty dla' : locale === 'de' ? 'Produkte für' : 'Products for',
-          clearLabel: locale === 'pl' ? 'wyczyść' : locale === 'de' ? 'löschen' : 'clear',
+          subtitle: tv('subtitle'),
+          selectPrompt: tv('selectPrompt'),
+          productsFor: tv('productsFor'),
+          clearLabel: tv('clear'),
         }}
       />
     </main>

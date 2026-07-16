@@ -75,7 +75,7 @@ export default async function ProductPage({ params }: Props) {
 
         {/* Tags */}
         <div>
-          <h3 style={{ fontSize: '.85rem', fontWeight: 600, color: 'var(--fg-muted)', margin: '0 0 .5rem', textTransform: 'uppercase', letterSpacing: '.06em' }}>Tags</h3>
+          <h3 style={{ fontSize: '.85rem', fontWeight: 600, color: 'var(--fg-muted)', margin: '0 0 .5rem', textTransform: 'uppercase', letterSpacing: '.06em' }}>{tp('tags')}</h3>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '.4rem' }}>
             {product.tags.map(t => (
               <span key={t} className="tag" style={{ background: 'var(--bg-card2)', color: 'var(--fg-muted)', border: '1px solid var(--border)' }}>{t}</span>
@@ -94,7 +94,7 @@ export default async function ProductPage({ params }: Props) {
       {related.length > 0 && (
         <section style={{ marginTop: '2.5rem' }}>
           <h2 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--fg)', marginBottom: '1rem' }}>
-            {locale === 'pl' ? 'Powiązane produkty' : locale === 'de' ? 'Verwandte Produkte' : 'Related products'}
+            {tp('related')}
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: '1rem' }}>
             {related.map(r => {
