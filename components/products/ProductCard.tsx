@@ -47,7 +47,7 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
       />
 
       {/* Product image */}
-      <div style={{ position: 'relative', background: 'var(--bg-card2)', height: 180, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', borderBottom: '1px solid var(--border)' }}>
+      <div className="product-img-frame" style={{ position: 'relative', height: 180, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', borderBottom: '1px solid var(--border)' }}>
         <img
           src={basePath + product.image}
           alt={name}
@@ -55,6 +55,7 @@ export function ProductCard({ product, locale, zoneLabels, addRfqLabel, addedLab
           decoding="async"
           width={800}
           height={600}
+          className="product-img"
           style={{ maxHeight: 160, maxWidth: '100%', objectFit: 'contain', padding: '0 1.25rem' }}
           onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none' }}
         />

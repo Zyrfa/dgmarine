@@ -124,3 +124,19 @@ body {
 /* ── Product detail: image + description side by side ── */
 .product-detail-top { grid-template-columns: 1fr !important; }
 @media (min-width: 640px) { .product-detail-top { grid-template-columns: minmax(0,1fr) minmax(0,2fr) !important; } }
+
+/* ── Product image: white-bg blending ───────────────── */
+.product-img-frame {
+  background: #ffffff;
+}
+.product-img {
+  mix-blend-mode: multiply;
+}
+
+[data-theme="dark"] .product-img-frame {
+  background: #eae7e2;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(0,0,0,0.08);
+}
+[data-theme="dark"] .product-img {
+  mix-blend-mode: normal;
+}
